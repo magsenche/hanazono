@@ -1,0 +1,3 @@
+- [Digital garden](https://lyz-code.github.io/blue-book/digital_garden/)
+- [Spaced repetition](https://gwern.net/spaced-repetition)
+- Anki for leibner card ?
