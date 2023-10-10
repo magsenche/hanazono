@@ -1,0 +1,30 @@
+[data-md-color-primary=blue-grey] {
+
+    /* question admonition used for flashcards */
+    .md-typeset .admonition.question,
+    .md-typeset details.question {
+        border-color: #546d78;
+    }
+
+    .md-typeset .question>.admonition-title,
+    .md-typeset .question>summary {
+        background-color: #546d782e;
+    }
+
+    .md-typeset .question>.admonition-title::before,
+    .md-typeset .question>summary::before {
+        background-color: #546d78;
+        -webkit-mask-image: var(--md-admonition-icon--question);
+        mask-image: var(--md-admonition-icon--question);
+    }
+
+    .md-typeset .question>.admonition-title:after,
+    .md-typeset .question>summary:after {
+        color: #546d78
+    }
+
+    .md-typeset .admonition.question:focus-within,
+    .md-typeset details.question:focus-within {
+        box-shadow: 0 0 0 .2rem #546d781a
+    }
+}

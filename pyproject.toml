@@ -1,0 +1,28 @@
+[project]
+name = "Hanazono"
+version = "0.0.0"
+description = "Personal digital garden"
+authors = [{ name = "Magsen Chebini", email = "magsen.che@gmail.com" }]
+dependencies = [
+    "mkdocs>=1.5.2",
+    "mkdocs-material>=9.3.1",
+    "pymdown-extensions>=10.3",
+    "black>=23.9.1",
+    "pytest>=7.4.2",
+    "mkdocs-open-in-new-tab>=1.0.2",
+]
+requires-python = ">=3.11"
+readme = "README.md"
+license = { text = "MIT" }
+
+[tool.pdm.scripts._]
+env_file = ".env"
+
+[tool.black]
+line-length = 88
+
+[tool.isort]
+profile = "black"
+
+[project.entry-points."mkdocs.plugins"]
+custom_server = "plugin.custom_server:CustomServer"

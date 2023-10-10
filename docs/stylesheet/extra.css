@@ -1,0 +1,58 @@
+/* Underline titles */
+.md-typeset h1 {
+    font-size: 3em;
+    text-align: center;
+}
+
+.md-typeset h2 {
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.md-typeset h3 {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+/* flashcard buttons */
+.fbutton {
+    padding: 10px 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    float: right;
+    position: relative;
+}
+
+.fbutton.disabled {
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+/* ok button */
+.fbutton.ok {
+    color: #ffffff;
+    background-color: #598A4A;
+}
+
+.fbutton.ok::before {
+    content: '\2713';
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* nok button */
+.fbutton.nok {
+    color: #ffffff;
+    background-color: #8A4A5E;
+}
+
+.fbutton.nok::before {
+    content: '\2715';
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
