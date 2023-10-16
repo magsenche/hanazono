@@ -79,7 +79,8 @@ def update_markdown(id, is_ok, docs_dir):
 
 
 def generate_quiz(docs_dir):
-    header = "# Quiz [⟳](){.qbutton}\n\n"
+    header = "---\nsearch:\n  exclude: true\n---\n"
+    title = "# Quiz [⟳](){.qbutton}\n\n"
     body = "## **No flashcard to learn today !**"
 
     flashcards = []
@@ -94,4 +95,4 @@ def generate_quiz(docs_dir):
 
     quiz_file = docs_dir / "notes" / "quiz.md"
     with quiz_file.open("w") as f:
-        f.write(header + body)
+        f.write(header + title + body)
