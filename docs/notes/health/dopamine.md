@@ -51,11 +51,11 @@ There are compounds sold over the counter that potently increase dopamine but no
 ## Flashcards
 ??? question "What is dopamine's primary role in our emotions and perception? [](){.fbutton .ok}[](){.fbutton .nok}"
     Dopamine is linked to our sense of motivation, enhancing our focus and lowering our threshold for action. It is associated with wanting rather than having, shaping our perception of life and our feelings of capability.
-    ##### id: f1b2c3, box: 1, score: 0/0, next: 09/10/2023, last: 09/10/2023
+    ##### id: f1b2c3, box: 2, score: 1/2, next: 17/10/2023, last: 16/10/2023
 
 ??? question "What happens when dopamine levels are low? [](){.fbutton .ok}[](){.fbutton .nok}"
     When dopamine levels are low, we feel unmotivated, derive less pleasure from pursuits, and feel physically tired.
-    ##### id: c4e5f6, box: 2, score: 1/1, next: 12/10/2023, last: 11/10/2023
+    ##### id: c4e5f6, box: 3, score: 2/2, next: 22/10/2023, last: 16/10/2023
 
 ??? question "How can you establish a healthy level of baseline dopamine? [](){.fbutton .ok}[](){.fbutton .nok}"
     - View early morning sunlight for 10-30 minutes daily.
@@ -63,28 +63,24 @@ There are compounds sold over the counter that potently increase dopamine but no
     - Avoid melatonin supplements.
     - Avoid bright lights between 10 p.m.-4 a.m.
     - Ingest caffeine, avoiding it close to sleep.
-    ##### id: 789cbc, box: 2, score: 1/2, next: 13/10/2023, last: 12/10/2023
+    ##### id: 789cbc, box: 3, score: 2/3, next: 22/10/2023, last: 16/10/2023
 
 ??? question "What is the Random Intermittent Reward Timing (RIRT) strategy for motivation? [](){.fbutton .ok}[](){.fbutton .nok}"
     RIRT is a powerful schedule for dopamine release and staying motivated. It involves celebrating some wins at random intervals and associating "winning" with the effort process itself.
-    ##### id: defa23, box: 1, score: 0/0, next: 09/10/2023, last: 09/10/2023
+    ##### id: defa23, box: 2, score: 1/2, next: 17/10/2023, last: 16/10/2023
 
 ??? question "How does dopamine interact with the visual system? [](){.fbutton .ok}[](){.fbutton .nok}"
     Dopamine interacts with the visual system. Focusing your visual attention on a specific point can help maintain focus during goal work, recruiting a mix of neurochemicals including dopamine.
-    ##### id: 456719, box: 2, score: 1/2, next: 13/10/2023, last: 12/10/2023
+    ##### id: 456719, box: 3, score: 2/3, next: 22/10/2023, last: 16/10/2023
 
 ??? question "What are some supplements to microspike dopamine? [](){.fbutton .ok}[](){.fbutton .nok}"
     L-Tyrosine, Alpha-GPC, and Phenylethylamine are supplements that can increase dopamine. However, caution should be taken with timing and individual conditions like bipolar depression.
-    ##### id: 91cdef, box: 1, score: 0/0, next: 09/10/2023, last: 09/10/2023
+    ##### id: 91cdef, box: 1, score: 0/1, next: 16/10/2023, last: 16/10/2023
 
 ??? question "How does dopamine differ from serotonin in terms of desires and satisfaction? [](){.fbutton .ok}[](){.fbutton .nok}"
     Dopamine is about "wanting," focusing on external goals and desires. Serotonin, on the other hand, is associated with feelings of well-being about what we already have.
-    ##### id: eee1a2, box: 2, score: 1/1, next: 12/10/2023, last: 11/10/2023
+    ##### id: eee1a2, box: 3, score: 2/2, next: 22/10/2023, last: 16/10/2023
 
 ??? question "Why is it essential to avoid bright lights between 10 p.m. and 4 a.m.? [](){.fbutton .ok}[](){.fbutton .nok}"
     Viewing bright lights during this period activates the habenula, reducing the amount of circulating dopamine in your system. This can drastically affect motivation and well-being.
-    ##### id: eee3b4, box: 1, score: 0/1, next: 11/10/2023, last: 11/10/2023
-
-??? question "What is the key difference between dopamine and serotonin in terms of their primary associations? [](){.fbutton .ok}[](){.fbutton .nok}"
-    Dopamine is primarily associated with "wanting" and the pursuit of external goals, while serotonin is linked with feelings of contentment and well-being about what one already possesses.
-    ##### id: eee5c6, box: 1, score: 0/0, next: 09/10/2023, last: 09/10/2023
+    ##### id: eee3b4, box: 3, score: 2/3, next: 22/10/2023, last: 16/10/2023

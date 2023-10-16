@@ -12,4 +12,4 @@ Trade-off:
 
 ??? question "`Heisenberg Uncertainty Princinple` [](){.fbutton .ok}[](){.fbutton .nok}"
     A signal concentrated in time must have a spread out fourier transform
-    ##### id: 4e517e, box: 2, score: 1/2, next: 12/10/2023, last: 11/10/2023
+    ##### id: 4e517e, box: 3, score: 2/3, next: 21/10/2023, last: 15/10/2023

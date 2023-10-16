@@ -170,7 +170,7 @@ start_response("200 OK", [("Access-Control-Allow-Origin", "*")])
     if __name__ == "__main__":
         app.run()
     ```
-    ##### id: 68dc48, box: 1, score: 0/0, next: 06/10/2023, last: 06/10/2023
+    ##### id: 68dc48, box: 1, score: 0/1, next: 16/10/2023, last: 16/10/2023
 
 ??? question "Write a POST request sending a number to localhost on a server running on port 5000 [](){.fbutton .ok}[](){.fbutton .nok}"
     ```bash title=""

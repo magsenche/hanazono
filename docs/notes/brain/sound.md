@@ -42,7 +42,7 @@ Some problems:
 ## Flashcards
 ??? question "What are the roles of IHC and OHC in the auditory system? [](){.fbutton .ok}[](){.fbutton .nok}"
     IHC is responsible for 95% of projection and sensory transduction, while OHC accounts for 5% of projections and provides signal amplification.
-    ##### id: d758ed, box: 2, score: 1/1, next: 12/10/2023, last: 11/10/2023
+    ##### id: d758ed, box: 3, score: 2/2, next: 22/10/2023, last: 16/10/2023
 
 ??? question "List and describe all 3 types of neurons found in the VCN [](){.fbutton .ok}[](){.fbutton .nok}"
     - Stellate (fires for sound duration - feature detection)
@@ -52,19 +52,19 @@ Some problems:
 
 ??? question "How is A1 tuned and what affects its receptive fields? [](){.fbutton .ok}[](){.fbutton .nok}"
     A1 is tuned by frequency levels and localisation, and its receptive fields can be shaped by experience.
-    ##### id: c7ee0e, box: 1, score: 0/1, next: 12/10/2023, last: 12/10/2023
+    ##### id: c7ee0e, box: 1, score: 0/2, next: 15/10/2023, last: 15/10/2023
 
 ??? question "Identify the 3 main components involved in vowel perception and their roles [](){.fbutton .ok}[](){.fbutton .nok}"
     - S(f) - Vocal folds
     - T(f) - Vocal tract (influenced by the shape and position of the larynx, tongue, etc.)
     - R(f) - Mouth radiation
-    ##### id: 76f1c3, box: 2, score: 1/1, next: 13/10/2023, last: 12/10/2023
+    ##### id: 76f1c3, box: 3, score: 2/2, next: 21/10/2023, last: 15/10/2023
 
 ??? question "What are formants, formant frequencies? Why are they importent in vowel perception? [](){.fbutton .ok}[](){.fbutton .nok}"
     Formants are distinctive patterns of spectral maxima, with formant frequencies being the maxima of a formant.
 
     The distribution of the first three formants is used as cues for vowel perception
-    ##### id: baa4c1, box: 2, score: 1/2, next: 12/10/2023, last: 11/10/2023
+    ##### id: baa4c1, box: 3, score: 2/3, next: 21/10/2023, last: 15/10/2023
 
 ??? question "What is the McGurk effect in the context of auditory hallucinations? [](){.fbutton .ok}[](){.fbutton .nok}"
     The McGurk effect demonstrates how visual and auditory modalities can interact to produce a perceived sound different from the auditory stimulus

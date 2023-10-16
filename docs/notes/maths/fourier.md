@@ -51,7 +51,7 @@ $\frac{1}{2\pi}$ and $\frac{1}{N}$ to ensure $\hat{F}(F(f)) = f$, depending on t
 ??? question "`Fourier transform` for continuous signals [](){.fbutton .ok}[](){.fbutton .nok}"
     : $\hat{f}(\omega) = \frac{1}{2\pi} \int f(t) e^{-i\omega t} dt$
     : $f(t) = \int \hat{f}(\omega) e^{i\omega t} d\omega$
-    ##### id: 3bef8a, box: 1, score: 0/0, next: 06/10/2023, last: 06/10/2023
+    ##### id: 3bef8a, box: 2, score: 1/1, next: 17/10/2023, last: 16/10/2023
 
 ??? question "`Fourier transform` for discrete signal [](){.fbutton .ok}[](){.fbutton .nok}"
     : $X_k = \sum_{n=0}^{N-1} x_n \cdot e^{-\frac {i 2\pi}{N}kn}$

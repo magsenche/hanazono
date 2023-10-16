@@ -53,11 +53,11 @@
 
 ??? question "`Coset` [](){.fbutton .ok}[](){.fbutton .nok}"
     $gH = \{ gh | h \in H \}$
-    ##### id: 170626, box: 1, score: 0/2, next: 12/10/2023, last: 12/10/2023
+    ##### id: 170626, box: 2, score: 1/3, next: 16/10/2023, last: 15/10/2023
 
 ??? question "`Group representation` [](){.fbutton .ok}[](){.fbutton .nok}"
     $\rho: G \rightarrow GL(n),  \rho (g.h) = \rho(g)\rho(h)$
-    ##### id: 85c2dd, box: 1, score: 0/0, next: 07/10/2023, last: 07/10/2023
+    ##### id: 85c2dd, box: 2, score: 1/1, next: 17/10/2023, last: 16/10/2023
 
 ??? question "`Tangent space` [](){.fbutton .ok}[](){.fbutton .nok}"
     Local coordinate system on a manifold

@@ -53,13 +53,13 @@
     | Difference between 2 quantities | Difference between 2 close points (time, space, etc.)     | Partial derivative representing local change with respect to one variable | Not necessarily a difference or variation |
     | Measures a global change        | Can be standalone: $dx$, $dt$ as infinitesimal quantities | Always as a ratio: $\partial A / \partial x$, $\partial f / \partial t$   | $\delta W = F \cdot dL$                   |
 
-    ##### id: d806c2, box: 1, score: 0/0, next: 06/10/2023, last: 06/10/2023
+    ##### id: d806c2, box: 2, score: 1/1, next: 17/10/2023, last: 16/10/2023
 
 ??? question "Einstein notation for $(\mathbf{A} \mathbf{v})_{i}$ [](){.fbutton .ok}[](){.fbutton .nok}"
     $u^i = {A^i}_j v^j$
-    ##### id: b2b51a, box: 1, score: 0/0, next: 06/10/2023, last: 06/10/2023
+    ##### id: b2b51a, box: 2, score: 1/1, next: 17/10/2023, last: 16/10/2023
 
-??? question "Einstein notation for $(\mathbf{A} \mathbf{B})_{ik}$[](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "Einstein notation for $(\mathbf{A} \mathbf{B})_{ik} [](){.fbutton .ok}[](){.fbutton .nok}"
     ${C^i}_k = {A^i}_j {B^j}_k$
     ##### id: d4cb21, box: 3, score: 2/2, next: 18/10/2023, last: 12/10/2023
 

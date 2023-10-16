@@ -111,7 +111,7 @@ These models can also surpass CNN on high resolution  (cf paper on equivariance 
 
 ??? question "What is the primary mechanism behind Transformers? [](){.fbutton .ok}[](){.fbutton .nok}"
     They are an architecture for sequence transduction models using only attention mechanisms without recurrence or convolution
-    ##### id: a7b8c9, box: 2, score: 1/1, next: 11/10/2023, last: 10/10/2023
+    ##### id: a7b8c9, box: 3, score: 2/2, next: 22/10/2023, last: 16/10/2023
 
 ??? question "How do seq-to-seq models in Transformers function? [](){.fbutton .ok}[](){.fbutton .nok}"
     They take an input sequence and output a sequence of the same length, first compressing the input information into another representation space
@@ -124,7 +124,7 @@ These models can also surpass CNN on high resolution  (cf paper on equivariance 
 
 ??? question "What is the role of the "value" in the self-attention mechanism of Transformers? [](){.fbutton .ok}[](){.fbutton .nok}"
     The "value" represents the meaning of each word in the input sequence
-    ##### id: 5213a4, box: 1, score: 0/0, next: 09/10/2023, last: 09/10/2023
+    ##### id: 5213a4, box: 2, score: 1/1, next: 16/10/2023, last: 15/10/2023
 
 ??? question "How does multi-head attention in Transformers differ from regular self-attention? [](){.fbutton .ok}[](){.fbutton .nok}"
     It trains multiple heads simultaneously, capturing different types of information in parallel
@@ -136,7 +136,7 @@ These models can also surpass CNN on high resolution  (cf paper on equivariance 
 
 ??? question "How does the decoder function in Transformers? [](){.fbutton .ok}[](){.fbutton .nok}"
     It works as an autoregressive tool, taking all previous outputs as inputs along with the encoder's output, using the attention mechanism to attend to relevant parts of the input sequence
-    ##### id: a1a223, box: 1, score: 0/0, next: 09/10/2023, last: 09/10/2023
+    ##### id: a1a223, box: 2, score: 1/1, next: 16/10/2023, last: 15/10/2023
 
 ??? question "How are images processed in Transformers for vision tasks? [](){.fbutton .ok}[](){.fbutton .nok}"
     Images are treated as patches, embedded, and then handled as sequences with added positional encoding
@@ -145,7 +145,7 @@ These models can also surpass CNN on high resolution  (cf paper on equivariance 
 ??? question "Name two advantages of Transformers over traditional RNNs or CNNs. [](){.fbutton .ok}[](){.fbutton .nok}"
     - can be trained in parallel
     - efficiently handle long-range dependencies
-    ##### id: e7f8a9, box: 2, score: 1/1, next: 13/10/2023, last: 12/10/2023
+    ##### id: e7f8a9, box: 3, score: 2/2, next: 22/10/2023, last: 16/10/2023
 
 ??? question "Why might Transformers require more training data compared to CNNs? [](){.fbutton .ok}[](){.fbutton .nok}"
     They have fewer inductive biases than CNNs, so they need more data to learn some basic properties of images

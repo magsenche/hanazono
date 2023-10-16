@@ -139,7 +139,7 @@ role in categorization](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4143420/pdf
     - color
     - eccentricity bias
     - visual field maps
-    ##### id: c4d027, box: 2, score: 1/2, next: 13/10/2023, last: 12/10/2023
+    ##### id: c4d027, box: 3, score: 2/3, next: 22/10/2023, last: 16/10/2023
 
 ??? question "List all 3 levels of Marr's approach for understanding information processing systems [](){.fbutton .ok}[](){.fbutton .nok}"
     - computation
@@ -153,15 +153,15 @@ role in categorization](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4143420/pdf
 
 ??? question "How do VTC responses differ from V1-hV4 responses? [](){.fbutton .ok}[](){.fbutton .nok}"
     VTC responses represent perceived similarity more than physical similarity and are primarily driven by shape and content
-    ##### id: ccd84f, box: 1, score: 0/1, next: 11/10/2023, last: 11/10/2023
+    ##### id: ccd84f, box: 1, score: 0/3, next: 16/10/2023, last: 16/10/2023
 
 ??? question "Describe the levels of clustering in VTC [](){.fbutton .ok}[](){.fbutton .nok}"
     Columns (1 mm), patches (5 mm), regions (10 mm), and maps (within and across regions)
-    ##### id: 7cfda4, box: 1, score: 0/1, next: 11/10/2023, last: 11/10/2023
+    ##### id: 7cfda4, box: 1, score: 0/2, next: 16/10/2023, last: 16/10/2023
 
 ??? question "What is the primary objective of the TDANN model? [](){.fbutton .ok}[](){.fbutton .nok}"
     To predict functional organization in cortical areas of the primate visual system in a biophysically efficient manner
-    ##### id: f235e4, box: 1, score: 0/1, next: 11/10/2023, last: 11/10/2023
+    ##### id: f235e4, box: 2, score: 1/2, next: 17/10/2023, last: 16/10/2023
 
 ??? question "Name the two main constraints of TDANN [](){.fbutton .ok}[](){.fbutton .nok}"
     - support ecologically-relevant behaviors

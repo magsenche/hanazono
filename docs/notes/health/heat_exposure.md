@@ -46,11 +46,11 @@ Throughout the day, body temperature fluctuates in sync with your natural circad
 ## Flashcards
 ??? question "What are the safety concerns regarding deliberate heat exposure? [](){.fbutton .ok}[](){.fbutton .nok}"
     Pregnant women and children under 16 should avoid saunas. Starting with cooler temperatures that don't significantly increase heart rate is advised. Hyperthermia and dehydration are potential risks. Men should be aware that regular heat exposure can reduce sperm count, but it rebounds after cessation of sauna use.
-    ##### id: 9801a2, box: 1, score: 0/0, next: 09/10/2023, last: 09/10/2023
+    ##### id: 9801a2, box: 1, score: 0/1, next: 16/10/2023, last: 16/10/2023
 
 ??? question "How can regular sauna usage benefit cardiovascular health? [](){.fbutton .ok}[](){.fbutton .nok}"
     Regular sauna use can reduce risks of cardiovascular events and strokes. It triggers mechanisms similar to cardiovascular exercise, causing increased heart rate and blood flow. Blood vessels expand to regulate body temperature.
-    ##### id: 982f3c, box: 1, score: 0/0, next: 09/10/2023, last: 09/10/2023
+    ##### id: 982f3c, box: 1, score: 0/1, next: 15/10/2023, last: 15/10/2023
 
 ??? question "How does heat exposure influence mood and stress response? [](){.fbutton .ok}[](){.fbutton .nok}"
     Heat exposure leads to a release of dynorphins (cause initial discomfort) followed by endorphins, leading to post-sauna euphoria. Hormesis, a mild stress from heat, has been linked to decreased cortisol levels, activation of DNA repair pathways, and Heat Shock Proteins for cellular protein structure integrity.
