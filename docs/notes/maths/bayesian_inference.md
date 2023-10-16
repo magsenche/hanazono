@@ -39,35 +39,11 @@ $\hat{Q}(\theta)=argmin_{Q(\theta)}D_{KL}[Q(\theta) \parallel P(\theta|D)]$
 
 ??? question "Maximum a posteriori [](){.fbutton .ok}[](){.fbutton .nok}"
     $\hat{\theta}_{MAP}=argmax_{\theta}{P(\theta|D)} = argmax_{\theta}{P(D|\theta)P(\theta)}$
-    ##### id: e8b6b6, box: 2, score: 1/2, next: 13/10/2023, last: 12/10/2023
+    ##### id: e8b6b6, box: 3, score: 2/3, next: 22/10/2023, last: 16/10/2023
 
 ??? question "When does $\hat{\theta}_{MLE} = \hat{\theta}_{MAP}$ ? [](){.fbutton .ok}[](){.fbutton .nok}"
     With an uniform or no prior
-    ##### id: 3fe433, box: 1, score: 0/1, next: 11/10/2023, last: 11/10/2023
-
-??? question "Describe the Expectation-Maximization algorithm to fit a Gaussian mixture Model? [](){.fbutton .ok}[](){.fbutton .nok}"
-
-    1. **Initialization:**
-          - Initialize means, covariances, and weights randomly.
-          - Set the maximum number of iterations and convergence threshold.
-    2. **Iteration:**
-          - Repeat the following steps until convergence or until the maximum number of iterations is reached.
-    3. **Expectation Step (E-step):**
-          - For each data point:
-            - Calculate the probability that it belongs to each Gaussian component.
-            - Update the responsibilities based on these probabilities.
-    4. **Maximization Step (M-step):**
-          - For each Gaussian component:
-            - Update the weight based on the sum of responsibilities.
-            - Update the mean based on weighted data points.
-            - Update the covariance based on weighted data point deviations from the mean.
-    5. **Convergence Check:**
-          - Measure the change in parameters from the previous iteration.
-          - If the change is below the convergence threshold, stop iterating.
-    6. **Result:**
-          - Return the final parameters: means, covariances, and weights.
-
-    ##### id: 7dc4ef, box: 1, score: 0/0, next: 27/09/2023, last: 27/09/2023
+    ##### id: 3fe433, box: 2, score: 1/2, next: 16/10/2023, last: 15/10/2023
 
 ??? question "In which case is it impossible to differentiate two distributions using $\hat{\theta}_{MLE}$ or $\hat{\theta}_{MAP}$ [](){.fbutton .ok}[](){.fbutton .nok}"
     Two distributions with the same mode/max cannot be differenciated by MLE or MAP
@@ -82,7 +58,7 @@ $\hat{Q}(\theta)=argmin_{Q(\theta)}D_{KL}[Q(\theta) \parallel P(\theta|D)]$
     - Markov Chain Monte Carlo
     - Metropolis-Hastings
 
-    ##### id: a21379, box: 1, score: 0/1, next: 12/10/2023, last: 12/10/2023
+    ##### id: a21379, box: 2, score: 1/2, next: 17/10/2023, last: 16/10/2023
 
 ??? question "What is the purpose of Variational Inference [](){.fbutton .ok}[](){.fbutton .nok}"
     To find an approximation $Q(\theta)$ of the true posterior $P(\theta|D)$:

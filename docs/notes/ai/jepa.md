@@ -50,7 +50,7 @@ To learn world models in an unsupervised fashion, recently we've been using cont
     - The actor module computes proposals for action sequences.
 
     - The short-term memory module keeps track of the current and predicted world state, as well as associated costs.
-    ##### id: 4bc5be, box: 2, score: 1/2, next: 12/10/2023, last: 11/10/2023
+    ##### id: 4bc5be, box: 3, score: 2/3, next: 22/10/2023, last: 16/10/2023
 
 ??? question "JEPA: What unsupervised method does Yann LeCun advocate for learning world models [](){.fbutton .ok}[](){.fbutton .nok}"
     Yann LeCun promotes Hierarchical JEPA (Joint Embedding Predictive Architecture) and suggests learning world models using contrastive methods, with new methods like VICReg/JEPA that focus on maximizing mutual information and minimizing the latent representation

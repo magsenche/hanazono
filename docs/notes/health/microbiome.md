@@ -59,11 +59,11 @@ Microbiota are present on any and all surfaces which have come into contact with
 
 ??? question "How does eating fermented foods affect gut microbiota diversity? [](){.fbutton .ok}[](){.fbutton .nok}"
     Eating fermented foods can increase overall gut microbiota diversity and reduce key markers of inflammation, thus enhancing gut health.
-    ##### id: f2c3d4, box: 2, score: 1/1, next: 13/10/2023, last: 12/10/2023
+    ##### id: f2c3d4, box: 3, score: 2/2, next: 22/10/2023, last: 16/10/2023
 
 ??? question "Why is a high-fiber diet beneficial for the gut microbiome? [](){.fbutton .ok}[](){.fbutton .nok}"
     While it may not increase microbiota diversity, a high-fiber diet can increase the amount of carbohydrate active enzymes, helping digest fiber and potentially enhancing the microbiome’s ability to degrade other complex carbohydrates. It can also provide key nutrients and potentially reduce inflammation markers.
-    ##### id: f2e5f6, box: 2, score: 1/2, next: 13/10/2023, last: 12/10/2023
+    ##### id: f2e5f6, box: 3, score: 2/3, next: 21/10/2023, last: 15/10/2023
 
 ??? question "How do prebiotics and probiotics support gut health? [](){.fbutton .ok}[](){.fbutton .nok}"
     Prebiotics provide food for established gut microbiota, while probiotics introduce live bacteria or yeasts that can colonize in the gut, enhancing gut microbiome health and potentially aiding recovery in cases of dysbiosis.

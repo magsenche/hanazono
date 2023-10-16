@@ -23,4 +23,4 @@ Deux tels atlas sont équivalents et définissent donc une structure de variét�
 
 ??? question "`Variété` [](){.fbutton .ok}[](){.fbutton .nok}"
     : Espace localement affine sur lequel on peut faire du calcul différentiel. Système de cartes avec coordonnées locales
-    ##### id: 9e0a99, box: 1, score: 0/2, next: 11/10/2023, last: 11/10/2023
+    ##### id: 9e0a99, box: 2, score: 1/3, next: 17/10/2023, last: 16/10/2023

@@ -25,7 +25,7 @@ Abstract causal dependences are what are conserved accross scenarios eg if I go 
 
 ??? question "What are GFlowNets for? [](){.fbutton .ok}[](){.fbutton .nok}"
     To generalize and abstract information in high-dimensional spaces
-    ##### id: af46fe, box: 1, score: 0/1, next: 10/10/2023, last: 10/10/2023
+    ##### id: af46fe, box: 1, score: 0/2, next: 16/10/2023, last: 16/10/2023
 
 ??? question "In active learning scenarios with GFlowNets, what is the objective? [](){.fbutton .ok}[](){.fbutton .nok}"
     To economically determine the most informative samples for the model to learn from

@@ -71,11 +71,11 @@ Specific code
 ??? question "Where are the place cells? What they do? [](){.fbutton .ok}[](){.fbutton .nok}"
     - in the hippocampus
     - they are context-dependant and code for current loaction
-    ##### id: be677f, box: 1, score: 0/0, next: 09/10/2023, last: 09/10/2023
+    ##### id: be677f, box: 2, score: 1/1, next: 16/10/2023, last: 15/10/2023
 
 ??? question "What are boundary cells for? [](){.fbutton .ok}[](){.fbutton .nok}"
     They code for boundaries in both entorhinal cortex and hippocampus
-    ##### id: 7e38a7, box: 2, score: 1/2, next: 12/10/2023, last: 11/10/2023
+    ##### id: 7e38a7, box: 3, score: 2/3, next: 22/10/2023, last: 16/10/2023
 
 ??? question "How does the brain use graph formalisme in cognitive mapping? [](){.fbutton .ok}[](){.fbutton .nok}"
     To unify different modalities, with each modality having different graphs, like vision using 2D grid graphs and sound using 1D graphs

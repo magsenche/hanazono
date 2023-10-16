@@ -30,4 +30,4 @@ $(\int e^{-x^2}dx)^2 = \iint_{\R^2} e^{-\left(x^2 + y^2\right)}dx\,dy = \int_0^{
 ??? question "List 2 symmetries along with the associated conservation law [](){.fbutton .ok}[](){.fbutton .nok}"
     - Time symmetry $\rightarrow$ conservation of energy
     - Space symmetry $\rightarrow$ to conservation of momentum
-    ##### id: b50306, box: 2, score: 1/1, next: 13/10/2023, last: 12/10/2023
+    ##### id: b50306, box: 3, score: 2/2, next: 21/10/2023, last: 15/10/2023

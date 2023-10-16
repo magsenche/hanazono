@@ -34,11 +34,11 @@ Other models with different diameter for nerve fibers
 
 ??? question "Ephaptic interactions: what happens during subthreshold firing? [](){.fbutton .ok}[](){.fbutton .nok}"
     Subthreshold firing occurs when an adjacent electric signal traveling in one neuron influences another neuron. Ephaptic interactions can contribute to neuronal synchrony, especially observed in the hippocampus. Depending on the distance between neighboring signals/impulses and different coupling coefficients, attraction or repulsion effects can arise. This phenomenon can even generate new action potentials and backward signals.
-    ##### id: b36732, box: 1, score: 0/2, next: 12/10/2023, last: 12/10/2023
+    ##### id: b36732, box: 2, score: 1/3, next: 17/10/2023, last: 16/10/2023
 
-??? question "How can ephaptic interactoins influence the behavior of neuronal fiber pathways? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "How can ephaptic interactions influence the behavior of neuronal fiber pathways? [](){.fbutton .ok}[](){.fbutton .nok}"
     Ephaptic interactions, enhanced by the orientations and bundling of neuronal tracts in three-dimensional space, can transform fiber pathways into an active axonal medium. This can lead to complex spatiotemporal dynamics, challenging the common assumption that neuronal fiber pathways merely act as transmission cables between brain regions
-    ##### id: c6b5a8, box: 1, score: 0/0, next: 09/10/2023, last: 09/10/2023
+    ##### id: c6b5a8, box: 1, score: 0/2, next: 16/10/2023, last: 16/10/2023
 
 ??? question "Ephaptic interactions: What si the significance of axonal diameter heterogeneity? [](){.fbutton .ok}[](){.fbutton .nok}"
     Heterogeneity in axonal diameters has a dispersive effect on ephaptic interactions. A higher level of diameter heterogeneity demands stronger ephaptic coupling to achieve full synchronization between spikes

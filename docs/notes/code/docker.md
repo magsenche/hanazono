@@ -152,7 +152,7 @@ Access the application through your browser or API client on port 80, and Nginx 
 
 ??? question "`Docker Container` [](){.fbutton .ok}[](){.fbutton .nok}"
     A container is a running instance of an image, encapsulating the application and its dependencies
-    ##### id: 6c7265, box: 2, score: 1/1, next: 13/10/2023, last: 12/10/2023
+    ##### id: 6c7265, box: 3, score: 2/2, next: 21/10/2023, last: 15/10/2023
 
 ??? question "Docker: What does the RUN instruction do in a Dockerfile [](){.fbutton .ok}[](){.fbutton .nok}"
     It executes commands during the image building phase
@@ -160,11 +160,11 @@ Access the application through your browser or API client on port 80, and Nginx 
 
 ??? question "Docker: What is the purpose of COPY instruction [](){.fbutton .ok}[](){.fbutton .nok}"
     It transfers files or directories from the host to the container's filesystem
-    ##### id: 208389, box: 1, score: 0/1, next: 10/10/2023, last: 10/10/2023
+    ##### id: 208389, box: 2, score: 1/2, next: 17/10/2023, last: 16/10/2023
 
 ??? question "Docker: relation between Image and Container [](){.fbutton .ok}[](){.fbutton .nok}"
     A container is a running instance of an image, encapsulating the application and its dependencies
-    ##### id: 284eba, box: 1, score: 0/0, next: 09/10/2023, last: 09/10/2023
+    ##### id: 284eba, box: 2, score: 1/1, next: 17/10/2023, last: 16/10/2023
 
 ??? question "Docker: how is WORKDIR used ? [](){.fbutton .ok}[](){.fbutton .nok}"
     It sets the working directory for subsequent commands
@@ -172,15 +172,15 @@ Access the application through your browser or API client on port 80, and Nginx 
 
 ??? question "Docker: why use VOLUME instruction? [](){.fbutton .ok}[](){.fbutton .nok}"
     To specify a mount point for sharing and persisting data between the host and container.
-    ##### id: a3e837, box: 1, score: 0/0, next: 09/10/2023, last: 09/10/2023
+    ##### id: a3e837, box: 2, score: 1/1, next: 16/10/2023, last: 15/10/2023
 
 ??? question "Docker: what does the EXPOSE instruction indicate? [](){.fbutton .ok}[](){.fbutton .nok}"
     It documents the network ports the container listens on
-    ##### id: 227aed, box: 2, score: 1/1, next: 12/10/2023, last: 11/10/2023
+    ##### id: 227aed, box: 3, score: 2/2, next: 21/10/2023, last: 15/10/2023
 
 ??? question "Docker: how does ENV instruction benefit a Docker container? [](){.fbutton .ok}[](){.fbutton .nok}"
      It sets environment variables for processes inside the container
-    ##### id: 8a8839, box: 2, score: 1/1, next: 11/10/2023, last: 10/10/2023
+    ##### id: 8a8839, box: 3, score: 2/2, next: 21/10/2023, last: 15/10/2023
 
 ??? question "Docker: difference between ENTRYPOINt and CMD [](){.fbutton .ok}[](){.fbutton .nok}"
     ENTRYPOINT determines the default command when the container starts, while CMD specifies the default command for the container when it runs but can be overridden
@@ -188,7 +188,7 @@ Access the application through your browser or API client on port 80, and Nginx 
 
 ??? question "Why use nginx in a containerzied environment? [](){.fbutton .ok}[](){.fbutton .nok}"
     To direct traffic to other containers, ensuring efficient communication and load distribution
-    ##### id: 40f133, box: 2, score: 1/1, next: 12/10/2023, last: 11/10/2023
+    ##### id: 40f133, box: 3, score: 2/2, next: 22/10/2023, last: 16/10/2023
 
 ??? question "Primary use case of nginx in a Docker environment [](){.fbutton .ok}[](){.fbutton .nok}"
     As a reverse proxy to direct traffic to other containers

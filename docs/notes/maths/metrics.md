@@ -54,13 +54,13 @@ Un des problèmes de leur loss, c'est que avec leur metrique de transport optima
     $P$: data, observations
 
     $Q$: model, theories, approximation of $P$
-    ##### id: ced04e, box: 1, score: 0/1, next: 11/10/2023, last: 11/10/2023
+    ##### id: ced04e, box: 2, score: 1/2, next: 16/10/2023, last: 15/10/2023
 
 ??? question "Interpretation of the KL div [](){.fbutton .ok}[](){.fbutton .nok}"
     - number of bits required for encoding samples of $P$ using a code optimized for $Q$ rather than one optimized for $P$
     - expected excess surprise from using $Q$ as a model when the actual distribution is $P$
     - relative entropy of $P$ w.r.t $Q$
-    ##### id: 8507b7, box: 1, score: 0/0, next: 07/10/2023, last: 07/10/2023
+    ##### id: 8507b7, box: 1, score: 1/2, next: 16/10/2023, last: 16/10/2023
 
 ??? question "`JS div` [](){.fbutton .ok}[](){.fbutton .nok}"
     $$ D_{JS}[p\parallel q] = \frac{1}{2} D_{KL}[p\parallel {\frac{p+q}{2}}] + \frac{1}{2} D_{KL}[q\parallel {\frac{p+q}{2}}]$$

@@ -100,28 +100,28 @@ A comprehensive article on Neurotech Berkeley delves into the intricacies of the
 
 ??? question "What is the formula representing the relationship between Free Energy, Energy, and Entropy? [](){.fbutton .ok}[](){.fbutton .nok}"
     Free Energy = Energy - Entropy = Surprise + Divergence
-    ##### id: c7a8b9, box: 2, score: 1/1, next: 12/10/2023, last: 11/10/2023
+    ##### id: c7a8b9, box: 3, score: 2/2, next: 22/10/2023, last: 16/10/2023
 
 ??? question "FEP: what do Markov Blankets define? [](){.fbutton .ok}[](){.fbutton .nok}"
     The boundary of a system, separating internal from external states. They establish conditional independencies and require synchronization.
-    ##### id: e0f1e2, box: 1, score: 0/0, next: 09/10/2023, last: 09/10/2023
+    ##### id: e0f1e2, box: 2, score: 1/1, next: 17/10/2023, last: 16/10/2023
 
 ??? question "In FEP, what should objective functions be based on? [](){.fbutton .ok}[](){.fbutton .nok}"
     Beliefs about the world rather than the actual states of the world.
-    ##### id: e0f1e3, box: 1, score: 0/0, next: 09/10/2023, last: 09/10/2023
+    ##### id: e0f1e3, box: 1, score: 0/1, next: 16/10/2023, last: 16/10/2023
 
 ??? question "FEP: what are System 1 and System 2? [](){.fbutton .ok}[](){.fbutton .nok}"
     - System 1 is fast, intuitive, and automatic
     - System 2 is slower, deliberate, and logical.
-    ##### id: e0f1e4, box: 1, score: 0/0, next: 09/10/2023, last: 09/10/2023
+    ##### id: e0f1e4, box: 2, score: 1/2, next: 17/10/2023, last: 16/10/2023
 
 ??? question "What is the 'Low road' in Active Inference? [](){.fbutton .ok}[](){.fbutton .nok}"
     A bottom-up approach focusing on the brain's immediate actions.
-    ##### id: e0f1e5, box: 1, score: 0/0, next: 09/10/2023, last: 09/10/2023
+    ##### id: e0f1e5, box: 2, score: 1/2, next: 17/10/2023, last: 16/10/2023
 
 ??? question "How does predictive coding relate to backpropagation? [](){.fbutton .ok}[](){.fbutton .nok}"
     Predictive coding can approximate backpropagation on arbitrary graphs. Any gradient can be described as a prediction error.
-    ##### id: e0f1e6, box: 2, score: 1/1, next: 12/10/2023, last: 11/10/2023
+    ##### id: e0f1e6, box: 3, score: 2/2, next: 21/10/2023, last: 15/10/2023
 
 ??? question "What does the 'inner screen model of consciousness' propose? [](){.fbutton .ok}[](){.fbutton .nok}"
     It applies the FEP directly to the study of conscious experience, suggesting consciousness emerges from the brain's attempt to minimize free energy.
@@ -129,11 +129,11 @@ A comprehensive article on Neurotech Berkeley delves into the intricacies of the
 
 ??? question "FEP: how does the brain perceive the world? [](){.fbutton .ok}[](){.fbutton .nok}"
     The brain perceives the world based on its predictions and adjusts these predictions when they're wrong.
-    ##### id: e2f3g4, box: 1, score: 0/0, next: 09/10/2023, last: 09/10/2023
+    ##### id: e2f3c4, box: 2, score: 1/1, next: 16/10/2023, last: 15/10/2023
 
 ??? question "FEP: how do organisms act in the world? [](){.fbutton .ok}[](){.fbutton .nok}"
     Organisms act to change the world in a way that makes it more predictable, further reducing free energy.
-    ##### id: e0f1e9, box: 1, score: 0/0, next: 09/10/2023, last: 09/10/2023
+    ##### id: e0f1e9, box: 3, score: 2/2, next: 22/10/2023, last: 16/10/2023
 
 ??? question "FEP: what is the role of learning in the context of FEP? [](){.fbutton .ok}[](){.fbutton .nok}"
     Over time, the brain updates the structure of its internal models to better predict future sensory inputs.
@@ -157,7 +157,7 @@ A comprehensive article on Neurotech Berkeley delves into the intricacies of the
 
 ??? question "Active inference: what is the significance of Exploration vs. Exploitation? [](){.fbutton .ok}[](){.fbutton .nok}"
     Active inference involves a balance between exploration (seeking new situations to refine models) and exploitation (acting in ways that confirm predictions). This ensures adaptability in changing environments.
-    ##### id: d605f4, box: 1, score: 0/0, next: 09/10/2023, last: 09/10/2023
+    ##### id: d605f4, box: 2, score: 1/1, next: 17/10/2023, last: 16/10/2023
 
 ??? question "Active inference: how are the brain's internal models structured? [](){.fbutton .ok}[](){.fbutton .nok}"
     The brain's models are hierarchical. Higher-level models make broad predictions, while lower-level models handle details. Active inference operates at all hierarchy levels, like predicting it's daytime or specific light patterns.
