@@ -35,37 +35,30 @@
 `Tangent space`
 : The tangent space defines a coordinate system locally on a manifold
 
-??? question "`Group` [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "`Group`"
     - $+$ interne composistion
     - $0$ identity element
     - associativity
     - $-a$ inverse
-    ##### id: d3d614, box: 3, score: 2/2, next: 18/10/2023, last: 12/10/2023
-??? question "`Orbit` [](){.fbutton .ok}[](){.fbutton .nok}"
+
+??? question "`Orbit`"
     $O_x =  \{gx | x \in X, g \in G \}$
 
     $x \sim_g y \Rightarrow y \in O_x$
-    ##### id: 618def, box: 3, score: 2/2, next: 17/10/2023, last: 11/10/2023
 
-??? question "`Stabilizer` [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "`Stabilizer`"
     $H_x =  \{g \in G | gx = x \}$
-    ##### id: e38e3e, box: 2, score: 1/1, next: 13/10/2023, last: 12/10/2023
 
-??? question "`Coset` [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "`Coset`"
     $gH = \{ gh | h \in H \}$
-    ##### id: 170626, box: 2, score: 1/3, next: 16/10/2023, last: 15/10/2023
 
-??? question "`Group representation` [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "`Group representation`"
     $\rho: G \rightarrow GL(n),  \rho (g.h) = \rho(g)\rho(h)$
-    ##### id: 85c2dd, box: 2, score: 1/1, next: 17/10/2023, last: 16/10/2023
 
-??? question "`Tangent space` [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "`Tangent space`"
     Local coordinate system on a manifold
-    ##### id: 45b2b1, box: 2, score: 1/1, next: 12/10/2023, last: 11/10/2023
 
-??? question "List 2 possible structures constructed from the circle and the segment [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "List 2 possible structures constructed from the circle and the segment"
     Circle as a manifold, segment as the fiber:
-
     - Basic cartesian product $\rightarrow$ Ring
     - "Twisted" product $\rightarrow$ Moebius ruban
-    ##### id: b2bc31, box: 3, score: 2/2, next: 18/10/2023, last: 12/10/2023

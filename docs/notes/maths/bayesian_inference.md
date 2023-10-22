@@ -33,23 +33,19 @@ $\hat{Q}(\theta)=argmin_{Q(\theta)}D_{KL}[Q(\theta) \parallel P(\theta|D)]$
 - **Metropolis-Hastings** ([MH])
 
 ## Flashcards
-??? question "Maximum likelihood estimator [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "Maximum likelihood estimator"
     $\hat{\theta}_{MLE}=argmax_{\theta}{P(D|\theta)}$
-    ##### id: d37e63, box: 2, score: 3/5, next: 12/10/2023, last: 11/10/2023
 
-??? question "Maximum a posteriori [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "Maximum a posteriori"
     $\hat{\theta}_{MAP}=argmax_{\theta}{P(\theta|D)} = argmax_{\theta}{P(D|\theta)P(\theta)}$
-    ##### id: e8b6b6, box: 3, score: 2/3, next: 22/10/2023, last: 16/10/2023
 
-??? question "When does $\hat{\theta}_{MLE} = \hat{\theta}_{MAP}$ ? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "When does $\hat{\theta}_{MLE} = \hat{\theta}_{MAP}$ ?"
     With an uniform or no prior
-    ##### id: 3fe433, box: 2, score: 1/2, next: 16/10/2023, last: 15/10/2023
 
-??? question "In which case is it impossible to differentiate two distributions using $\hat{\theta}_{MLE}$ or $\hat{\theta}_{MAP}$ [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "In which case is it impossible to differentiate two distributions using $\hat{\theta}_{MLE}$ or $\hat{\theta}_{MAP}$"
     Two distributions with the same mode/max cannot be differenciated by MLE or MAP
-    ##### id: 7c6972, box: 1, score: 0/0, next: 27/09/2023, last: 27/09/2023
 
-??? question "Name at least 3 algorithm to determine parameters of intractable models [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "Name at least 3 algorithm to determine parameters of intractable models"
     - Expectation maximization iteratively searches MLE/MAP given data
     - Variational inference  finds best
     approximation
@@ -58,10 +54,6 @@ $\hat{Q}(\theta)=argmin_{Q(\theta)}D_{KL}[Q(\theta) \parallel P(\theta|D)]$
     - Markov Chain Monte Carlo
     - Metropolis-Hastings
 
-    ##### id: a21379, box: 2, score: 1/2, next: 17/10/2023, last: 16/10/2023
-
-??? question "What is the purpose of Variational Inference [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "What is the purpose of Variational Inference"
     To find an approximation $Q(\theta)$ of the true posterior $P(\theta|D)$:
-
     $$\hat{Q}(\theta)=argmin_{Q(\theta)}D_{KL}[Q(\theta) \parallel P(\theta|D)]$$
-    ##### id: ea2055, box: 1, score: 0/0, next: 27/09/2023, last: 27/09/2023

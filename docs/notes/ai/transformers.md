@@ -101,60 +101,45 @@ These models can also surpass CNN on high resolution  (cf paper on equivariance 
 - [Pytorch tutorial](https://pytorch.org/tutorials/beginner/transformer_tutorial.html)
 
 ## Flashcards
-??? question "How does scaled-dot self-attention relates to a soft-dictionnary [](){.fbutton .ok}[](){.fbutton .nok}"
-    $Q$ Query: represent the word/token currently processed $Q_1=M_qV_1$
+??? question "How does scaled-dot self-attention relates to a soft-dictionnary"
+    - $Q$ Query: represent the word/token currently processed $Q_1=M_qV_1$
+    - $K$ Key: represent all other words in the sequence used to compute attention weights $K_1=M_kV_1$
+    - $V$ Value: represent the meaning of each word in the input sequence $V_1=M_vV_1$
 
-    $K$ Key: represent all other words in the sequence used to compute attention weights $K_1=M_kV_1$
-
-    $V$ Value: represent the meaning of each word in the input sequence $V_1=M_vV_1$
-    ##### id: c7dfee, box: 1, score: 0/1, next: 11/10/2023, last: 11/10/2023
-
-??? question "What is the primary mechanism behind Transformers? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "What is the primary mechanism behind Transformers?"
     They are an architecture for sequence transduction models using only attention mechanisms without recurrence or convolution
-    ##### id: a7b8c9, box: 3, score: 2/2, next: 22/10/2023, last: 16/10/2023
 
-??? question "How do seq-to-seq models in Transformers function? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "How do seq-to-seq models in Transformers function?"
     They take an input sequence and output a sequence of the same length, first compressing the input information into another representation space
-    ##### id: d0e1f2, box: 2, score: 1/1, next: 12/10/2023, last: 11/10/2023
 
-??? question "How does the self-attention mechanism in Transformers use the initial embedding $V_1$? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "How does the self-attention mechanism in Transformers use the initial embedding $V_1$?"
     - dot product between word and all other (including self) to get the weighting $W_{1j} = V_1V^j$
     - dot product between weighting vector and input sequence embedding to get final embedding $Y_1=\sum_j W_{1j}V_j$
-    ##### id: 521300, box: 3, score: 2/2, next: 18/10/2023, last: 12/10/2023
 
-??? question "What is the role of the "value" in the self-attention mechanism of Transformers? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "What is the role of the "value" in the self-attention mechanism of Transformers?"
     The "value" represents the meaning of each word in the input sequence
-    ##### id: 5213a4, box: 2, score: 1/1, next: 16/10/2023, last: 15/10/2023
 
-??? question "How does multi-head attention in Transformers differ from regular self-attention? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "How does multi-head attention in Transformers differ from regular self-attention?"
     It trains multiple heads simultaneously, capturing different types of information in parallel
-    ##### id: b556e7, box: 3, score: 2/2, next: 18/10/2023, last: 12/10/2023
 
-??? question "Why is positional encoding added in Transformers? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "Why is positional encoding added in Transformers?"
     To provide sequence information since Transformers treat sequences without any particular order
-    ##### id: f8f9d0, box: 3, score: 2/2, next: 19/10/2023, last: 13/10/2023
 
-??? question "How does the decoder function in Transformers? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "How does the decoder function in Transformers?"
     It works as an autoregressive tool, taking all previous outputs as inputs along with the encoder's output, using the attention mechanism to attend to relevant parts of the input sequence
-    ##### id: a1a223, box: 2, score: 1/1, next: 16/10/2023, last: 15/10/2023
 
-??? question "How are images processed in Transformers for vision tasks? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "How are images processed in Transformers for vision tasks?"
     Images are treated as patches, embedded, and then handled as sequences with added positional encoding
-    ##### id: b4c5d6, box: 1, score: 0/0, next: 09/10/2023, last: 09/10/2023
 
-??? question "Name two advantages of Transformers over traditional RNNs or CNNs. [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "Name two advantages of Transformers over traditional RNNs or CNNs."
     - can be trained in parallel
     - efficiently handle long-range dependencies
-    ##### id: e7f8a9, box: 3, score: 2/2, next: 22/10/2023, last: 16/10/2023
 
-??? question "Why might Transformers require more training data compared to CNNs? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "Why might Transformers require more training data compared to CNNs?"
     They have fewer inductive biases than CNNs, so they need more data to learn some basic properties of images
-    ##### id: 10a1c2, box: 3, score: 2/2, next: 18/10/2023, last: 12/10/2023
 
-??? question "Why might Transformers perform better than CNNs on high-resolution data in terms of the equivariance metric? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "Why might Transformers perform better than CNNs on high-resolution data in terms of the equivariance metric?"
     Transformers do not struggle to model long-range dependencies as all patches have a distance of one, in contrast to CNNs
-    ##### id: 4647b8, box: 1, score: 0/1, next: 12/10/2023, last: 12/10/2023
 
-??? question "In Transformers, how is the weighting in the self-attention mechanism typically calculated? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "In Transformers, how is the weighting in the self-attention mechanism typically calculated?"
     $W_{1j} = \frac{\exp(Q_1K_j)}{\sum_{j'}\exp(Q_1K_{j'})}$
-    ##### id: 5920c1, box: 1, score: 0/0, next: 09/10/2023, last: 09/10/2023

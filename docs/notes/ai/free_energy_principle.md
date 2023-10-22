@@ -88,77 +88,58 @@ The inner screen model of consciousness applies the FEP directly to the study of
 A comprehensive article on Neurotech Berkeley delves into the intricacies of the Free Energy Principle, making it more accessible to a broader audience.
 
 ## Flashcards
-??? question "What is the Free Energy Principle (FEP)? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "What is the Free Energy Principle (FEP)?"
     A theoretical framework suggesting every system minimizes its surprise or prediction error.
-
     It has implications for understanding cognition, behavior, and existence.
-    ##### id: a1b2c3, box: 3, score: 2/2, next: 18/10/2023, last: 12/10/2023
 
-??? question "FEP: what is the main goal of systems? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "FEP: what is the main goal of systems?"
     To resist disorder and minimize surprise across time scales. It's about predicting the future and maintaining adaptability.
-    ##### id: d4e5f6, box: 1, score: 0/2, next: 12/10/2023, last: 12/10/2023
 
-??? question "What is the formula representing the relationship between Free Energy, Energy, and Entropy? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "What is the formula representing the relationship between Free Energy, Energy, and Entropy?"
     Free Energy = Energy - Entropy = Surprise + Divergence
-    ##### id: c7a8b9, box: 3, score: 2/2, next: 22/10/2023, last: 16/10/2023
 
-??? question "FEP: what do Markov Blankets define? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "FEP: what do Markov Blankets define?"
     The boundary of a system, separating internal from external states. They establish conditional independencies and require synchronization.
-    ##### id: e0f1e2, box: 2, score: 1/1, next: 17/10/2023, last: 16/10/2023
 
-??? question "In FEP, what should objective functions be based on? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "In FEP, what should objective functions be based on?"
     Beliefs about the world rather than the actual states of the world.
-    ##### id: e0f1e3, box: 1, score: 0/1, next: 16/10/2023, last: 16/10/2023
 
-??? question "FEP: what are System 1 and System 2? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "FEP: what are System 1 and System 2?"
     - System 1 is fast, intuitive, and automatic
     - System 2 is slower, deliberate, and logical.
-    ##### id: e0f1e4, box: 2, score: 1/2, next: 17/10/2023, last: 16/10/2023
 
-??? question "What is the 'Low road' in Active Inference? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "What is the 'Low road' in Active Inference?"
     A bottom-up approach focusing on the brain's immediate actions.
-    ##### id: e0f1e5, box: 2, score: 1/2, next: 17/10/2023, last: 16/10/2023
 
-??? question "How does predictive coding relate to backpropagation? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "How does predictive coding relate to backpropagation?"
     Predictive coding can approximate backpropagation on arbitrary graphs. Any gradient can be described as a prediction error.
-    ##### id: e0f1e6, box: 3, score: 2/2, next: 21/10/2023, last: 15/10/2023
 
-??? question "What does the 'inner screen model of consciousness' propose? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "What does the 'inner screen model of consciousness' propose?"
     It applies the FEP directly to the study of conscious experience, suggesting consciousness emerges from the brain's attempt to minimize free energy.
-    ##### id: b8c9d0, box: 1, score: 0/0, next: 09/10/2023, last: 09/10/2023
 
-??? question "FEP: how does the brain perceive the world? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "FEP: how does the brain perceive the world?"
     The brain perceives the world based on its predictions and adjusts these predictions when they're wrong.
-    ##### id: e2f3c4, box: 2, score: 1/1, next: 16/10/2023, last: 15/10/2023
 
-??? question "FEP: how do organisms act in the world? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "FEP: how do organisms act in the world?"
     Organisms act to change the world in a way that makes it more predictable, further reducing free energy.
-    ##### id: e0f1e9, box: 3, score: 2/2, next: 22/10/2023, last: 16/10/2023
 
-??? question "FEP: what is the role of learning in the context of FEP? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "FEP: what is the role of learning in the context of FEP?"
     Over time, the brain updates the structure of its internal models to better predict future sensory inputs.
-    ##### id: f0f1e2, box: 2, score: 1/1, next: 13/10/2023, last: 12/10/2023
 
-??? question "What does the Free Energy Principle imply about the brain's function? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "What does the Free Energy Principle imply about the brain's function?"
     The brain is essentially a prediction machine, constantly trying to match its predictions with the actual sensory data it receives.
-    ##### id: a0f1e2, box: 1, score: 0/0, next: 09/10/2023, last: 09/10/2023
 
-??? question "FEP: what is Active Inference? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "FEP: what is Active Inference?"
     Active inference describes how organisms engage with their environment to minimize free energy, thus reducing surprise or prediction error. It involves both perception and action.
-    ##### id: a9b8c7, box: 2, score: 1/1, next: 12/10/2023, last: 11/10/2023
 
-??? question "Active inference: how does the brain perceive the world? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "Active inference: how does the brain perceive the world?"
     The brain perceives the world based on its predictions and adjusts these predictions when they're wrong. It updates its beliefs or internal models to minimize free energy.
-    ##### id: d6e5f4, box: 1, score: 0/1, next: 11/10/2023, last: 11/10/2023
 
-??? question "Active inference: how do organisms act in the world? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "Active inference: how do organisms act in the world?"
     Organisms act proactively to confirm the brain's predictions about the environment, making the world more predictable and reducing free energy. For instance, if predicting a door will open when pushed, they push it to confirm.
-    ##### id: dde5f4, box: 1, score: 1/2, next: 12/10/2023, last: 12/10/2023
 
-??? question "Active inference: what is the significance of Exploration vs. Exploitation? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "Active inference: what is the significance of Exploration vs. Exploitation?"
     Active inference involves a balance between exploration (seeking new situations to refine models) and exploitation (acting in ways that confirm predictions). This ensures adaptability in changing environments.
-    ##### id: d605f4, box: 2, score: 1/1, next: 17/10/2023, last: 16/10/2023
 
-??? question "Active inference: how are the brain's internal models structured? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "Active inference: how are the brain's internal models structured?"
     The brain's models are hierarchical. Higher-level models make broad predictions, while lower-level models handle details. Active inference operates at all hierarchy levels, like predicting it's daytime or specific light patterns.
-    ##### id: d6e004, box: 1, score: 0/0, next: 09/10/2023, last: 09/10/2023

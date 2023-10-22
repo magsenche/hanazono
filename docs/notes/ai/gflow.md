@@ -23,10 +23,8 @@ Abstraction gives power of generalization. It lacks in current AI. Discrete conc
 
 Abstract causal dependences are what are conserved accross scenarios eg if I go to the moon, same laws of physics.
 
-??? question "What are GFlowNets for? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "What are GFlowNets for?"
     To generalize and abstract information in high-dimensional spaces
-    ##### id: af46fe, box: 1, score: 0/2, next: 16/10/2023, last: 16/10/2023
 
-??? question "In active learning scenarios with GFlowNets, what is the objective? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "In active learning scenarios with GFlowNets, what is the objective?"
     To economically determine the most informative samples for the model to learn from
-    ##### id: ef995a, box: 1, score: 0/0, next: 09/10/2023, last: 09/10/2023

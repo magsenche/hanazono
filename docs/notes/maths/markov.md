@@ -28,16 +28,12 @@ Condition to work:
   1. target distribution symmetric
   2. values calculated during step 4/5 must be prop. to posterior likelihoods & ignore initial samples (because initial guess can be very wrong)
 
-??? question "`Markov Chain` [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "`Markov Chain`"
     $$P(X_T = x_T | X_{T-1}, ..., X_{0} = x_{T-1}, ..., x_{0})=P(X_T = x_T | X_{T-1} = x_{T-1})$$
-
     Memory-less stochastic process: the knowledge of the previous state is all that is necessary to determine the current state
-    ##### id: 15490b, box: 3, score: 2/2, next: 18/10/2023, last: 12/10/2023
 
-??? question "`Markov Random Field` [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "`Markov Random Field`"
     Set of random variables satisfying the Markov property for random fields
-    ##### id: 8a03cc, box: 1, score: 0/1, next: 10/10/2023, last: 10/10/2023
 
-??? question "`Monte Carlo sampling` [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "`Monte Carlo sampling`"
     Process of estimating the properties of a distribution by examining random samples from the distribution
-    ##### id: c0d92c, box: 3, score: 2/2, next: 17/10/2023, last: 11/10/2023

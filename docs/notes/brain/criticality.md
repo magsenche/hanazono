@@ -20,14 +20,11 @@ Why is it evolutionnary advantaged? $\Rightarrow$ more sensitive to changes in i
 At critical point, information transmission is **optimal**
 
 ## Flashcards
-??? question "`Neurophysics` [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "`Neurophysics`"
     Neurophysics is a branch of biophysics that develops and utilizes physics theories to study neural systems
-    ##### id: 0f2859, box: 2, score: 1/1, next: 17/10/2023, last: 16/10/2023
 
-??? question "How does the darwinian perspective explain the brain's tendency towards criticality? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "How does the darwinian perspective explain the brain's tendency towards criticality?"
     From a Darwinian perspective, the brain might feature criticality because the most informative parts of the external world primarily occur at a boundary between purely ordered and purely disordered states. In a purely ordered world, information would be trivial, while in a purely disordered world, it would be incomprehensible
-    ##### id: da02ec, box: 3, score: 2/3, next: 22/10/2023, last: 16/10/2023
 
-??? question "What are the implication of the brain functionning at the critical point? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "What are the implication of the brain functionning at the critical point?"
     The brain being at the "critical point" is evolutionarily advantageous because it becomes more sensitive to changes in input. At this critical point, information transmission is optimal. However, since the brain isn't a closed system, it might be "quasicritical" and there's a need to understand the homeostatic mechanism that maintains the brain in this state
-    ##### id: 32b2d2, box: 1, score: 0/0, next: 09/10/2023, last: 09/10/2023

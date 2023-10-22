@@ -57,13 +57,12 @@ En accord avec les resultats experimentaux concernant les ratios d'echelle entre
 Utilisation de "Continuous Attractor Networks" pour la modélisation neuronale.
 
 ## Flashcards
-??? question "What are the main constraints from which self-organization emerges? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "What are the main constraints from which self-organization emerges?"
     - energetic constraints (cost of connection induces stronger connectivity with neighbors)
     - topological constraints of inputs/outputs (spatially and semantically structured inputs/outputs)
     - dimension reduction constraints (representing a space with more than 2D in 2D)
-    ##### id: bd2d3c, box: 3, score: 2/4, next: 22/10/2023, last: 16/10/2023
 
-??? question "List 3 properties of self-organization in the human brain [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "List 3 properties of self-organization in the human brain"
     1. modular connectivity
     2. unsupervised learning
     3. adaptive ability
@@ -71,12 +70,9 @@ Utilisation de "Continuous Attractor Networks" pour la modélisation neuronale.
     5. functional plasticity
     6. from-local-to-global functional organization
     7. dynamic system growth
-    ##### id: cf06af, box: 1, score: 0/3, next: 16/10/2023, last: 16/10/2023
 
-??? question "What phenomenon explains the emergent creation of grid cells and their hexagonal patterns? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "What phenomenon explains the emergent creation of grid cells and their hexagonal patterns?"
     The Fourier instability theory explains this phenomenon, where local excitation of fixed size combined with variable size local inhibition results in the emergence of discrete modules
-    ##### id: f1655c, box: 1, score: 0/1, next: 15/10/2023, last: 15/10/2023
 
-??? question "What is the OS-Map, and how does it generalize the concept of Self-Organizing Maps (SOM)? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "What is the OS-Map, and how does it generalize the concept of Self-Organizing Maps (SOM)?"
     OS-Map is a generalized SOM with orientation and scaling, introducing generalized neighbors and winner selection. The original SOM becomes a specific case without orientation and with a scaling of 1
-    ##### id: a315e6, box: 1, score: 0/1, next: 12/10/2023, last: 12/10/2023

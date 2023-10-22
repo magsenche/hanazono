@@ -51,36 +51,28 @@ Specific code
 > Your brain can do this because it represents the rules and the contents at different physical scales
 
 ## Flashcards
-??? question "What is the primary way mammals organize knowledge? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "What is the primary way mammals organize knowledge?"
     By constructing models of the world that make use of the regularities of the world to reduce memory and computational cost
-    ##### id: ecbf75, box: 1, score: 0/1, next: 11/10/2023, last: 11/10/2023
 
-??? question "What are the two component of a world model? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "What are the two component of a world model?"
     General and specific knowledge
-    ##### id: 7f8747, box: 1, score: 0/1, next: 11/10/2023, last: 11/10/2023
 
-??? question "What does "Modality-agnostic mapping machine" means? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "What does "Modality-agnostic mapping machine" means?"
     The ability of the brain to creates maps that are not specific to any type (vision, sound) of sensory input
-    ##### id: 6bf0b4, box: 3, score: 2/2, next: 17/10/2023, last: 11/10/2023
 
-??? question "Where are the grid cells? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "Where are the grid cells?"
     - in the entorhinal cortex
     - they are context-independent and code path integration
-    ##### id: ed444c, box: 2, score: 2/3, next: 13/10/2023, last: 12/10/2023
 
-??? question "Where are the place cells? What they do? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "Where are the place cells? What they do?"
     - in the hippocampus
     - they are context-dependant and code for current loaction
-    ##### id: be677f, box: 2, score: 1/1, next: 16/10/2023, last: 15/10/2023
 
-??? question "What are boundary cells for? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "What are boundary cells for?"
     They code for boundaries in both entorhinal cortex and hippocampus
-    ##### id: 7e38a7, box: 3, score: 2/3, next: 22/10/2023, last: 16/10/2023
 
-??? question "How does the brain use graph formalisme in cognitive mapping? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "How does the brain use graph formalisme in cognitive mapping?"
     To unify different modalities, with each modality having different graphs, like vision using 2D grid graphs and sound using 1D graphs
-    ##### id: 1c9b99, box: 1, score: 0/0, next: 09/10/2023, last: 09/10/2023
 
-??? question "`Path integration` [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "`Path integration`"
     A navigational process where an organism calculates its position using internal cues about distances and directions traveled, rather than external landmarks.
-    ##### id: e9575e, box: 3, score: 2/2, next: 19/10/2023, last: 13/10/2023

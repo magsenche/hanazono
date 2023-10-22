@@ -40,32 +40,25 @@ Some problems:
  - V1, A1, S1 anatomically interconnected
 
 ## Flashcards
-??? question "What are the roles of IHC and OHC in the auditory system? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "What are the roles of IHC and OHC in the auditory system?"
     IHC is responsible for 95% of projection and sensory transduction, while OHC accounts for 5% of projections and provides signal amplification.
-    ##### id: d758ed, box: 3, score: 2/2, next: 22/10/2023, last: 16/10/2023
 
-??? question "List and describe all 3 types of neurons found in the VCN [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "List and describe all 3 types of neurons found in the VCN"
     - Stellate (fires for sound duration - feature detection)
     - Bushy (phase-locked firing - localisation)
     - Octopus (single spike per sound - object binding)
-    ##### id: c825dc, box: 2, score: 1/3, next: 13/10/2023, last: 12/10/2023
 
-??? question "How is A1 tuned and what affects its receptive fields? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "How is A1 tuned and what affects its receptive fields?"
     A1 is tuned by frequency levels and localisation, and its receptive fields can be shaped by experience.
-    ##### id: c7ee0e, box: 1, score: 0/2, next: 15/10/2023, last: 15/10/2023
 
-??? question "Identify the 3 main components involved in vowel perception and their roles [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "Identify the 3 main components involved in vowel perception and their roles"
     - S(f) - Vocal folds
     - T(f) - Vocal tract (influenced by the shape and position of the larynx, tongue, etc.)
     - R(f) - Mouth radiation
-    ##### id: 76f1c3, box: 3, score: 2/2, next: 21/10/2023, last: 15/10/2023
 
-??? question "What are formants, formant frequencies? Why are they importent in vowel perception? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "What are formants, formant frequencies? Why are they importent in vowel perception?"
     Formants are distinctive patterns of spectral maxima, with formant frequencies being the maxima of a formant.
-
     The distribution of the first three formants is used as cues for vowel perception
-    ##### id: baa4c1, box: 3, score: 2/3, next: 21/10/2023, last: 15/10/2023
 
-??? question "What is the McGurk effect in the context of auditory hallucinations? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "What is the McGurk effect in the context of auditory hallucinations?"
     The McGurk effect demonstrates how visual and auditory modalities can interact to produce a perceived sound different from the auditory stimulus
-    ##### id: df91e6, box: 1, score: 0/0, next: 09/10/2023, last: 09/10/2023

@@ -53,34 +53,26 @@ Microbiota are present on any and all surfaces which have come into contact with
 - all is from the [newsletter](https://www.hubermanlab.com/newsletter/6-key-tools-to-improve-your-gut-microbiome-health)
 
 ## Flashcards
-??? question "What role do the microbiota in our gut play in our health? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "What role do the microbiota in our gut play in our health?"
     Microbiota are essential for our immune, brain, and hormone health because they produce chemicals that impact our body's functions, including neurotransmitters like serotonin. They are crucial for both mental and physical health.
-    ##### id: f2a1b2, box: 1, score: 0/0, next: 09/10/2023, last: 09/10/2023
 
-??? question "How does eating fermented foods affect gut microbiota diversity? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "How does eating fermented foods affect gut microbiota diversity?"
     Eating fermented foods can increase overall gut microbiota diversity and reduce key markers of inflammation, thus enhancing gut health.
-    ##### id: f2c3d4, box: 3, score: 2/2, next: 22/10/2023, last: 16/10/2023
 
-??? question "Why is a high-fiber diet beneficial for the gut microbiome? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "Why is a high-fiber diet beneficial for the gut microbiome?"
     While it may not increase microbiota diversity, a high-fiber diet can increase the amount of carbohydrate active enzymes, helping digest fiber and potentially enhancing the microbiome’s ability to degrade other complex carbohydrates. It can also provide key nutrients and potentially reduce inflammation markers.
-    ##### id: f2e5f6, box: 3, score: 2/3, next: 21/10/2023, last: 15/10/2023
 
-??? question "How do prebiotics and probiotics support gut health? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "How do prebiotics and probiotics support gut health?"
     Prebiotics provide food for established gut microbiota, while probiotics introduce live bacteria or yeasts that can colonize in the gut, enhancing gut microbiome health and potentially aiding recovery in cases of dysbiosis.
-    ##### id: f2g7h8, box: 1, score: 0/0, next: 09/10/2023, last: 09/10/2023
 
-??? question "What is the relationship between sleep and gut microbiome health? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "What is the relationship between sleep and gut microbiome health?"
     Achieving proper quality and duration of sleep is essential to manage stress, to which the gut microbiome is highly attuned, thus ensuring gut microbiome health.
-    ##### id: f2i9j1, box: 1, score: 0/0, next: 09/10/2023, last: 09/10/2023
 
-??? question "What negative impact can emulsifiers in processed foods have on the gut? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "What negative impact can emulsifiers in processed foods have on the gut?"
     Emulsifiers can disrupt the mucus layer of the GI tract, reduce microbial diversity, induce low-grade inflammation, and cause an increase in body fat, higher blood sugar levels, and insulin resistance.
-    ##### id: f2k2l3, box: 1, score: 0/0, next: 09/10/2023, last: 09/10/2023
 
-??? question "How might artificial sweeteners affect the gut microbiome? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "How might artificial sweeteners affect the gut microbiome?"
     While the impact on humans is not fully understood, some animal studies suggest artificial sweeteners can disrupt the gut microbiome, and neuropod cells in the gut can discriminate between natural and artificial sweeteners, sending different signals to the brain.
-    ##### id: f2m4n5, box: 1, score: 0/0, next: 09/10/2023, last: 09/10/2023
 
-??? question "Why is it important not to over-sanitize our environment in the context of gut health? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "Why is it important not to over-sanitize our environment in the context of gut health?"
     Exposure to microbes from the environment educates our immune systems and maintains balance in the gut microbiome. Over-sanitization can eliminate sources of beneficial gut microbiota.
-    ##### id: f2o6p7, box: 1, score: 0/0, next: 09/10/2023, last: 09/10/2023

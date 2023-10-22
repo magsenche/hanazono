@@ -44,22 +44,17 @@ Throughout the day, body temperature fluctuates in sync with your natural circad
 - all comes from the [newsletter](https://www.hubermanlab.com/newsletter/deliberate-heat-exposure-protocols-for-health-and-performance)
 
 ## Flashcards
-??? question "What are the safety concerns regarding deliberate heat exposure? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "What are the safety concerns regarding deliberate heat exposure?"
     Pregnant women and children under 16 should avoid saunas. Starting with cooler temperatures that don't significantly increase heart rate is advised. Hyperthermia and dehydration are potential risks. Men should be aware that regular heat exposure can reduce sperm count, but it rebounds after cessation of sauna use.
-    ##### id: 9801a2, box: 1, score: 0/1, next: 16/10/2023, last: 16/10/2023
 
-??? question "How can regular sauna usage benefit cardiovascular health? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "How can regular sauna usage benefit cardiovascular health?"
     Regular sauna use can reduce risks of cardiovascular events and strokes. It triggers mechanisms similar to cardiovascular exercise, causing increased heart rate and blood flow. Blood vessels expand to regulate body temperature.
-    ##### id: 982f3c, box: 1, score: 0/1, next: 15/10/2023, last: 15/10/2023
 
-??? question "How does heat exposure influence mood and stress response? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "How does heat exposure influence mood and stress response?"
     Heat exposure leads to a release of dynorphins (cause initial discomfort) followed by endorphins, leading to post-sauna euphoria. Hormesis, a mild stress from heat, has been linked to decreased cortisol levels, activation of DNA repair pathways, and Heat Shock Proteins for cellular protein structure integrity.
-    ##### id: 9874b5, box: 1, score: 0/0, next: 09/10/2023, last: 09/10/2023
 
-??? question "How does sauna usage influence Growth Hormone production? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "How does sauna usage influence Growth Hormone production?"
     Growth Hormone stimulates muscle growth, bone strengthening, tissue repair, and metabolism. Specific sauna protocols can boost Growth Hormone release. Infrequent sauna sessions with breaks in between can elevate Growth Hormone up to 16-fold. It's best when sauna is used in a semi-fasted state and less frequently.
-    ##### id: 98d6e7, box: 1, score: 0/0, next: 09/10/2023, last: 09/10/2023
 
-??? question "What are some general tips and protocols for sauna use? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "What are some general tips and protocols for sauna use?"
     Hydrate well before and after sauna, consuming at least 16 ounces of water for every 10 minutes in the sauna. Using the sauna in the afternoon/evening aligns with natural circadian cooling rhythms, aiding sleep. For added metabolic benefits, alternate sauna sessions with deliberate cold exposure.
-    ##### id: 98k2p9, box: 1, score: 0/0, next: 09/10/2023, last: 09/10/2023
