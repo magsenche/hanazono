@@ -127,43 +127,34 @@ role in categorization](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4143420/pdf
 - [Spatial Embedding and Wiring Cost Constrain the Functional Layout of the Cortical Network of Rodents and Primates](https://journals.plos.org/plosbiology/article/file?id=10.1371/journal.pbio.1002512&type=printable)
 
 ## Flashcards
-??? question "What is a prominent feature of brain architecture seen in the VTC? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "What is a prominent feature of brain architecture seen in the VTC?"
     Superimposition of multiple functional maps and fine-scale clusters within the same cortical expanse.
-    ##### id: 86e87b, box: 3, score: 2/3, next: 18/10/2023, last: 12/10/2023
 
-??? question "Where does visual categorization occur after V1-4 in the human visual stream? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "Where does visual categorization occur after V1-4 in the human visual stream?"
     In the Ventral Temporal Cortex (VTC).
-    ##### id: a77f2f, box: 3, score: 2/2, next: 17/10/2023, last: 11/10/2023
 
-??? question "Name three types of information contained in the VTC [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "Name three types of information contained in the VTC"
     - color
     - eccentricity bias
     - visual field maps
-    ##### id: c4d027, box: 3, score: 2/3, next: 22/10/2023, last: 16/10/2023
 
-??? question "List all 3 levels of Marr's approach for understanding information processing systems [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "List all 3 levels of Marr's approach for understanding information processing systems"
     - computation
     - representation
     - neural implementation
-    ##### id: 80bb63, box: 1, score: 0/1, next: 11/10/2023, last: 11/10/2023
 
-??? question "What is the role of the VTC in visual information processing? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "What is the role of the VTC in visual information processing?"
     To disentangle tangled representations coming from V1 and allow flexible access to category information based on context or task
-    ##### id: 1878d8, box: 1, score: 0/0, next: 09/10/2023, last: 09/10/2023
 
-??? question "How do VTC responses differ from V1-hV4 responses? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "How do VTC responses differ from V1-hV4 responses?"
     VTC responses represent perceived similarity more than physical similarity and are primarily driven by shape and content
-    ##### id: ccd84f, box: 1, score: 0/3, next: 16/10/2023, last: 16/10/2023
 
-??? question "Describe the levels of clustering in VTC [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "Describe the levels of clustering in VTC"
     Columns (1 mm), patches (5 mm), regions (10 mm), and maps (within and across regions)
-    ##### id: 7cfda4, box: 1, score: 0/2, next: 16/10/2023, last: 16/10/2023
 
-??? question "What is the primary objective of the TDANN model? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "What is the primary objective of the TDANN model?"
     To predict functional organization in cortical areas of the primate visual system in a biophysically efficient manner
-    ##### id: f235e4, box: 2, score: 1/2, next: 17/10/2023, last: 16/10/2023
 
-??? question "Name the two main constraints of TDANN [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "Name the two main constraints of TDANN"
     - support ecologically-relevant behaviors
     - minimize neuronal wiring length
-    ##### id: c0f93e, box: 1, score: 0/0, next: 09/10/2023, last: 09/10/2023

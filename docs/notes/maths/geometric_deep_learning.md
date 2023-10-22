@@ -42,14 +42,11 @@ Among all the curves connecting points $u$ and $v$ on a manifold, we seek $\gamm
 `Geodesic`
 :  It is a generalization of the notion of a "straight line". Curve representing in some sense the shortest path (arc) between two points in a surface, or more generally in a Riemannian manifold.
 
-??? question "What the basic idea of geometric deep learning [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "What the basic idea of geometric deep learning"
     Applying deep learning to surfaces or manifolds while respecting and preserving their underlying geometry
-    ##### id: ae47ec, box: 3, score: 2/2, next: 17/10/2023, last: 11/10/2023
 
-??? question "`Geodesic` [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "`Geodesic`"
     It is a generalization of the notion of a "straight line". Curve representing in some sense the shortest path (arc) between two points in a surface, or more generally in a Riemannian manifold.
-    ##### id: d1187b, box: 2, score: 1/1, next: 12/10/2023, last: 11/10/2023
 
-??? question "Relation between convolution and shift-invariant linear operator [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "Relation between convolution and shift-invariant linear operator"
     Convolutions are linear shift-equivariant operations, and any shift-equivariant linear operator is a convolution.
-    ##### id: 352c61, box: 1, score: 0/0, next: 07/10/2023, last: 07/10/2023

@@ -60,29 +60,23 @@ Staying completely still while in cold water allows a thermal layer to surround 
 - all comes from the [newsletter](https://www.hubermanlab.com/newsletter/the-science-and-use-of-cold-exposure-for-health-and-performance)
 
 ## Flashcards
-??? question "What are the safety precautions to consider before deliberate cold exposure? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "What are the safety precautions to consider before deliberate cold exposure?"
     1. Avoid entering dangerous bodies of water.
     2. Never hyperventilate before or during cold water immersion.
     3. Start with warmer temperatures before progressing to colder ones to prevent cold shock.
     4. Find the right temperature for you, always prioritizing safety.
-    ##### id: 9b01, box: 1, score: 0/0, next: 09/10/2023, last: 09/10/2023
 
-??? question "How do you determine the right cold temperature for deliberate exposure? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "How do you determine the right cold temperature for deliberate exposure?"
     The right temperature should evoke the thought, “This is really cold and I want to get out, BUT I can safely stay in.” This temperature varies for individuals; for some it might be 60°F, for others, 45°F.
-    ##### id: 9b02, box: 1, score: 0/0, next: 09/10/2023, last: 09/10/2023
 
-??? question "Which methods of cold exposure are most studied and effective? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "Which methods of cold exposure are most studied and effective?"
     Most studies utilize ice baths or cold water immersion up to the neck. While these are considered the best, cold showers can also be effective and are more accessible.
-    ##### id: 9b03, box: 1, score: 0/0, next: 09/10/2023, last: 09/10/2023
 
-??? question "How does deliberate cold exposure impact energy and focus? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "How does deliberate cold exposure impact energy and focus?"
     Cold exposure triggers a significant release of epinephrine and norepinephrine in the brain and body. These neurochemicals increase alertness and energy, enhancing focus post-exposure.
-    ##### id: 9b04, box: 1, score: 0/0, next: 09/10/2023, last: 09/10/2023
 
-??? question "What are the mental benefits of deliberate cold exposure? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "What are the mental benefits of deliberate cold exposure?"
     Deliberate cold exposure builds resilience and grit by allowing individuals to exert 'top-down control' over reflexive brain centers, aiding in coping with real-world stressors. It also enhances mood through the release of dopamine.
-    ##### id: 9b05, box: 1, score: 0/0, next: 09/10/2023, last: 09/10/2023
 
-??? question "How does cold exposure influence metabolism? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "How does cold exposure influence metabolism?"
     In the short term, metabolism increases as the body burns calories to raise its core temperature. Cold exposure can also convert white fat to metabolically active beige or brown fat, benefiting cold adaptation and metabolism boost.
-    ##### id: 9b06, box: 1, score: 0/0, next: 09/10/2023, last: 09/10/2023

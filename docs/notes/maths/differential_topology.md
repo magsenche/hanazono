@@ -21,6 +21,5 @@ Tout atlas lisse sur induit par restriction un atlas lisse sur $V$.
 
 Deux tels atlas sont équivalents et définissent donc une structure de variété.
 
-??? question "`Variété` [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "`Variété`"
     : Espace localement affine sur lequel on peut faire du calcul différentiel. Système de cartes avec coordonnées locales
-    ##### id: 9e0a99, box: 2, score: 1/3, next: 17/10/2023, last: 16/10/2023

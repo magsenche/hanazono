@@ -146,55 +146,43 @@ In this setup, the Nginx container would proxy requests to the webapp container.
 Access the application through your browser or API client on port 80, and Nginx will handle the proxying to your web application.
 
 ## Flashcards
-??? question "`Docker Image`? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "`Docker Image`?"
     A blueprint or template containing all necessary files, dependencies, and configurations to create a running instance of a container
-    ##### id: 94fb81, box: 2, score: 1/1, next: 13/10/2023, last: 12/10/2023
 
-??? question "`Docker Container` [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "`Docker Container`"
     A container is a running instance of an image, encapsulating the application and its dependencies
-    ##### id: 6c7265, box: 3, score: 2/2, next: 21/10/2023, last: 15/10/2023
 
-??? question "Docker: What does the RUN instruction do in a Dockerfile [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "Docker: What does the RUN instruction do in a Dockerfile"
     It executes commands during the image building phase
-    ##### id: 369057, box: 3, score: 2/2, next: 18/10/2023, last: 12/10/2023
 
-??? question "Docker: What is the purpose of COPY instruction [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "Docker: What is the purpose of COPY instruction"
     It transfers files or directories from the host to the container's filesystem
-    ##### id: 208389, box: 2, score: 1/2, next: 17/10/2023, last: 16/10/2023
 
-??? question "Docker: relation between Image and Container [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "Docker: relation between Image and Container"
     A container is a running instance of an image, encapsulating the application and its dependencies
-    ##### id: 284eba, box: 2, score: 1/1, next: 17/10/2023, last: 16/10/2023
 
-??? question "Docker: how is WORKDIR used ? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "Docker: how is WORKDIR used ?"
     It sets the working directory for subsequent commands
-    ##### id: 179344, box: 3, score: 2/2, next: 18/10/2023, last: 12/10/2023
 
-??? question "Docker: why use VOLUME instruction? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "Docker: why use VOLUME instruction?"
     To specify a mount point for sharing and persisting data between the host and container.
-    ##### id: a3e837, box: 2, score: 1/1, next: 16/10/2023, last: 15/10/2023
 
-??? question "Docker: what does the EXPOSE instruction indicate? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "Docker: what does the EXPOSE instruction indicate?"
     It documents the network ports the container listens on
-    ##### id: 227aed, box: 3, score: 2/2, next: 21/10/2023, last: 15/10/2023
 
-??? question "Docker: how does ENV instruction benefit a Docker container? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "Docker: how does ENV instruction benefit a Docker container?"
      It sets environment variables for processes inside the container
-    ##### id: 8a8839, box: 3, score: 2/2, next: 21/10/2023, last: 15/10/2023
 
-??? question "Docker: difference between ENTRYPOINt and CMD [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "Docker: difference between ENTRYPOINt and CMD"
     ENTRYPOINT determines the default command when the container starts, while CMD specifies the default command for the container when it runs but can be overridden
-    ##### id: 21c98d, box: 2, score: 1/1, next: 11/10/2023, last: 10/10/2023
 
-??? question "Why use nginx in a containerzied environment? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "Why use nginx in a containerzied environment?"
     To direct traffic to other containers, ensuring efficient communication and load distribution
-    ##### id: 40f133, box: 3, score: 2/2, next: 22/10/2023, last: 16/10/2023
 
-??? question "Primary use case of nginx in a Docker environment [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "Primary use case of nginx in a Docker environment"
     As a reverse proxy to direct traffic to other containers
-    ##### id: ffcc4f, box: 1, score: 0/0, next: 09/10/2023, last: 09/10/2023
 
-??? question "How to make nginx and other service communicate in a docker-compose? [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "How to make nginx and other service communicate in a docker-compose?"
     By defining both services in the docker-compose.yml and setting up proper networking and proxy configurations in Nginx
 
     ```yaml title="docker-compose.yml"
@@ -211,4 +199,3 @@ Access the application through your browser or API client on port 80, and Nginx 
         expose:
           - "8080"
     ```
-    ##### id: 113f1f, box: 1, score: 0/0, next: 09/10/2023, last: 09/10/2023

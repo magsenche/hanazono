@@ -148,7 +148,7 @@ if __name__ == "__main__":
 start_response("200 OK", [("Access-Control-Allow-Origin", "*")])
 ```
 
-??? question "Write a simple code to handle a post request [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "Write a simple code to handle a post request"
     ```python title="server.py"
     import flask
     app = flask.Flask(__name__)
@@ -157,9 +157,8 @@ start_response("200 OK", [("Access-Control-Allow-Origin", "*")])
         on_post()
         return "OK", 200
     ```
-    ##### id: ca7f41, box: 1, score: 0/1, next: 11/10/2023, last: 11/10/2023
 
-??? question "Run a server to handle a post request sending a number [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "Run a server to handle a post request sending a number"
     ```python title="server.py"
     import flask
     app = flask.Flask(__name__)
@@ -170,24 +169,19 @@ start_response("200 OK", [("Access-Control-Allow-Origin", "*")])
     if __name__ == "__main__":
         app.run()
     ```
-    ##### id: 68dc48, box: 1, score: 0/1, next: 16/10/2023, last: 16/10/2023
 
-??? question "Write a POST request sending a number to localhost on a server running on port 5000 [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "Write a POST request sending a number to localhost on a server running on port 5000"
     ```bash title=""
     curl -X POST -H "Content-Type: application/json" -d '{"number": 42}' http://localhost:5000/number
     ```
-    ##### id: c141d7, box: 2, score: 1/2, next: 12/10/2023, last: 11/10/2023
 
-??? question "List all 4 http request methods along with their usage [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question "List all 4 http request methods along with their usage"
     - `GET` : request data from server
     - `POST`: send data to server
     - `PUT`: update data to server
     - `DELETE`: delete data from server
-    ##### id: 3e2df5, box: 1, score: 0/0, next: 06/10/2023, last: 06/10/2023
 
-??? question " [](){.fbutton .ok}[](){.fbutton .nok}"
+??? question ""
     ```bash title=""
     arp -a
     ```
-
-    ##### id: e6e548, box: 1, score: 0/0, next: 13/10/2023, last: 13/10/2023
