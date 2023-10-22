@@ -10,10 +10,17 @@ dependencies = [
     "black>=23.9.1",
     "pytest>=7.4.2",
     "mkdocs-open-in-new-tab>=1.0.2",
+    "django>=4.2.6",
+    "colorlog>=6.7.0",
+    "bs4>=0.0.1",
 ]
 requires-python = ">=3.11"
 readme = "README.md"
 license = { text = "MIT" }
+
+[tool.pdm.scripts]
+update = "python src/update.py"
+manage = "python src/manage.py"
 
 [tool.pdm.scripts._]
 env_file = ".env"
@@ -25,4 +32,6 @@ line-length = 88
 profile = "black"
 
 [project.entry-points."mkdocs.plugins"]
-custom_server = "plugin.custom_server:CustomServer"
+custom_button = "plugin.custom_button:CustomButton"
+quiz = "plugin.custom_button:FlashcardPopup"
+get_quiz = "plugin.get_quiz:GetQuiz"
