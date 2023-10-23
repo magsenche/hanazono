@@ -57,7 +57,7 @@ def export_markdown(flashcard, for_quiz=False):
             buttons=buttons,
             id=flashcard.id,
             box=flashcard.box,
-            score=f"""{flashcard.score_correct}/{flashcard.score_correct+flashcard.score_incorrect}""",
+            score=flashcard.score(),
             next_review=flashcard.next_review.strftime("%d/%m/%Y"),
             last_review=flashcard.last_review.strftime("%d/%m/%Y"),
         )

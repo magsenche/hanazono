@@ -72,3 +72,6 @@ class Flashcard(models.Model):
         self.next_review = timezone.now() + timezone.timedelta(
             days=days_until_next_review
         )
+
+    def score(self):
+        return f"{self.score_correct}/{self.score_correct+self.score_incorrect}"

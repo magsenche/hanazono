@@ -32,31 +32,3 @@ class CustomButton(BasePlugin):
             button.append(details["text"])
 
         return button
-
-
-class FlashcardPopup(BasePlugin):
-    config_scheme = (
-        ("class", config_options.Type(str, default="md-header__title")),
-        ("text", config_options.Type(str, default=None)),
-    )
-
-    def on_post_page(self, output_content, page, config):
-        soup = BeautifulSoup(output_content, "html.parser")
-        section_class = soup.find("div", {"class": self.config["class"]})
-
-        if section_class:
-            button_element = self._generate_flashcard_button(self.config)
-            section_class.insert_after(button_element)
-
-        souped_html = soup.prettify(soup.original_encoding)
-        return souped_html
-
-    def _generate_flashcard_button(self, details):
-        button = Tag(
-            name="a",
-            attrs={"class": "popbutton custombutton"},
-        )
-        if "text" in details:
-            button.append(details["text"])
-
-        return button

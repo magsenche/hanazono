@@ -59,21 +59,23 @@
 
 .custombutton {
     margin-right: 10px;
-    /* Adjust the value as needed */
-}
-
-.popbutton {
-    cursor: pointer;
 }
 
 .flashcard-popup {
     position: fixed;
-    top: 10%;
-    left: 30%;
-    width: 40%;
-    height: 80%;
-    background-color: white;
-    overflow-y: scroll;
-    padding: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    bottom: 4%;
+    right: 4%;
+    width: fit-content;
+    height: fit-content;
+    padding: 1%;
+    border-radius: 5px;
+    line-height: 1.5;
+}
+
+.flashcard-green {
+    background-color: #598A4A;
+}
+
+.flashcard-red {
+    background-color: #8A4A5E
 }

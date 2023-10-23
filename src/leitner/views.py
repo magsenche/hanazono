@@ -5,7 +5,6 @@ from django.conf import settings
 from django.http import FileResponse, HttpResponse, JsonResponse
 from django.shortcuts import redirect, render
 
-import leitner.quiz
 from leitner.models import Flashcard
 from utils import logger
 
@@ -23,8 +22,17 @@ def update_flashcard(request, id, is_ok):
     if request.method == "GET":
         is_ok = is_ok.lower() == "true"
         try:
-            leitner.quiz.update_flashcard(id, is_ok)
-            return JsonResponse({"success": True})
+            flashcard = Flashcard.objects.get(id=id)
+            flashcard.update_box(is_ok)
+            flashcard.save()
+            return JsonResponse(
+                {
+                    "success": True,
+                    "box": flashcard.box,
+                    "next_review_date": flashcard.next_review.date(),
+                    "score": flashcard.score(),
+                }
+            )
         except Flashcard.DoesNotExist:
             return JsonResponse(
                 {"success": False, "error": "Flashcard not found"}, status=404
