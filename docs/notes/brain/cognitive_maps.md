@@ -57,7 +57,7 @@ Specific code
 ??? question "What are the two component of a world model?"
     General and specific knowledge
 
-??? question "What does "Modality-agnostic mapping machine" means?"
+??? question "What does Modality-agnostic mapping machine means?"
     The ability of the brain to creates maps that are not specific to any type (vision, sound) of sensory input
 
 ??? question "Where are the grid cells?"
@@ -70,9 +70,6 @@ Specific code
 
 ??? question "What are boundary cells for?"
     They code for boundaries in both entorhinal cortex and hippocampus
-
-??? question "How does the brain use graph formalisme in cognitive mapping?"
-    To unify different modalities, with each modality having different graphs, like vision using 2D grid graphs and sound using 1D graphs
 
 ??? question "`Path integration`"
     A navigational process where an organism calculates its position using internal cues about distances and directions traveled, rather than external landmarks.

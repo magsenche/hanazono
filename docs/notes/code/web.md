@@ -148,16 +148,6 @@ if __name__ == "__main__":
 start_response("200 OK", [("Access-Control-Allow-Origin", "*")])
 ```
 
-??? question "Write a simple code to handle a post request"
-    ```python title="server.py"
-    import flask
-    app = flask.Flask(__name__)
-    @app.route('/on_post', methods=['POST'])
-    def on_post_route():
-        on_post()
-        return "OK", 200
-    ```
-
 ??? question "Run a server to handle a post request sending a number"
     ```python title="server.py"
     import flask
@@ -181,7 +171,7 @@ start_response("200 OK", [("Access-Control-Allow-Origin", "*")])
     - `PUT`: update data to server
     - `DELETE`: delete data from server
 
-??? question ""
+??? question "Get ip of all device connected to local network"
     ```bash title=""
     arp -a
     ```

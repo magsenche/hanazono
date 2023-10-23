@@ -56,4 +56,4 @@ $\hat{Q}(\theta)=argmin_{Q(\theta)}D_{KL}[Q(\theta) \parallel P(\theta|D)]$
 
 ??? question "What is the purpose of Variational Inference"
     To find an approximation $Q(\theta)$ of the true posterior $P(\theta|D)$:
-    $$\hat{Q}(\theta)=argmin_{Q(\theta)}D_{KL}[Q(\theta) \parallel P(\theta|D)]$$
+    $\hat{Q}(\theta)=argmin_{Q(\theta)}D_{KL}[Q(\theta) \parallel P(\theta|D)]$

@@ -26,18 +26,3 @@ Use [snippets](https://code.visualstudio.com/docs/editor/userdefinedsnippets) to
 		"description": "generate flashcard"
 	}
 ```
-
-??? question "How to define macros on vscode?"
-    Use snippets (search for configure snippets)
-    ```json title="markdown.json"
-	"Generate code block":{
-		"prefix":"cb",
-		"body":[
-			"```${1:langage} title=\"${2:}\"",
-			"${3:code}",
-			"```",
-			""
-		],
-		"description":"generate code block"
-	}
-    ```
