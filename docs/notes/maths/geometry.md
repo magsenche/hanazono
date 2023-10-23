@@ -59,6 +59,4 @@
     Local coordinate system on a manifold
 
 ??? question "List 2 possible structures constructed from the circle and the segment"
-    Circle as a manifold, segment as the fiber:
-    - Basic cartesian product $\rightarrow$ Ring
-    - "Twisted" product $\rightarrow$ Moebius ruban
+    Basic cartesian product $\rightarrow$ Ring and "Twisted" product $\rightarrow$ Moebius ruban

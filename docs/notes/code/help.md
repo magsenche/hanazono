@@ -4,7 +4,7 @@
 - [Markdown preview enchanced](https://shd101wyy.github.io/markdown-preview-enhanced/#/)
   - `~/.mume/style.less` for general styles
   - `~/.mume/parser.js` for advanced parsing
-  - `./styles.css` for workspace styles, along with `{"markdown.styles": ["styles.css"]}` in the `settings.json`---
+  - `./styles.css` for workspace styles, along with `{"markdown.styles": ["styles.css"]}` in the `settings.json`
 
 - Use url hash to target specific and add custom style:
   - in the `style.less`

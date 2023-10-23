@@ -106,17 +106,11 @@ These models can also surpass CNN on high resolution  (cf paper on equivariance 
     - $K$ Key: represent all other words in the sequence used to compute attention weights $K_1=M_kV_1$
     - $V$ Value: represent the meaning of each word in the input sequence $V_1=M_vV_1$
 
-??? question "What is the primary mechanism behind Transformers?"
-    They are an architecture for sequence transduction models using only attention mechanisms without recurrence or convolution
-
-??? question "How do seq-to-seq models in Transformers function?"
-    They take an input sequence and output a sequence of the same length, first compressing the input information into another representation space
-
 ??? question "How does the self-attention mechanism in Transformers use the initial embedding $V_1$?"
     - dot product between word and all other (including self) to get the weighting $W_{1j} = V_1V^j$
     - dot product between weighting vector and input sequence embedding to get final embedding $Y_1=\sum_j W_{1j}V_j$
 
-??? question "What is the role of the "value" in the self-attention mechanism of Transformers?"
+??? question "What is the role of the value in the self-attention mechanism of Transformers?"
     The "value" represents the meaning of each word in the input sequence
 
 ??? question "How does multi-head attention in Transformers differ from regular self-attention?"
@@ -128,18 +122,12 @@ These models can also surpass CNN on high resolution  (cf paper on equivariance 
 ??? question "How does the decoder function in Transformers?"
     It works as an autoregressive tool, taking all previous outputs as inputs along with the encoder's output, using the attention mechanism to attend to relevant parts of the input sequence
 
-??? question "How are images processed in Transformers for vision tasks?"
-    Images are treated as patches, embedded, and then handled as sequences with added positional encoding
-
 ??? question "Name two advantages of Transformers over traditional RNNs or CNNs."
     - can be trained in parallel
     - efficiently handle long-range dependencies
 
 ??? question "Why might Transformers require more training data compared to CNNs?"
     They have fewer inductive biases than CNNs, so they need more data to learn some basic properties of images
-
-??? question "Why might Transformers perform better than CNNs on high-resolution data in terms of the equivariance metric?"
-    Transformers do not struggle to model long-range dependencies as all patches have a distance of one, in contrast to CNNs
 
 ??? question "In Transformers, how is the weighting in the self-attention mechanism typically calculated?"
     $W_{1j} = \frac{\exp(Q_1K_j)}{\sum_{j'}\exp(Q_1K_{j'})}$

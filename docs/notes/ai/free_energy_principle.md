@@ -108,26 +108,14 @@ A comprehensive article on Neurotech Berkeley delves into the intricacies of the
     - System 1 is fast, intuitive, and automatic
     - System 2 is slower, deliberate, and logical.
 
-??? question "What is the 'Low road' in Active Inference?"
-    A bottom-up approach focusing on the brain's immediate actions.
-
 ??? question "How does predictive coding relate to backpropagation?"
     Predictive coding can approximate backpropagation on arbitrary graphs. Any gradient can be described as a prediction error.
 
 ??? question "What does the 'inner screen model of consciousness' propose?"
     It applies the FEP directly to the study of conscious experience, suggesting consciousness emerges from the brain's attempt to minimize free energy.
 
-??? question "FEP: how does the brain perceive the world?"
-    The brain perceives the world based on its predictions and adjusts these predictions when they're wrong.
-
-??? question "FEP: how do organisms act in the world?"
-    Organisms act to change the world in a way that makes it more predictable, further reducing free energy.
-
 ??? question "FEP: what is the role of learning in the context of FEP?"
     Over time, the brain updates the structure of its internal models to better predict future sensory inputs.
-
-??? question "What does the Free Energy Principle imply about the brain's function?"
-    The brain is essentially a prediction machine, constantly trying to match its predictions with the actual sensory data it receives.
 
 ??? question "FEP: what is Active Inference?"
     Active inference describes how organisms engage with their environment to minimize free energy, thus reducing surprise or prediction error. It involves both perception and action.

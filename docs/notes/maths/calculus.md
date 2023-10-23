@@ -53,10 +53,12 @@
     | Difference between 2 quantities | Difference between 2 close points (time, space, etc.)     | Partial derivative representing local change with respect to one variable | Not necessarily a difference or variation |
     | Measures a global change        | Can be standalone: $dx$, $dt$ as infinitesimal quantities | Always as a ratio: $\partial A / \partial x$, $\partial f / \partial t$   | $\delta W = F \cdot dL$                   |
 
+
+
 ??? question "Einstein notation for $(\mathbf{A} \mathbf{v})_{i}$"
     $u^i = {A^i}_j v^j$
 
-??? question "Einstein notation for $(\mathbf{A} \mathbf{B})_{ik}"
+??? question "Einstein notation for $(\mathbf{A} \mathbf{B})_{ik}$"
     ${C^i}_k = {A^i}_j {B^j}_k$
 
 ??? question "Einstein notation for $\mathbf{u} \otimes \mathbf{v}$"

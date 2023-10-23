@@ -29,7 +29,7 @@ Condition to work:
   2. values calculated during step 4/5 must be prop. to posterior likelihoods & ignore initial samples (because initial guess can be very wrong)
 
 ??? question "`Markov Chain`"
-    $$P(X_T = x_T | X_{T-1}, ..., X_{0} = x_{T-1}, ..., x_{0})=P(X_T = x_T | X_{T-1} = x_{T-1})$$
+    $P(X_T = x_T | X_{T-1}, ..., X_{0} = x_{T-1}, ..., x_{0})=P(X_T = x_T | X_{T-1} = x_{T-1})$
     Memory-less stochastic process: the knowledge of the previous state is all that is necessary to determine the current state
 
 ??? question "`Markov Random Field`"
