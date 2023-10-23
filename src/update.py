@@ -37,10 +37,12 @@ def update_markdown(docs_dir):
 
 
 def update_database(docs_dir):
+    flashcards_in_md = set()
     for mdfile in docs_dir.rglob("*.md"):
         txt = mdfile.read_text()
         flashcards = import_flashcards(txt)[0]
         for fc in flashcards:
+            flashcards_in_md.add(fc.question)
             try:
                 flashcard = Flashcard.objects.get(question=fc.question)
             except Flashcard.DoesNotExist:
@@ -56,6 +58,10 @@ def update_database(docs_dir):
                     flashcard.question = fc.question
                     flashcard.answer = fc.answer
                     flashcard.save()
+    for db_flashcard in Flashcard.objects.all():
+        if db_flashcard.question not in flashcards_in_md:
+            log.info(f"Removed {db_flashcard}")
+            db_flashcard.delete()
 
 
 if __name__ == "__main__":
