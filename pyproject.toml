@@ -13,6 +13,7 @@ dependencies = [
     "django>=4.2.6",
     "colorlog>=6.7.0",
     "bs4>=0.0.1",
+    "pytest-django>=4.5.2",
 ]
 requires-python = ">=3.11"
 readme = "README.md"
@@ -30,6 +31,9 @@ line-length = 88
 
 [tool.isort]
 profile = "black"
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "djangoproject.settings"
 
 [project.entry-points."mkdocs.plugins"]
 custom_button = "plugin.custom_button:CustomButton"

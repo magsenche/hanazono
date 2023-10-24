@@ -16,6 +16,7 @@ buttons = "[](){.fbutton .ok}[](){.fbutton .nok}"
 regex_variables = {
     "question": r"(.+?)",
     "answer": r"(.+?)",
+    "buttons": r"\[\]\(\)\{\.fbutton \.ok\}\[\]\(\)\{\.fbutton \.nok\}",
     "id": r"([0-9a-fA-F]{6})",  # 6-digit hex number
     "box": r"(\d+)",  # any number
     "score": r"(\d+/\d+)",  # number/number format
@@ -33,16 +34,15 @@ def regex(s):
     return template
 
 
-def import_flashcards(markdown_text):
+def import_flashcards(markdown_text, from_quiz=False):
     flashcards = []
     parts = []
     ms = 0
-
-    for m in re.finditer(regex(flashcard_str), markdown_text, re.DOTALL):
+    fstr = quiz_flashcard_str if from_quiz else flashcard_str
+    for m in re.finditer(regex(fstr), markdown_text, re.DOTALL):
         parts.append(markdown_text[ms : m.start()])
         ms = m.end()
-        question, answer = m.groups()
-        flashcard = Flashcard(question, answer)
+        flashcard = Flashcard(*m.groups())
         flashcards.append(flashcard)
 
     parts.append(markdown_text[ms:])
