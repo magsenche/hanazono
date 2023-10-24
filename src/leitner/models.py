@@ -39,7 +39,7 @@ class Flashcard(models.Model):
         return hash_object.hexdigest()[:6]
 
     def do_quiz(self):
-        return self.next_review.date() < timezone.now().date()
+        return self.next_review.date() <= timezone.now().date()
 
     def update_box(self, succes):
         if succes:
