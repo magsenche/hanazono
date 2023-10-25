@@ -5,7 +5,7 @@ from leitner.models import Flashcard
 
 id = "a1b2c3"
 question = "Check the value of π/2 with python"
-answer = """import math\n    math.cos(math.pi/2) == 0"""
+answer = """    import math\n    math.cos(math.pi/2) == 0"""
 box = 1
 next_review = datetime.strptime("12/12/2015", "%d/%m/%Y")
 last_review = datetime.strptime("10/12/2015", "%d/%m/%Y")
@@ -52,15 +52,3 @@ def test_extract_flashcards():
     flashcards, _ = leitner.utils.import_flashcards(text)
     assert leitner.utils.export_markdown(flashcards[0]) == flashcard_md
     assert leitner.utils.export_markdown(flashcards[1]) == flashcard_md
-
-
-def test_build_quiz():
-    fc1 = Flashcard(
-        question, answer, id, box, next_review, last_review, correct, incorrect
-    )
-    quiz_md = "\n".join([leitner.utils.export_markdown(fc, True) for fc in [fc1, fc1]])
-    quiz_flashcards, _ = leitner.utils.import_flashcards(quiz_md, True)
-    assert quiz_flashcards[0].question == fc1.question
-    assert quiz_flashcards[1].question == fc1.question
-    assert quiz_flashcards[0].answer == fc1.answer
-    assert quiz_flashcards[1].answer == fc1.answer

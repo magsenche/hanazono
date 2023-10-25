@@ -3,43 +3,22 @@ import re
 from leitner.models import Flashcard
 
 flashcard_str = """??? question "{question}"
-    {answer}
+{answer}"""
 
-"""
 quiz_flashcard_str = """??? question "{question} {buttons}"
-    {answer}
+{answer}
     ##### id: {id}, box: {box}, score: {score}, next: {next_review}, last: {last_review}
 """
 
 buttons = "[](){.fbutton .ok}[](){.fbutton .nok}"
-
-regex_variables = {
-    "question": r"(.+?)",
-    "answer": r"(.+?)",
-    "buttons": r"\[\]\(\)\{\.fbutton \.ok\}\[\]\(\)\{\.fbutton \.nok\}",
-    "id": r"([0-9a-fA-F]{6})",  # 6-digit hex number
-    "box": r"(\d+)",  # any number
-    "score": r"(\d+/\d+)",  # number/number format
-    "next_review": r"(\d{2}/\d{2}/\d{4})",  # date format dd/mm/yyyy
-    "last_review": r"(\d{2}/\d{2}/\d{4})",  # date format dd/mm/yyyy
-}
+flashcard_regex = r"""\?\?\? question "(.*?)".*?\n((?: {4}.*|\n)*?)(?=\n[^\s]|$)"""
 
 
-def regex(s):
-    template = s.replace("\n", "\\n")
-    for char in "#?()[]":
-        template = template.replace(char, f"\\{char}")
-    for variable, pattern in regex_variables.items():
-        template = template.replace("{" + variable + "}", pattern)
-    return template
-
-
-def import_flashcards(markdown_text, from_quiz=False):
+def import_flashcards(markdown_text):
     flashcards = []
     parts = []
     ms = 0
-    fstr = quiz_flashcard_str if from_quiz else flashcard_str
-    for m in re.finditer(regex(fstr), markdown_text, re.DOTALL):
+    for m in re.finditer(flashcard_regex, markdown_text):
         parts.append(markdown_text[ms : m.start()])
         ms = m.end()
         flashcard = Flashcard(*m.groups())
