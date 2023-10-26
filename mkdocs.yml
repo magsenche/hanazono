@@ -5,7 +5,8 @@ repo_url: https://github.com/magsenche/hanazono
 repo_name: magsenche/hanazono
 site_dir: src/site
 theme:
-  logo: assets/hanazono.png
+  logo: assets/logo.png
+  favicon: assets/logo.png
   font:
     text: Quicksand
     code: Fira Code
