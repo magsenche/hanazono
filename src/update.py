@@ -11,7 +11,7 @@ import pathlib
 import mkdocs.config
 
 from leitner.models import Flashcard
-from leitner.utils import export_markdown, import_flashcards
+from leitner.utils import export_markdown, import_definitions, import_flashcards
 from utils import logger
 
 log = logger.custom(__name__)
@@ -41,6 +41,7 @@ def update_database(docs_dir):
     for mdfile in docs_dir.rglob("*.md"):
         txt = mdfile.read_text()
         flashcards = import_flashcards(txt)[0]
+        flashcards += import_definitions(txt)
         for fc in flashcards:
             flashcards_in_md.add(fc.question)
             try:

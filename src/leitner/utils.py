@@ -12,6 +12,7 @@ quiz_flashcard_str = """??? question "{question} {buttons}"
 
 buttons = "[](){.fbutton .ok}[](){.fbutton .nok}"
 flashcard_regex = r"""\?\?\? question "(.*?)".*?\n((?: {4}.*|\n)*?)(?=\n[^\s]|$)"""
+definition_regex = r"(`\w+`)\n:\s(.+?)(?=\n|$)"
 
 
 def import_flashcards(markdown_text):
@@ -26,6 +27,17 @@ def import_flashcards(markdown_text):
 
     parts.append(markdown_text[ms:])
     return flashcards, parts
+
+
+def import_definitions(markdown_text):
+    definitions = []
+    for m in re.finditer(definition_regex, markdown_text):
+        q, d = m.groups()
+        a = f"    {d}"
+        flashcard = Flashcard(question=q, answer=a)
+        definitions.append(flashcard)
+
+    return definitions
 
 
 def export_markdown(flashcard, for_quiz=False):
