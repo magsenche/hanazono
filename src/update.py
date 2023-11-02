@@ -41,7 +41,7 @@ def update_database(docs_dir):
     for mdfile in docs_dir.rglob("*.md"):
         txt = mdfile.read_text()
         flashcards = import_flashcards(txt)[0]
-        flashcards += import_definitions(txt)
+        flashcards += import_definitions(txt, mdfile.stem)
         for fc in flashcards:
             flashcards_in_md.add(fc.question)
             try:
