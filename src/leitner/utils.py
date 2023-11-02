@@ -12,7 +12,7 @@ quiz_flashcard_str = """??? question "{question} {buttons}"
 
 buttons = "[](){.fbutton .ok}[](){.fbutton .nok}"
 flashcard_regex = r"""\?\?\? question "(.*?)".*?\n((?: {4}.*|\n)*?)(?=\n[^\s]|$)"""
-definition_regex = r"(`\w+`)\n:\s(.+?)(?=\n|$)"
+definition_regex = r"(`.+`)\n:\s(.+?)(?=\n|$)"
 
 
 def import_flashcards(markdown_text):
