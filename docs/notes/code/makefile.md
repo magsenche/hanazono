@@ -33,3 +33,5 @@ post_test: ## Nothing for now
 post_master: ## Do stuff after master build
 .PHONY: post_master
 ```
+
+## Flashcards

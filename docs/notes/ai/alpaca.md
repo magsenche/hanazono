@@ -24,3 +24,5 @@ Traceback (most recent call last):
     raise ValueError(f'{err} Sorry, your {self.file_format.name}v{self.format_version} file of type {ftype.name} is not eligible for conversion.')
 ValueError: Quantizations changed in GGJTv2. Can only convert unquantized GGML files older than GGJTv2. Sorry, your GGMLv1 file of type MOSTLY_Q4_0 is not eligible for conversion.
 ```
+
+## Flashcards

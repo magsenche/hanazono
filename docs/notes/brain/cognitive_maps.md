@@ -71,5 +71,5 @@ Specific code
 ??? question "What are boundary cells for?"
     They code for boundaries in both entorhinal cortex and hippocampus
 
-??? question "`Path integration`"
-    A navigational process where an organism calculates its position using internal cues about distances and directions traveled, rather than external landmarks.
+??? question "Cognitive maps: What is a factorized representation?"
+    A factorized representation is a method used by the brain to organize information by breaking down situations into their component parts. For example, in vision, this might involve representing 2D scenes as a grid of hexagonal cells, while in sound perception it might involve representing pitch and duration along a 1D axis. This approach allows for a more efficient use of memory and computational resources by reducing the amount of information that needs to be processed simultaneously.

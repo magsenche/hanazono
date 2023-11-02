@@ -109,3 +109,5 @@ The more you know, the less you remember
 Indirect conenction from thalamus: 2 pathways
 
 Attention bring up attended information
+
+## Flashcards

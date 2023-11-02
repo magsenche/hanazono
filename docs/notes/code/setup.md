@@ -104,3 +104,5 @@ Extensions:
 - Markdown all in one
 - Markdowon preview enhanced
 - YAML
+
+## Flashcards

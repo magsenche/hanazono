@@ -2,6 +2,8 @@
 
 ## Engram
 
+`Engram`
+: An engram is a representation of information encoded as synaptic changes in sparse populations of neurons. It is closely related to associative memory, and there is evidence to support the concept of a sparse distributed code for memory representation
 [Buidling blocks of memory in the brain](https://youtu.be/X5trRLX7PQY)
 
 1) Information si encoded as synaptic changes in sparse populations of neurons **engrams**
@@ -26,9 +28,6 @@
    - $\rightarrow$ the closer experiences are, the more overlap engrams have, the more linked memories are
 
 ## Flahscards
-
-??? question "`Engram`"
-    An engram is a representation of information encoded as synaptic changes in sparse populations of neurons. It is closely related to associative memory, and there is evidence to support the concept of a sparse distributed code for memory representation
 
 ??? question "How is engram sparsity conserved? How does it vary across brain regions?"
     Engram sparsity is conserved and controlled through neuronal competition. The degree of sparsity differs across various brain regions, with it being high in the hippocampus and low in the cortex

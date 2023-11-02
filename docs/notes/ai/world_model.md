@@ -8,3 +8,5 @@
 > Evidence also suggests that what we perceive at any given moment is governed by our brain’s prediction of the future based on our internal model
 
 Example of baseball players hitting the baseball within a 100 ms window - which is faster than the signal coming from the eyes to reach the brain - because it anticipated the trajectory.
+
+## Flashcards

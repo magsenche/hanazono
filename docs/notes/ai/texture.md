@@ -26,3 +26,5 @@ Texture Generation with Neural Cellular Automata:
 
 ## Datasets
 https://pytorch.org/vision/stable/generated/torchvision.datasets.DTD.html
+
+## Flashcards

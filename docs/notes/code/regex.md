@@ -136,7 +136,7 @@ False
 | ?=      | Lookahead assertion      | x(?=y) matches "x" only if it's followed by "y".             |
 | ?!      | Negative lookahead       | x(?!y) matches "x" only if it's not followed by "y".         |
 | ?<=     | Lookbehind assertion     | (?<=y)x matches "x" only if it's preceded by "y".            |
-| ?!=     | Negative lookbehind      | (?<!y)x matches "x" only if it's not preceded by "y".        |
+| ?<!     | Negative lookbehind      | (?<!y)x matches "x" only if it's not preceded by "y".        |
 | ?>      | Once-only Subexpression  | a(?>b\|bc)c matches "abc", but not "abcc".                   |
 | ?()     | Condition [if then]      | (?(?=y)xy\|x) matches "xy" or "x" based on the condition     |
 | ?()\|   | Condition [if then else] | (?(?=y)xy\|xz) matches "xy" if "y" follows or "xz" otherwise |

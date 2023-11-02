@@ -1,9 +1,9 @@
 ## Definitions
 
-`Image`
+`Docker Image`
 : An image is a blueprint or template that encompasses all the essential files, dependencies, and configurations needed to create a running instance of a container. Think of it as a static, read-only snapshot that bundles together the application's code, necessary libraries, and the runtime environment, ensuring the application runs as intended.
 
-`Container`
+`Docker Container`
 : A container is an isolated, lightweight runtime instance derived from an image. Essentially, when an image is executed, it becomes a container. Containers encapsulate the application along with its dependencies, offering a consistent and reproducible setting. This means applications can run reliably across various computing contexts, be it a developer's local machine or a production server.
 
 ## Dockerfile
@@ -146,11 +146,6 @@ In this setup, the Nginx container would proxy requests to the webapp container.
 Access the application through your browser or API client on port 80, and Nginx will handle the proxying to your web application.
 
 ## Flashcards
-??? question "`Docker Image`?"
-    A blueprint or template containing all necessary files, dependencies, and configurations to create a running instance of a container
-
-??? question "`Docker Container`"
-    A container is a running instance of an image, encapsulating the application and its dependencies
 
 ??? question "Docker: What does the RUN instruction do in a Dockerfile"
     It executes commands during the image building phase

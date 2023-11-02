@@ -14,3 +14,7 @@ Several models:
 ## Attention mechanism
 
 Link to transformers:  [Attention is all you need](https://arxiv.org/pdf/2008.02217.pdf)
+
+## Flashcards
+??? question "What is the purpose of Hopfield networks?"
+    The purpose of Hopfield networks is to store patterns in memory and retrieve them using a process of state updating until an equilibrium is reached.

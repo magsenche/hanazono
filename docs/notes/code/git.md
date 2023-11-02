@@ -7,3 +7,5 @@
 - use vscode as default git edior (linux only?) `git config --global core.editor code -w`
 
 ## New personal project
+
+## Flashcards
