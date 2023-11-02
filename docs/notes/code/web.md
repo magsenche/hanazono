@@ -148,6 +148,8 @@ if __name__ == "__main__":
 start_response("200 OK", [("Access-Control-Allow-Origin", "*")])
 ```
 
+## Flashcards
+
 ??? question "Run a server to handle a post request sending a number"
     ```python title="server.py"
     import flask

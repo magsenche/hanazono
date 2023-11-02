@@ -23,8 +23,7 @@ Examples:
 - compute $\int e^{-x^2}dx = \sqrt{\pi}$ by using the radial symmetry of
 $(\int e^{-x^2}dx)^2 = \iint_{\R^2} e^{-\left(x^2 + y^2\right)}dx\,dy = \int_0^{2\pi} \int_0^{\infty} e^{-r^2}r\,dr\,d\theta$
 
-??? question "`Noether's theorem`"
-    For every symmetry, their is a conservation law
+## Flashcards
 
 ??? question "List 2 symmetries along with the associated conservation law"
     - Time symmetry $\rightarrow$ conservation of energy

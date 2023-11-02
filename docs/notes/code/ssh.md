@@ -26,3 +26,5 @@ cat ~/.ssh/id_rsa.pub
       HostName raspberrypi.local
       User pi
    ```
+
+## Flashcards

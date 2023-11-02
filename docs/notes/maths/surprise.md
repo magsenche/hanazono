@@ -27,6 +27,8 @@ In non volatile environments: $\Theta_i = \Theta$, pas de changement dans la par
 
 Signature of shannon surprise $S_{Sh1}$ found in various EEG and FMRi experiments.
 
+## Flashcards
+
 ??? question "What are the 4 different types of surprise?"
     1. information gain suprise
     2. prediction surprise

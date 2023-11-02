@@ -47,6 +47,7 @@ nav:
       - notes/ai/lenia.md
       - notes/ai/life.md
       - notes/ai/llama.md
+      - notes/ai/mistral.md
       - notes/ai/predictive_coding.md
       - notes/ai/self_organization.md
       - notes/ai/texture.md
@@ -78,9 +79,12 @@ nav:
       - notes/code/docker.md
       - notes/code/git.md
       - notes/code/help.md
+      - notes/code/hugging_face.md
+      - notes/code/langchain.md
       - notes/code/linux.md
       - notes/code/makefile.md
       - notes/code/mkdocs.md
+      - notes/code/ollama.md
       - Python:
           - notes/code/python.md
           - notes/code/python_import_rules.md
@@ -91,8 +95,18 @@ nav:
       - notes/code/tensor_computation_librairies.md
       - notes/code/vscode.md
       - notes/code/web.md
+  - Health:
+      - notes/health/cold_exposure.md
+      - notes/health/dopamine.md
+      - notes/health/heat_exposure.md
+      - notes/health/immune_system.md
+      - notes/health/microbiome.md
+  - Invest:
+      - notes/invest/index.md
+      - notes/invest/env_sup.md
+      - notes/invest/enveloppes.md
+      - notes/invest/supports.md
   - Maths:
-      - notes/maths/bayesian_inference.md
       - notes/maths/calculus.md
       - notes/maths/differential_topology.md
       - notes/maths/equivariance.md
@@ -100,23 +114,15 @@ nav:
       - notes/maths/geometric_deep_learning.md
       - notes/maths/geometry.md
       - notes/maths/heiseinberg_uncertainty_principle.md
-      - notes/maths/markov.md
       - notes/maths/metrics.md
-      - notes/maths/probabilistic_graphical_models.md
+      - Probability:
+          - notes/maths/probability/index.md
+          - notes/maths/probability/bayesian_inference.md
+          - notes/maths/probability/markov.md
+          - notes/maths/probability/probabilistic_graphical_models.md
       - notes/maths/restricted_boltzmann_machine.md
       - notes/maths/surprise.md
       - notes/maths/symmetry.md
-  - Health:
-      - notes/health/cold_exposure.md
-      - notes/health/dopamine.md
-      - notes/health/heat_exposure.md
-      - notes/health/immune_system.md
-      - notes/health/microbiome.md
-  - Vrac:
-      - notes/vrac/reflexion.md
-      - notes/todo.md
-      - notes/vrac/usefull.md
-
 markdown_extensions:
   - abbr
   - admonition

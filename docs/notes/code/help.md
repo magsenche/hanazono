@@ -25,3 +25,5 @@
         "/*": "${documentDirName}/supp/${documentBaseName}/${fileName}"
     },
     ```
+
+## Flashcards

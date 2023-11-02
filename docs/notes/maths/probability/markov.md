@@ -3,16 +3,16 @@
 ## Definitions
 
 `Markov Chain`
-
-: $$P(X_T = x_T | X_{T-1}, ..., X_{0} = x_{T-1}, ..., x_{0})=P(X_T = x_T | X_{T-1} = x_{T-1})$$
-
-Memory-less stochastic process. The knowledge of the previous state is all that is necessary to determine the current state
+: $P(X_T = x_T | X_{T-1}, ..., X_{0} = x_{T-1}, ..., x_{0})=P(X_T = x_T | X_{T-1} = x_{T-1})$. Memory-less stochastic process. The knowledge of the previous state is all that is necessary to determine the current state
 
 `Markov Random Field`
 : Set of random variables satisfying the Markov property for random fields
 
 - is known as Markov Network or Undirected Graphical Model
 - differs from  Baysesian networks which are directed and acyclic
+
+`Monte Carlo sampling`
+: Process of estimating the properties of a distribution by examining random samples from the distribution
 
 ## Markov Chain Monte Carlo
 
@@ -28,12 +28,7 @@ Condition to work:
   1. target distribution symmetric
   2. values calculated during step 4/5 must be prop. to posterior likelihoods & ignore initial samples (because initial guess can be very wrong)
 
-??? question "`Markov Chain`"
-    $P(X_T = x_T | X_{T-1}, ..., X_{0} = x_{T-1}, ..., x_{0})=P(X_T = x_T | X_{T-1} = x_{T-1})$
-    Memory-less stochastic process: the knowledge of the previous state is all that is necessary to determine the current state
+## Flashcards
 
-??? question "`Markov Random Field`"
-    Set of random variables satisfying the Markov property for random fields
-
-??? question "`Monte Carlo sampling`"
-    Process of estimating the properties of a distribution by examining random samples from the distribution
+??? question "What's the principle behind MCMC sampling"
+    It's based on iteratively sampling from a Markov chain whose stationary distribution is the target distribution, which in the case of Bayesian computation is most often the posterior distribution $p(θ|y)$

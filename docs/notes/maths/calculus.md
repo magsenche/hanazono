@@ -46,13 +46,14 @@
 - [https://sassafras13.github.io/ReparamTrick/](https://sassafras13.github.io/ReparamTrick/)
 - [https://gregorygundersen.com/blog/2018/04/29/reparameterization/](https://gregorygundersen.com/blog/2018/04/29/reparameterization/)
 
+## Flashcards
+
 ??? question "Properties of 4 deltas"
     | $\Delta$                        | $d$                                                       | $\partial$                                                                | $\delta$                                  |
     | ------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------------------- | ----------------------------------------- |
     | Global Total Variation          | Local Total Variation                                     | Partial Local Variation                                                   | Elementary Quantity                       |
     | Difference between 2 quantities | Difference between 2 close points (time, space, etc.)     | Partial derivative representing local change with respect to one variable | Not necessarily a difference or variation |
     | Measures a global change        | Can be standalone: $dx$, $dt$ as infinitesimal quantities | Always as a ratio: $\partial A / \partial x$, $\partial f / \partial t$   | $\delta W = F \cdot dL$                   |
-
 
 
 ??? question "Einstein notation for $(\mathbf{A} \mathbf{v})_{i}$"

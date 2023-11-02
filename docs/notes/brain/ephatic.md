@@ -39,3 +39,9 @@ Other models with different diameter for nerve fibers
 
 ??? question "Ephaptic interactions: What si the significance of axonal diameter heterogeneity?"
     Heterogeneity in axonal diameters has a dispersive effect on ephaptic interactions. A higher level of diameter heterogeneity demands stronger ephaptic coupling to achieve full synchronization between spikes
+
+??? question "What is ephaptic interaction?"
+    Ephaptic interaction refers to an electrical or mechanical signal transmitted from one neuron to another neuron, which is not through direct contact of their axons. It occurs when the electric signal from one neuron induces a change in the membrane potential of another neuron. This phenomenon contributes to neuronal synchrony and can lead to self-organized trains of impulses and significant alterations in action potential timings.
+
+??? question "What is the difference between ephaptic and synaptic interactions in the nervous system?"
+    Ephaptic interactions refer to electrical or mechanical signals transmitted between neurons without direct contact, while synaptic interactions involve direct contact of axons through synapses. Ephaptic interactions are responsible for influencing membrane potentials, neuronal synchrony, and signal propagation, whereas synaptic interactions mainly facilitate information transmission through the release of neurotransmitters.

@@ -2,13 +2,15 @@
 
 ## Definitions
 
-`Continuous signals`
+`Fourier transform of continuous signals`
 : $\hat{f}(\omega) = \frac{1}{2\pi} \int f(t) e^{-i\omega t} dt$
-: $f(t) = \int \hat{f}(\omega) e^{i\omega t} d\omega$
 
-`Discrete signals`
+$f(t) = \int \hat{f}(\omega) e^{i\omega t} d\omega$
+
+`Fourier transform of discrete signals`
 : $X_k = \sum_{n=0}^{N-1} x_n \cdot e^{-\frac {i 2\pi}{N}kn}$
-: $x_n = \frac{1}{N} \sum_{k=0}^{N-1} X_k \cdot e^{\frac {i 2\pi}{N}kn}$
+
+$x_n = \frac{1}{N} \sum_{k=0}^{N-1} X_k \cdot e^{\frac {i 2\pi}{N}kn}$
 
 $\frac{1}{2\pi}$ and $\frac{1}{N}$ to ensure $\hat{F}(F(f)) = f$, depending on the convention used, can be on $f$,$\hat{f}$, or both
 
@@ -48,13 +50,7 @@ $\frac{1}{2\pi}$ and $\frac{1}{N}$ to ensure $\hat{F}(F(f)) = f$, depending on t
 | Heaviside Step Function | $H(t)$                                | $-\frac{i}{\omega} + \pi\delta(\omega)$                                 |
 | Constant                | $A$                                   | $2\pi A\delta(\omega)$                                                  |
 
-??? question "`Fourier transform` for continuous signals"
-    : $\hat{f}(\omega) = \frac{1}{2\pi} \int f(t) e^{-i\omega t} dt$
-    : $f(t) = \int \hat{f}(\omega) e^{i\omega t} d\omega$
-
-??? question "`Fourier transform` for discrete signal"
-    : $X_k = \sum_{n=0}^{N-1} x_n \cdot e^{-\frac {i 2\pi}{N}kn}$
-    : $x_n = \frac{1}{N} \sum_{k=0}^{N-1} X_k \cdot e^{\frac {i 2\pi}{N}kn}$
+## Flashcards
 
 ??? question "List 5 properties of fourier transform"
     | Property                  | Time Domain                                          | Frequency Domain                                      |

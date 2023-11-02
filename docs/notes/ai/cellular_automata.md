@@ -6,3 +6,5 @@
 $\rightarrow$ systems of agents that reach global goals through local interactions
 
 ### [Neural Texture synthesis](texture.md)
+
+## Flashcards

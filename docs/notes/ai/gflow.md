@@ -11,7 +11,7 @@ In active learning, the model can economicaly ask an oracle (eg the world) the m
 
 An idea is machine teaching, where human give the most informative samples to the model.
 
-A method to estimate posterior distribution or unormalized probability distribution/energy function is to use [markov chain monte carlo sampling](../maths/markov.md)
+A method to estimate posterior distribution or unormalized probability distribution/energy function is to use [markov chain monte carlo sampling](../maths/probability/markov.md)
 
 Issues are that at high dimension, it exponentially complicated to do that. But we can break this expoentiality with machine learning, this is why Bengio calls systematic generalization: generalize far from the data in a meaningful way.
 
@@ -22,6 +22,8 @@ Gflownet can be used no only for sampling, but also estimate (any ?) distributio
 Abstraction gives power of generalization. It lacks in current AI. Discrete concepts emerge as a way to provide good generalization
 
 Abstract causal dependences are what are conserved accross scenarios eg if I go to the moon, same laws of physics.
+
+## Flashcards
 
 ??? question "What are GFlowNets for?"
     To generalize and abstract information in high-dimensional spaces

@@ -25,3 +25,5 @@ class CustomServer(BasePlugin):
 ## Ressources
 
 - official [dev guide](https://www.mkdocs.org/dev-guide/plugins/)
+
+## Flashcards

@@ -1,5 +1,7 @@
 # Yann Lecun and JEPA
 
+JEPA is an architecture for autonomous intelligence proposed by Yann LeCun that aims to learn models of the world in a self-supervised manner. It consists of several modules. The goal of JEPA is to enable humans to plan effectively in unfamiliar situations by predicting what's likely, plausible, impossible.
+
 ## JEPA
 
 [Yann LeCun on a vision to make AI systems learn and reason like animals and humans](https://ai.facebook.com/blog/yann-lecun-advances-in-ai-research/)

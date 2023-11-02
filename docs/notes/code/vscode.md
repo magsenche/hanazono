@@ -26,3 +26,5 @@ Use [snippets](https://code.visualstudio.com/docs/editor/userdefinedsnippets) to
 		"description": "generate flashcard"
 	}
 ```
+
+## Flashcards

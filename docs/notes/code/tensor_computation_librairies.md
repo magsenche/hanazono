@@ -23,3 +23,5 @@
 2. lazy vs eager execution: variables evaluated when defined or when needed
 3. usage: autodifferentiaion
 4. code execution and compilation
+
+## Flashcards

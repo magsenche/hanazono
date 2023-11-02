@@ -19,6 +19,12 @@ The self-attention mechanism used in Transformers can be seen as a "transformer"
 - 2015: first use of **attention** in nlp
 - 2017: first transformers for language modeling (and self-attention)
 
+## Categories
+
+- GPT-like (also called auto-regressive Transformer models)
+- BERT-like (also called auto-encoding Transformer models)
+- BART/T5-like (also called sequence-to-sequence Transformer models)
+
 ## Caracteristics
 - draw connections between any part of the sequence $\Rightarrow$ no issue sith long range dependency that RNN suffers from
 - more a set model than a sequential model $\Rightarrow$ positional encoding to add sequence info
@@ -35,6 +41,7 @@ The self-attention mechanism used in Transformers can be seen as a "transformer"
 **Goal**: add context to word embeddings by applying some weighting or similarity from the sequence.
 
 Basically, no weight are trained because the weighting comes from the raw word embeddings dot product. Each initial embedding $V_1$ is used three times:
+
 - dot product between word and all other (including self) to get the weighting $W_{1j} = V_1V^j$
 - dot product between weighting vector and input sequence embedding to get final embedding $Y_1=\sum_j W_{1j}V_j$
 
@@ -71,7 +78,11 @@ In multi-head attention, the query, key, and value embeddings are each projected
 ### Positonal encoding
 ![](fig/transformers_positional_encoding_add.png)![](fig/transformers_positional_encoding.png)
 
+### Encoder
+Encoder models are best suited for tasks requiring an understanding of the full sentence, such as sentence classification, named entity recognition (and more generally word classification), and extractive question answering.
+
 ### Decoder
+Decoder models are best suited for tasks involving text generation.
 
 Works as an autoregressive tools: for a given token, it takes all previous outputs as inputs + the ouptput of the decoder.
 

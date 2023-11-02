@@ -18,7 +18,7 @@ In this study, a high-fiber diet did not lead to an increase in microbiota diver
 `Prebiotics`
 : fermentable dietary fiber or microbiota-accessible carbohydrates; supplements of food for established gut microbiota
 
-`​Probiotics`
+`Probiotics`
 : live bacteria or yeasts that can colonize in the gut microbiome
 
 `Synbiotics`
@@ -55,3 +55,10 @@ Microbiota are present on any and all surfaces which have come into contact with
 
 ??? question "How do prebiotics and probiotics support gut health?"
     Prebiotics provide food for established gut microbiota, while probiotics introduce live bacteria or yeasts that can colonize in the gut, enhancing gut microbiome health and potentially aiding recovery in cases of dysbiosis.
+
+??? question "What are some tips to improve gut microbiome health?"
+    1. Eat a high-fiber diet that is rich in whole plant foods, such as vegetables, legumes, and whole grains.
+    2. Avoid processed foods, which contain additives that can disrupt the mucus layer of the GI tract.
+    3. Prioritize fermented foods, which provide microbial diversity and improve gut health.
+    4. Get adequate sleep, aiming for 6-8 hours per night.
+    5. Limit exposure to pathogens or harmful chemicals in your environment to maintain a healthy gut microbiome.

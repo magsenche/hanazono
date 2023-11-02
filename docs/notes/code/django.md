@@ -167,3 +167,5 @@ python manage.py migrate
 ### Django documentation
 - [Djangoproject](https://www.djangoproject.com/)
 - [Tutorials](https://docs.djangoproject.com/en/4.2/intro/) with 8 parts
+
+## Flashcards

@@ -16,3 +16,5 @@ Log polar
 
 #### [ECG](https://ieeexplore.ieee.org/abstract/document/71367)
 Similar sampling method using concentric squares instead of circles
+
+## Flashcards

@@ -87,10 +87,7 @@ Divergence vs convergence. They are both beneficial:
 [A Unifying Principle for the Functional Organization of Visual Cortex](https://www.biorxiv.org/content/10.1101/2023.05.18.541361v1.full.pdf) & [code](https://github.com/neuroailab/TDANN)
 
 `TDANN`
-:  unified model that predict functional organization in cortical areas of the primate visual system by:
-
-    - achieving a self-supervised task-general sensory representation
-    - maximizing the  smoothness of responses across the cortical sheet according to a metric that scales relative to cortical surface area(the network’s inter-layer wiring length: the brain balances performance with metabolic costs.)
+:  unified model that predict functional organization in cortical areas of the primate visual system by achieving a self-supervised task-general sensory representation and maximizing the  smoothness of responses across the cortical sheet according to a metric that scales relative to cortical surface area (the network’s inter-layer wiring length: the brain balances performance with metabolic costs.)
 
 #### Constraints
 
@@ -127,6 +124,7 @@ role in categorization](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4143420/pdf
 - [Spatial Embedding and Wiring Cost Constrain the Functional Layout of the Cortical Network of Rodents and Primates](https://journals.plos.org/plosbiology/article/file?id=10.1371/journal.pbio.1002512&type=printable)
 
 ## Flashcards
+
 ??? question "What is a prominent feature of brain architecture seen in the VTC?"
     Superimposition of multiple functional maps and fine-scale clusters within the same cortical expanse.
 

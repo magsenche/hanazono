@@ -20,3 +20,5 @@ example: `./main -m ../llama/llama-2-7b-chat/ggml-model-q4_0.gguf -p "The list o
 
 ## Ressources
 -  [Llama 2 for Mac M1](https://medium.com/@auslei/llama-2-for-mac-m1-ed67bbd9a0c2)
+
+## Flashcards
