@@ -36,6 +36,5 @@ profile = "black"
 DJANGO_SETTINGS_MODULE = "djangoproject.settings"
 
 [project.entry-points."mkdocs.plugins"]
-custom_button = "plugin.custom_button:CustomButton"
-quiz = "plugin.custom_button:FlashcardPopup"
+button = "plugin.button:Button"
 get_quiz = "plugin.get_quiz:GetQuiz"

@@ -7,7 +7,7 @@ from utils import logger
 log = logger.custom(__name__)
 
 
-class CustomButton(BasePlugin):
+class Button(BasePlugin):
     config_scheme = (("buttons", config_options.Type(list, default=[])),)
 
     def on_post_page(self, output_content, page, config):

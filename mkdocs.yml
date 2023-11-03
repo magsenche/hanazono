@@ -81,7 +81,7 @@ extra_css:
   - stylesheet/extra.css
   - stylesheet/admonition.css
 plugins:
-  - custom_button:
+  - button:
       buttons:
         - link: /admin
           text: Admin
