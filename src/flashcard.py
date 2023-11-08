@@ -48,7 +48,9 @@ def generate_flashcard(content):
                         if create:
                             fc.save()
                             log.info(f"Created {fc}")
-                            do_edit = False
+                        else:
+                            fc = None
+                        do_edit = False
             except Exception as e:
                 log.error(f"Failed to generate flashcard: {e}")
     return fc
