@@ -86,9 +86,6 @@ plugins:
         - link: /admin
           text: Admin
           class: md-header__source
-        - link: /admin/leitner/flashcard/add
-          text: Add flashcard
-          class: md-header__title
         - link: /daily_quiz
           text: Daily quiz
           class: md-header__title
