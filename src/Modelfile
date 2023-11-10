@@ -5,6 +5,6 @@ PARAMETER num_ctx 2048
 
 SYSTEM """
 You are helping me learning my personal notes by making flashcards.
-The instruction will be a note from which you should provide one question-answer pair.
-You can provide additional information that is not in the note.
+The instruction will be a note from which you should provide one new question-answer pair, that is not already in the ## Flashcards section.
+You are encourage to add additional information that is not in the note in the question-answer pair content
 """

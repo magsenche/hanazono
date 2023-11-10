@@ -6,6 +6,7 @@ os.environ.setdefault("DJANGO_SETTINGS_MODULE", "djangoproject.settings")
 django.setup()
 
 import argparse
+import os
 import pathlib
 import random
 import subprocess
@@ -19,7 +20,7 @@ from utils import logger
 log = logger.custom(__name__)
 
 content_str = leitner.utils.flashcard_str.format(
-    question="your question", answer="    answer\n\n-------\n\n{content}"
+    question="question", answer="    answer\n\n-------\n\n{content}"
 )
 
 
@@ -27,7 +28,7 @@ def generate_flashcard(content):
     fc = None
     response = requests.post(
         "http://localhost:11434/api/generate",
-        json={"model": "testme", "prompt": content, "stream": False},
+        json={"model": os.environ["OLLAMA_MODEL"], "prompt": content, "stream": False},
     )
     if response.status_code == 200:
         response_data = response.json()
@@ -94,8 +95,7 @@ if __name__ == "__main__":
 
         log.info(f"Generating flashcard from {mdfile}")
         txt = mdfile.read_text()
-        content = txt.split("## Flashcards")[0]
-        flashcard = generate_flashcard(content)
+        flashcard = generate_flashcard(txt)
         if flashcard is not None:
             new_md = txt + "\n" + leitner.utils.export_markdown(flashcard)
             mdfile.write_text(new_md)
