@@ -21,7 +21,7 @@ from leitner import views
 
 urlpatterns = [
     path("", views.home, name="home"),
-    path("admin/", admin.site.urls),
+    path("admin", admin.site.urls),
     path("daily_quiz", views.daily_quiz, name="daily_quiz"),
     path(
         "update_flashcard/<str:id>/<str:is_ok>",
