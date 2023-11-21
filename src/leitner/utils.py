@@ -31,10 +31,9 @@ def import_flashcards(markdown_text):
 
 def import_definitions(markdown_text, file_stem):
     definitions = []
-    topic = file_stem.replace("_", " ")
     for m in re.finditer(definition_regex, markdown_text):
         q, d = m.groups()
-        question = f"{topic} {q}"
+        question = f"{q}"
         answer = f"    {d}"
         flashcard = Flashcard(question=question, answer=answer)
         definitions.append(flashcard)
