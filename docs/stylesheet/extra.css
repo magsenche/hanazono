@@ -79,3 +79,10 @@
 .flashcard-red {
     background-color: #8A4A5E
 }
+
+/* Progress bar */
+.pbar {
+    margin-top: 0.9rem;
+    height: 0.4rem;
+    float: left;
+}
