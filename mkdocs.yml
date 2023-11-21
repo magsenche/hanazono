@@ -80,6 +80,7 @@ extra_css:
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
   - stylesheet/extra.css
   - stylesheet/admonition.css
+  - stylesheet/progress.css
 plugins:
   - button:
       buttons:
@@ -90,5 +91,6 @@ plugins:
           text: Daily quiz
           class: md-header__title
   - get_quiz
+  - pbar
   - search
   - open-in-new-tab

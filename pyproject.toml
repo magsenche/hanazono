@@ -40,3 +40,4 @@ DJANGO_SETTINGS_MODULE = "djangoproject.settings"
 [project.entry-points."mkdocs.plugins"]
 button = "plugin.button:Button"
 get_quiz = "plugin.get_quiz:GetQuiz"
+pbar = "plugin.pbar:ProgressBarPlugin"
