@@ -90,7 +90,7 @@ plugins:
         - link: /daily_quiz
           text: Daily quiz
           class: md-header__title
-  - get_quiz
+  - quiz
   - pbar
   - search
   - open-in-new-tab

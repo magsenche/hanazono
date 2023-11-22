@@ -20,7 +20,7 @@ from utils import logger
 log = logger.custom(__name__)
 
 
-class GetQuiz(BasePlugin):
+class QuizPlugin(BasePlugin):
     config_scheme = (("buttons", config_options.Type(list, default=[])),)
 
     def __init__(self) -> None:
@@ -39,6 +39,7 @@ class GetQuiz(BasePlugin):
         return config
 
     def on_files(self, files: Files, *, config: MkDocsConfig) -> Files | None:
+        # Write the content of all flashcards to a markdown file to be processed
         md = "\n".join([export_markdown(fc, True) for fc in Flashcard.objects.all()])
         self.md_file.write_text(md)
         files.append(File(self.quiz_uri, config["docs_dir"], config["site_dir"], True))
@@ -49,19 +50,25 @@ class GetQuiz(BasePlugin):
     ) -> str | None:
         if pathlib.Path(page.url).stem == "quiz":
             soup = BeautifulSoup(output, "html.parser")
+
+            # Extract all flashcards html
             for fc in Flashcard.objects.all():
                 id_element = soup.find(string=lambda text: "id: " + fc.id in text)
                 if id_element:
                     fc_html = id_element.find_parents("details")[0]
-                    fc.html = str(fc_html)
+                    fc.html = fc_html.prettify(soup.original_encoding)
                     fc.save()
+
+            # Prepare for the quiz template
             article_tag = soup.find("article")
             if article_tag:
                 new_content = NavigableString(
                     "{% block article_content %}Default content{% endblock %}"
                 )
                 article_tag.replace_with(new_content)
-            self.flashcard_html_file.write_text(str(soup))
+            flashcard_html = soup.prettify(soup.original_encoding)
+            self.flashcard_html_file.write_text(flashcard_html)
+
         return output
 
     def on_post_build(self, *, config: MkDocsConfig) -> None:

@@ -7,7 +7,7 @@ from utils import logger
 log = logger.custom(__name__)
 
 
-class Button(BasePlugin):
+class ButtonPlugin(BasePlugin):
     config_scheme = (("buttons", config_options.Type(list, default=[])),)
 
     def on_post_page(self, output_content, page, config):
@@ -22,12 +22,7 @@ class Button(BasePlugin):
         return souped_html
 
     def _generate_button(self, details):
-        """
-        Generate a BeautifulSoup button element based on provided details.
-        """
         button = Tag(name="a", attrs={"class": "custombutton", "href": details["link"]})
-
-        # If there's text, add it to the button
         if "text" in details:
             button.append(details["text"])
 

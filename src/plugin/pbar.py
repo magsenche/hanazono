@@ -18,4 +18,5 @@ class ProgressBarPlugin(BasePlugin):
                 },
             )
             pbar.replace_with(new_pbar)
-        return str(soup)
+        new_content = soup.prettify(soup.original_encoding)
+        return new_content
