@@ -16,8 +16,11 @@ Mathematics:
 ## How Neurons get their spike
 
 - 20th: Lapique made the link between ohms law and nerves. Equivalent circuit schema.
-- 1960: leaky integrate and fire neuron.
-$\rightarrow$ Leaky: resistance, integrate: resistance, fire: threshold.
+- 1960: leaky integrate and fire neuron:
+
+    - Leaky: resistance
+    - integrate: resistance
+    - fire: threshold
 
 Rall used cable theory to prove, before any experiment can be done, the role of dendrites for neural computation
 
@@ -70,5 +73,3 @@ Flaws of démon individually matching shapes. New solution is  pandemonium.
 ## Flashcards
 ??? question "What is the concept behind extended cognition?"
     Extended cognition refers to the idea that certain cognitive processes occur outside of an organism's brain and rely on external tools or structures, such as language or mathematics. In this case, mathematics is considered an example of extended cognition because it relies on external symbols and rules to process information.
-
-

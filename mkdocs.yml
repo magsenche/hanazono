@@ -105,7 +105,12 @@ nav:
       - notes/invest/index.md
       - notes/invest/env_sup.md
       - notes/invest/enveloppes.md
+      - notes/invest/martingale.md
       - notes/invest/supports.md
+  - General knowledge:
+      - notes/gk/effetdeserre.md
+  - Geopolitics:
+      - notes/geopolitics/russie.md
   - Maths:
       - notes/maths/calculus.md
       - notes/maths/differential_topology.md
@@ -116,9 +121,10 @@ nav:
       - notes/maths/heiseinberg_uncertainty_principle.md
       - notes/maths/metrics.md
       - Probability:
+          - notes/maths/probability/approximate_inference.md
           - notes/maths/probability/index.md
           - notes/maths/probability/bayesian_inference.md
-          - notes/maths/probability/markov.md
+          - notes/maths/probability/bayesian_modeling.md
           - notes/maths/probability/probabilistic_graphical_models.md
       - notes/maths/restricted_boltzmann_machine.md
       - notes/maths/surprise.md
