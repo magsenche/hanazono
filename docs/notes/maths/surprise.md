@@ -19,7 +19,7 @@ Different types of surprise measure:
 
 1. Probabilistic mismatch surprise measure (e.g shannon surprise) uses the marginal probability which depend on the belief $\pi^{(t)}$
 2. Observation mismatch surprise measures (e.g prediction error $\hat{y}_{t+1}-y_{t+1}$ ) depends on the belief $\pi^{(t)}$ through some estimate of the next observation $y_{t+1}$
-3. Belief-mismatch surprise measures (e.g Baysian surprise), using the whole distribution $\pi^{(t)}$
+3. Belief-mismatch surprise measures (e.g Bayesian surprise), using the whole distribution $\pi^{(t)}$
 
 ![Categorization of surprise measures based on the form of their dependence upon the belief](fig/surprise_different_surprise.png)
 

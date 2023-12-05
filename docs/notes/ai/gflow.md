@@ -11,7 +11,7 @@ In active learning, the model can economicaly ask an oracle (eg the world) the m
 
 An idea is machine teaching, where human give the most informative samples to the model.
 
-A method to estimate posterior distribution or unormalized probability distribution/energy function is to use [markov chain monte carlo sampling](../maths/probability/markov.md)
+A method to estimate posterior distribution or unormalized probability distribution/energy function is to use [markov chain monte carlo sampling](../maths/probability/bayesian_inference.md#markov-chain-monte-carlo)
 
 Issues are that at high dimension, it exponentially complicated to do that. But we can break this expoentiality with machine learning, this is why Bengio calls systematic generalization: generalize far from the data in a meaningful way.
 

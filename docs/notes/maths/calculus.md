@@ -25,12 +25,26 @@
 
 ## Matrix
 
+- row vs column
+
+### Derivatives
+
+
+
+$\frac{\partial \bold{y}}{\partial \bold{x}}=(\frac{\partial y_j}{\partial x_i}) = \begin{pmatrix}\frac{\partial y_1}{\partial x_1} & \frac{\partial y_2}{\partial x_1} & \dots & \frac{\partial y_m}{\partial x_1} \\ \vdots & \vdots & \dots & \vdots \\ \frac{\partial y_1}{\partial x_n} & \frac{\partial y_2}{\partial x_n} & \dots & \frac{\partial y_m}{\partial x_n} \end{pmatrix}$
+
+??? example "Derivative w.r.t scalar"
+    $\frac{\partial y}{\partial \bold{x}} = \begin{pmatrix}\frac{\partial y}{\partial x_1}\\ \vdots \\ \frac{\partial y}{\partial x_n}\end{pmatrix}$
+
+    $\frac{\partial \bold{y}}{\partial x} = \begin{pmatrix} \frac{\partial y_1}{\partial x} & \dots & \frac{\partial y_m}{\partial x}\end{pmatrix}$
+
+
+- $\dfrac{\partial{a^TXb}}{\partial X} = ab^T$
+- $\dfrac{\partial{x^TAx}}{\partial x} = x^T(A+A^T)$ (?)
+
 - Cheatsheets
     - [matrix cookbook](https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf)
     - [matrix calculus](https://www.doc.ic.ac.uk/~ahanda/referencepdfs/MatrixCalculus.pdf)
-- row vs column layout
-- $\dfrac{\partial{a^TXb}}{\partial X} = ab^T$
-- $\dfrac{\partial{x^TAx}}{\partial x} = x^T(A+A^T)$ (?)
 
 ## Delta notation
 
@@ -67,3 +81,17 @@
 
 ??? question "Einstein notation for $\mathbf{u} \cdot \mathbf{v}$"
     $u_j v^j$
+
+## Notation
+
+* Scalars are written as lower case bold letters.
+* Vectors are written as upper case bold letters, such as $\mathbf{z}$, and can be either row (dimensions $(1\times n)$) or column (dimensions $(n\times1)$) vectors. Column vectors are the default choice, unless otherwise
+  mentioned. Individual elements are indexed by subscripts, such as $\mathbf{z}_{i}(i\in\{1,\cdot\cdot\cdot,n\})$.
+* Matrices are written as upper case bold letters, such as $\mathbf{X}$, and have dimensions $(m\times n)$
+  corresponding to $m$ rows and $n$ columns. Individual elements are indexed by double subscripts
+  for row and column, such as $\mathbf{X}_{ij}(i\in\{1,\cdot\cdot\cdot,m\},j\in\{1,\cdot\cdot\cdot,n\})$.
+
+## Basic Rules
+
+This document follows numerator layout convention. There is an alternative denominator layout
+convention, where several results are transposed. Do not mix different layout conventions.

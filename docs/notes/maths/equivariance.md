@@ -7,6 +7,8 @@ Equivariance provides a formal notion of consistency under transformation
 `Equivariance`
 : A function $f : V_1 \rightarrow V_2$ is equivariant to transformations from a symmetry group $G$ if applying the symmetry to the input of $f$ is the same as applying it to the output $ \forall g \in G : f \rightarrow f(g.x) = g.f(x)$
 
+Invariant hierarchical network $f_i \circ \rho_{i-1}(g) = \rho_{i}(g) \circ f_i$
+
 ## [Gauge Equivariant Convolutional Networks and the Icosahedral CNN](https://arxiv.org/abs/1902.04615)
 
 - Blog post [An Easy Guide to Gauge Equivariant Convolutional Networks](https://towardsdatascience.com/an-easy-guide-to-gauge-equivariant-convolutional-networks-9366fb600b70)

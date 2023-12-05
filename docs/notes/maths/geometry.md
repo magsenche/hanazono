@@ -12,7 +12,7 @@ A mathematical group is a collection of things (like the set of integers), and a
 
 `Orbit`
 : $O_x =  \{gx | x \in X, g \in G \}$
-: $x \sim_g y \Rightarrow y \in O_x$
+: $x \sim_g y \Leftrightarrow y \in O_x$
 
 `Stabilizer`
 : $H_x =  \{g \in G | gx = x \}$
