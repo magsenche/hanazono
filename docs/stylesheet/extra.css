@@ -1,3 +1,7 @@
+.md-grid {
+    max-width: 80rem;
+}
+
 /* Underline titles */
 .md-typeset h1 {
     font-size: 3em;
