@@ -34,6 +34,20 @@ INSTALLED_APPS = [
     ...
 }
 ```
+
+### Create a superuser
+This user will be able to access the admin interface. Use `--no-input` along with env variables to allow non-interactive creation.
+
+```sh title=".env"
+DJANGO_SUPERUSER_USERNAME=user
+DJANGO_SUPERUSER_PASSWORD=pwd
+DJANGO_SUPERUSER_EMAIL=""
+```
+
+```bash title=""
+python manage.py createsuperuser --no-input
+```
+
 ## Components
 
 ### Urls
@@ -135,6 +149,8 @@ python manage.py migrate
 ```
 
 ### Templates
+You can use [templates](https://docs.djangoproject.com/en/5.0/ref/templates/) to introduce html in spectific pages
+
 ```html title="myapp/templates/quiz.html"
 {% extends "flashcard.html" %}
 {% block article_content %}
@@ -163,6 +179,87 @@ python manage.py migrate
         },
     ]
     ```
+
+Add buttons:
+
+```html title=""
+<div>
+    <a class="button" href="/admin/update_site">Udpate site</a>
+    <a class="button" href="/admin/reset_data">Reset database</a>
+    <a class="button" href="/admin/export_data" download>Export database</a>
+</div>
+```
+
+### Forms
+Define custom forms that can be used with templates to customize the site
+
+```python title="myapp/templates/admin/form.py"
+from django import forms
+
+
+class FileUploadForm(forms.Form):
+    file = forms.FileField()
+```
+
+```html title="myapp/templates/admin/index.html"
+{% extends "admin/index.html" %}
+
+{% block content %}
+{{ block.super }}
+<div>
+    <form method="post" enctype="multipart/form-data" action="{% url 'import_data' %}">
+        {% csrf_token %}
+        <input type="submit" value="Import database" class="button">
+        <input name="file" type="file">
+    </form>
+</div>
+{% endblock %}
+```
+
+server-side, to use the form:
+
+```python title="myapp/view.py"
+def import_data(request):
+    if request.method == "POST":
+        form = FileUploadForm(request.POST, request.FILES)
+        if form.is_valid():
+            file_obj = form.cleaned_data["file"]
+            try:
+                flashcards = list(deserialize("json", file_obj))
+                for fc in flashcards:
+                    fc.object.save()
+                    log.info(f"Imported {fc.object}")
+                return redirect(f"/admin/update_site/")
+            except Exception as e:
+                log.error(f"Can't load data from {file_obj.name}: {str(e)}")
+                return redirect(f"/admin")
+```
+
+## Code
+### Custom command
+[Applications can register their own actions with manage.py](https://docs.djangoproject.com/en/5.0/howto/custom-management-commands/) by adding a `management/commands` and creating a file with the command name.
+
+```python title="myapp/management/commands/build.py"
+import mkdocs.config
+from django.core.management.base import BaseCommand
+from mkdocs.commands import build
+
+from utils import logger
+
+log = logger.custom(__name__)
+
+class Command(BaseCommand):
+    help = "Build site."
+
+    def handle(self, *args, **options):
+        config = mkdocs.config.load_config()
+        build.build(config)
+        log.info(f"""Site built in {config["site_dir"]}""")
+```
+
+### Database client
+Use the `dbshell` command to launch the database client
+
 ## Ressources
 ### Django documentation
 - [Djangoproject](https://www.djangoproject.com/)
