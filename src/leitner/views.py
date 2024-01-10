@@ -1,6 +1,3 @@
-import pathlib
-
-import mkdocs.config
 from django.conf import settings
 from django.http import FileResponse, HttpResponse, JsonResponse
 from django.shortcuts import redirect, render
@@ -8,8 +5,6 @@ from django.shortcuts import redirect, render
 from leitner.models import Flashcard
 from utils import logger
 
-config = mkdocs.config.load_config()
-docs_dir = pathlib.Path(config["docs_dir"])
 log = logger.custom(__name__)
 
 

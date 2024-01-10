@@ -1,11 +1,24 @@
 version: "3.8"
 services:
-  mkdocs-server:
+  site:
     build:
       context: .
-      dockerfile: Dockerfile
-    ports:
-      - "8000:8000"
-    command: mkdocs serve -a 0.0.0.0:8000
+      dockerfile: SiteDockerfile
+    command: bash -c "pdm run update db && mkdocs build"
     volumes:
       - ./docs:/app/docs
+      - site-volume:/app/src/site
+      - database-volume:/app/src/database
+  server:
+    build:
+      context: .
+      dockerfile: ServerDockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - site-volume:/app/src/site
+      - database-volume:/app/src/database
+    command: pdm run manage runserver 0.0.0.0:8000
+volumes:
+  site-volume:
+  database-volume:
