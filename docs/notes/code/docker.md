@@ -61,33 +61,40 @@ COPY mkdocs.yml ./
 
 `CMD`
 : Specifies the default command for the container when it runs, which can be overridden by command-line options.
-## docker-compose
 
+Difference [`ENTRYPOINT` vs `CMD`](https://aws.amazon.com/fr/blogs/france/demystifier-entrypoint-et-cmd-dans-docker/)
+
+## docker-compose
 ```yaml title="docker-compose.yml"
-# Define the Docker Compose file version
 version: "3.8"
 services:
-  # Define the http-server service
-  http-server:
-    build:
-      context: . # Set the build context to the current directory
-      dockerfile: Dockerfile # Specify the Dockerfile to use
-    ports:
-      - "8080:8080" # Map port 8080 on the host to port 8080 on the container
-    command: python src/leitner/server.py # Command to run when the container starts
+  db:
+    image: postgres:14
+    env_file:
+      - .env
+    environment:
+      POSTGRES_DB: ${PGDATABASE}
+      POSTGRES_USER: ${PGUSER}
+      POSTGRES_PASSWORD: ${PGPASSWORD}
+    restart: unless-stopped
     volumes:
-      - ./docs:/app/docs # Mount the `docs` directory from the host to `/app/docs` in the container
-
-  # Define the mkdocs-server service
-  mkdocs-server:
+      - pgdata:/var/lib/postgresql/data
+  server:
     build:
       context: .
       dockerfile: Dockerfile
+    depends_on:
+      - db
+    env_file:
+      - .env
     ports:
-      - "8000:8000"
-    command: mkdocs serve -a 0.0.0.0:8000
+      - "${SERVER_PORT}:8000"
+    restart: unless-stopped
+    command: sh -c "pdm run init & pdm run manage runserver 0.0.0.0:8000"
     volumes:
       - ./docs:/app/docs
+volumes:
+  pgdata:
 ```
 
 ## Nginx
@@ -125,9 +132,7 @@ In the configuration above, Nginx listens on port 80 and proxies incoming reques
 ### How to integrate Nginx with another service
 
 ```yaml title="docker-compose.yml"
-
 version: '3.8'
-
 services:
   nginx:
     build:

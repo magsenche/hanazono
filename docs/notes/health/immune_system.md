@@ -32,7 +32,7 @@ This system consists of a series of proteins that:
 - Directly lyse pathogens
 - Recruit immune cells and trigger inflammation
 
-## Infection & Immune Response Sequence
+## Immune Response Sequence
 
 1. Pathogen breaches barrier $\rightarrow$ Activation of macrophages
 2. Macrophages engulf the pathogen $\rightarrow$ Digestion through enzymes
@@ -45,14 +45,14 @@ This system consists of a series of proteins that:
 5. Dendritic cells present pathogen antigens to T cells, activating the adaptive immune system
 6. T cells coordinate the immune response, with helper T cells stimulating B cells to produce antibodies
 
-## Pillars of the Immune System
-
+## Immunity
+### Pillars of the Immune System
 - **Sleep**: Essential for immune function and cytokine production
 - **Physical Activity**: Enhances lymph circulation, facilitating immune cell movement
 - **Sun Exposure**: Primary source of Vitamin D, which supports immune function
 - **Hygiene**: Crucial for preventing exposure to many pathogens
 
-## Vitamins & Minerals
+### Vitamins & Minerals
 - **Vitamin D**:
     - Enhances pathogen-fighting effects of monocytes and neutrophils
     - Reduces inflammation
@@ -70,13 +70,20 @@ This system consists of a series of proteins that:
     - Modulates immune function
     - Supports health of cell membranes
 
-## Seasonality & Immunity
+### Seasonality
 Why do we tend to get sicker in winter?
 
 - Reduced sun exposure $\rightarrow$  Vitamin D deficiency
 - Drier air $\rightarrow$ Mucous membranes become less effective
 - More time indoors $\rightarrow$ Increased exposure to airborne pathogens
 - Cold exposure $\rightarrow$ Potential suppression of immune function
+
+## Infections
+### Colds
+- small viruses $\sim$ 5 $\mu m$
+- contagion is mostly done by touching eyes/face
+- people are contagious $\sim$ 6 days after peak symptoms
+
 
 ## Glossary
 

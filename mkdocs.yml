@@ -85,6 +85,7 @@ nav:
       - notes/code/makefile.md
       - notes/code/mkdocs.md
       - notes/code/ollama.md
+      - notes/code/postgres.md
       - Python:
           - notes/code/python.md
           - notes/code/python_import_rules.md
@@ -93,7 +94,6 @@ nav:
       - notes/code/setup.md
       - notes/code/ssh.md
       - notes/code/tensor_computation_librairies.md
-      - notes/code/vscode.md
       - notes/code/web.md
   - Health:
       - notes/health/cold_exposure.md
