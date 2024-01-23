@@ -2,6 +2,8 @@ version: "3.8"
 services:
   site:
     build:
+      args:
+        - db_arg=1
       context: .
       dockerfile: SiteDockerfile
     command: bash -c "pdm run update db && mkdocs build"
@@ -14,7 +16,7 @@ services:
       context: .
       dockerfile: ServerDockerfile
     ports:
-      - "8000:8000"
+      - "8001:8000"
     volumes:
       - site-volume:/app/src/site
       - database-volume:/app/src/database

@@ -1,4 +1,6 @@
-FROM python:3.11
+ARG db_arg
+
+FROM python:3.11 AS base
 
 WORKDIR /app
 
@@ -10,13 +12,30 @@ RUN pdm install
 ENV PATH="/app/.venv/bin:$PATH"
 
 RUN mkdir -p /app/src/database
+
+RUN pdm run manage makemigrations
 RUN pdm run manage migrate
+
+# Add user to new database
+FROM base AS db-1
 
 ENV DJANGO_SUPERUSER_USERNAME=db
 ENV DJANGO_SUPERUSER_PASSWORD=db123
 ENV DJANGO_SUPERUSER_EMAIL=your@mail.com
 
 RUN pdm run manage createsuperuser --noinput
+
+# Import existing database
+# Run the following to export data before:
+# pdm run manage dumpdata > dbdata.json
+FROM base AS db-2
+
+COPY dbdata.json ./dbdata.json
+RUN pdm run manage loaddata dbdata.json
+RUN rm -rf dbdata.json
+
+# Choose between the two
+FROM db-${db_arg} AS final
 
 COPY mkdocs.yml .
 COPY docs ./docs
