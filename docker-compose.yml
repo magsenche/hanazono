@@ -1,26 +1,41 @@
 version: "3.8"
 services:
+  db:
+    image: postgres:14
+    env_file:
+      - .env
+    environment:
+      POSTGRES_DB: ${PGDATABASE}
+      POSTGRES_USER: ${PGUSER}
+      POSTGRES_PASSWORD: ${PGPASSWORD}
+    restart: always
+    volumes:
+      - pgdata:/var/lib/postgresql/data
   site:
     build:
-      args:
-        - db_arg=1
       context: .
-      dockerfile: SiteDockerfile
-    command: bash -c "pdm run update db && mkdocs build"
+      dockerfile: Dockerfile
+    command: pdm run site
+    depends_on:
+      - db
+    env_file:
+      - .env
     volumes:
       - ./docs:/app/docs
-      - site-volume:/app/src/site
-      - database-volume:/app/src/database
+      - site:/app/src/site
   server:
     build:
       context: .
-      dockerfile: ServerDockerfile
+      dockerfile: Dockerfile
+    depends_on:
+      - db
+    env_file:
+      - .env
     ports:
-      - "8001:8000"
+      - "${SERVER_PORT}:8000"
     volumes:
-      - site-volume:/app/src/site
-      - database-volume:/app/src/database
+      - site:/app/src/site
     command: pdm run manage runserver 0.0.0.0:8000
 volumes:
-  site-volume:
-  database-volume:
+  site:
+  pgdata:

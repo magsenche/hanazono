@@ -15,15 +15,18 @@ dependencies = [
     "bs4>=0.0.1",
     "pytest-django>=4.5.2",
     "langchain>=0.0.331",
+    "psycopg>=3.1.17",
 ]
 requires-python = ">=3.11"
 readme = "README.md"
 license = { text = "MIT" }
 
 [tool.pdm.scripts]
-update = "python src/update.py"
+db = "python src/database.py"
 manage = "python src/manage.py"
 flashcard = "python src/flashcard.py"
+build = "mkdocs build"
+site = { composite = ["manage migrate", "db import", "db update", "build"] }
 
 [tool.pdm.scripts._]
 env_file = ".env"

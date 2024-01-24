@@ -9,6 +9,7 @@ import argparse
 import pathlib
 
 import mkdocs.config
+from django.core.management import call_command
 
 from leitner.models import Flashcard
 from leitner.utils import export_markdown, import_definitions, import_flashcards
@@ -65,15 +66,32 @@ def update_database(docs_dir):
             db_flashcard.delete()
 
 
+def import_database():
+    dbdata_path = os.getenv("DBDATA")
+    if dbdata_path is not None:
+        call_command("flush", verbosity=0, interactive=False)
+        log.info("Database flushed")
+        try:
+            call_command("loaddata", dbdata_path)
+        except:
+            log.info(f"Can't load data from {dbdata_path}")
+        else:
+            log.info(f"Data from {dbdata_path} imported into the database")
+    else:
+        log.info("No database to import")
+
+
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Update flashcards.")
-    parser.add_argument("command", choices=["md", "db"])
+    parser = argparse.ArgumentParser(description="Update, import or export database")
+    parser.add_argument("command", choices=["md", "update", "import"])
     args = parser.parse_args()
     config = mkdocs.config.load_config()
     notes_dir = pathlib.Path(config["docs_dir"]) / "notes"
     if args.command == "md":
         update_markdown(notes_dir)
-        log.info("markdown files updated")
-    elif args.command == "db":
+        log.info("Markdown files updated")
+    elif args.command == "update":
         update_database(notes_dir)
-        log.info("flashcards database updated")
+        log.info("Flashcards database updated")
+    elif args.command == "import":
+        import_database()
