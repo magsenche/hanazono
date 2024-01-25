@@ -8,7 +8,7 @@ services:
       POSTGRES_DB: ${PGDATABASE}
       POSTGRES_USER: ${PGUSER}
       POSTGRES_PASSWORD: ${PGPASSWORD}
-    restart: always
+    restart: unless-stopped
     volumes:
       - pgdata:/var/lib/postgresql/data
   site:
@@ -33,6 +33,7 @@ services:
       - .env
     ports:
       - "${SERVER_PORT}:8000"
+    restart: unless-stopped
     volumes:
       - site:/app/src/site
     command: pdm run manage runserver 0.0.0.0:8000
