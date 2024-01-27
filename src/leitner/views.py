@@ -6,6 +6,7 @@ from django.core.management import call_command
 from django.core.serializers import deserialize, serialize
 from django.http import FileResponse, HttpResponse, JsonResponse
 from django.shortcuts import redirect, render
+from django.utils import timezone
 
 from leitner.forms import FileUploadForm
 from leitner.models import Flashcard
@@ -92,12 +93,15 @@ def update_site(request):
 
 def export_data(request):
     if request.method == "GET":
-        output_file = pathlib.Path("flahscards_all.json")
         try:
             data = serialize("json", Flashcard.objects.all())
-            output_file.write_text(data)
-            log.info(f"Data exported into {output_file}")
-            return redirect(f"/admin")
+            filename = f"flashcards_{timezone.now().strftime('%d%m%y')}.json"
+            log.info(f"Data exported successfully")
+            return HttpResponse(
+                data,
+                content_type="application/json",
+                headers={"Content-Disposition": f"attachment; filename={filename}"},
+            )
         except Exception as e:
             log.error(f"Error exporting data: {str(e)}")
             return redirect(f"/admin")
