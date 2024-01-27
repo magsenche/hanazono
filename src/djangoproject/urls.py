@@ -21,6 +21,10 @@ from leitner import views
 
 urlpatterns = [
     path("", views.home, name="home"),
+    path("admin/update_site/", views.update_site, name="update_site"),
+    path("admin/export_data/", views.export_data, name="export_data"),
+    path("admin/import_data/", views.import_data, name="import_data"),
+    path("admin/reset_data/", views.reset_data, name="reset_data"),
     path("admin", admin.site.urls),
     path("daily_quiz", views.daily_quiz, name="daily_quiz"),
     path(

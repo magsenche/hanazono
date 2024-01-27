@@ -11,18 +11,6 @@ services:
     restart: unless-stopped
     volumes:
       - pgdata:/var/lib/postgresql/data
-  site:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    command: pdm run site
-    depends_on:
-      - db
-    env_file:
-      - .env
-    volumes:
-      - ./docs:/app/docs
-      - site:/app/src/site
   server:
     build:
       context: .
@@ -34,9 +22,8 @@ services:
     ports:
       - "${SERVER_PORT}:8000"
     restart: unless-stopped
+    command: sh -c "pdm run init & pdm run manage runserver 0.0.0.0:8000"
     volumes:
-      - site:/app/src/site
-    command: pdm run manage runserver 0.0.0.0:8000
+      - ./docs:/app/docs
 volumes:
-  site:
   pgdata:

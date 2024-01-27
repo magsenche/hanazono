@@ -1,0 +1,17 @@
+{% extends "admin/index.html" %}
+
+{% block content %}
+{{ block.super }}
+<div>
+    <a class="button" href="/admin/update_site">Udpate site</a>
+    <a class="button" href="/admin/export_data">Export database</a>
+    <a class="button" href="/admin/reset_data">Reset database</a>
+</div>
+<div>
+    <form method="post" enctype="multipart/form-data" action="{% url 'import_data' %}">
+        {% csrf_token %}
+        <input type="submit" value="Import database">
+        <input name="file" type="file">
+    </form>
+</div>
+{% endblock %}

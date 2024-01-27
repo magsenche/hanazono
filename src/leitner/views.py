@@ -1,10 +1,18 @@
+import pathlib
+
+import mkdocs.config
 from django.conf import settings
+from django.core.management import call_command
+from django.core.serializers import deserialize, serialize
 from django.http import FileResponse, HttpResponse, JsonResponse
 from django.shortcuts import redirect, render
 
+from leitner.forms import FileUploadForm
 from leitner.models import Flashcard
 from utils import logger
 
+config = mkdocs.config.load_config()
+notes_dir = pathlib.Path(config["docs_dir"]) / "notes"
 log = logger.custom(__name__)
 
 
@@ -65,3 +73,54 @@ def serve(request, path):
             return FileResponse(full_path.open("rb"))
         else:
             return FileResponse((settings.STATIC_ROOT / "404.html").open("rb"))
+
+
+def update_site(request):
+    if request.method == "GET":
+        try:
+            call_command("makemigrations")
+            call_command("migrate")
+            call_command("update", "db")
+            call_command("build")
+
+            log.info("Site updated")
+            return redirect(f"home")
+        except Exception as e:
+            log.error(f"Error updating site: {str(e)}")
+            return redirect(f"/admin")
+
+
+def export_data(request):
+    if request.method == "GET":
+        output_file = pathlib.Path("flahscards_all.json")
+        try:
+            data = serialize("json", Flashcard.objects.all())
+            output_file.write_text(data)
+            log.info(f"Data exported into {output_file}")
+            return redirect(f"/admin")
+        except Exception as e:
+            log.error(f"Error exporting data: {str(e)}")
+            return redirect(f"/admin")
+
+
+def import_data(request):
+    if request.method == "POST":
+        form = FileUploadForm(request.POST, request.FILES)
+        if form.is_valid():
+            file_obj = form.cleaned_data["file"]
+            try:
+                flashcards = list(deserialize("json", file_obj))
+                for fc in flashcards:
+                    fc.object.save()
+                    log.info(f"Imported {fc.object}")
+                return redirect(f"/admin/update_site/")
+            except Exception as e:
+                log.error(f"Can't load data from {file_obj.name}: {str(e)}")
+                return redirect(f"/admin")
+
+
+def reset_data(request):
+    if request.method == "GET":
+        Flashcard.objects.all().delete()
+        log.info("Database reseted")
+        return redirect(f"/admin")

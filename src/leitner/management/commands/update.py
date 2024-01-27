@@ -1,21 +1,31 @@
-import os
-
-import django
-
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "djangoproject.settings")
-django.setup()
-
-import argparse
 import pathlib
 
 import mkdocs.config
-from django.core.management import call_command
+from django.core.management.base import BaseCommand
 
 from leitner.models import Flashcard
 from leitner.utils import export_markdown, import_definitions, import_flashcards
 from utils import logger
 
 log = logger.custom(__name__)
+
+
+class Command(BaseCommand):
+    help = "Update flashcards."
+
+    def add_arguments(self, parser):
+        parser.add_argument("command", choices=["md", "db"])
+
+    def handle(self, *args, **options):
+        config = mkdocs.config.load_config()
+        notes_dir = pathlib.Path(config["docs_dir"]) / "notes"
+
+        if options["command"] == "md":
+            update_markdown(notes_dir)
+            log.info("Markdown files updated")
+        elif options["command"] == "db":
+            update_database(notes_dir)
+            log.info("Flashcards database updated")
 
 
 def update_markdown(docs_dir):
@@ -64,34 +74,3 @@ def update_database(docs_dir):
         if db_flashcard.question not in flashcards_in_md:
             log.info(f"Removed {db_flashcard}")
             db_flashcard.delete()
-
-
-def import_database():
-    dbdata_path = os.getenv("DBDATA")
-    if dbdata_path is not None:
-        call_command("flush", verbosity=0, interactive=False)
-        log.info("Database flushed")
-        try:
-            call_command("loaddata", dbdata_path)
-        except:
-            log.info(f"Can't load data from {dbdata_path}")
-        else:
-            log.info(f"Data from {dbdata_path} imported into the database")
-    else:
-        log.info("No database to import")
-
-
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Update, import or export database")
-    parser.add_argument("command", choices=["md", "update", "import"])
-    args = parser.parse_args()
-    config = mkdocs.config.load_config()
-    notes_dir = pathlib.Path(config["docs_dir"]) / "notes"
-    if args.command == "md":
-        update_markdown(notes_dir)
-        log.info("Markdown files updated")
-    elif args.command == "update":
-        update_database(notes_dir)
-        log.info("Flashcards database updated")
-    elif args.command == "import":
-        import_database()

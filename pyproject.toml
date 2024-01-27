@@ -22,11 +22,15 @@ readme = "README.md"
 license = { text = "MIT" }
 
 [tool.pdm.scripts]
-db = "python src/database.py"
-manage = "python src/manage.py"
 flashcard = "python src/flashcard.py"
-build = "mkdocs build"
-site = { composite = ["manage migrate", "db import", "db update", "build"] }
+manage = "python src/manage.py"
+init = { composite = [
+    "manage makemigrations",
+    "manage migrate",
+    "manage createuser --no-input",
+    "manage update db",
+    "manage build",
+] }
 
 [tool.pdm.scripts._]
 env_file = ".env"
