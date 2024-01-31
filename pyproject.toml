@@ -22,7 +22,6 @@ readme = "README.md"
 license = { text = "MIT" }
 
 [tool.pdm.scripts]
-flashcard = "python src/flashcard.py"
 manage = "python src/manage.py"
 init = { composite = [
     "manage makemigrations",
