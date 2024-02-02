@@ -35,7 +35,6 @@ theme:
         name: Switch to light mode
 
 markdown_extensions:
-  # Python Markdown
   - abbr
   - admonition
   - attr_list
@@ -45,20 +44,23 @@ markdown_extensions:
   - toc:
       permalink: true
       toc_depth: 4
-
-  # Python Markdown Extensions
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.betterem:
       smart_enable: all
   - pymdownx.caret
   - pymdownx.details
+  - pymdownx.emoji
   - pymdownx.highlight
   - pymdownx.inlinehilite
   - pymdownx.keys
   - pymdownx.mark
   - pymdownx.smartsymbols
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.tasklist:
