@@ -13,7 +13,6 @@ from leitner.models import Flashcard
 from utils import logger
 
 config = mkdocs.config.load_config()
-notes_dir = pathlib.Path(config["docs_dir"]) / "notes"
 log = logger.custom(__name__)
 
 
@@ -49,9 +48,9 @@ def daily_quiz(request):
         fc_htmls = [fc.html for fc in flashcards if fc.do_quiz()]
         quiz_html = "\n".join(fc_htmls)
         res = render(request, "quiz.html", {"quiz_html": quiz_html})
-        quiz_file = settings.STATIC_ROOT / f"notes/quiz/index.html"
+        quiz_file = settings.STATIC_ROOT / f"quiz/index.html"
         quiz_file.write_text(str(res.content, "utf-8"))
-        return redirect(f"/notes/quiz/")
+        return redirect(f"/quiz/")
 
 
 def serve_config(request):

@@ -18,13 +18,12 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         config = mkdocs.config.load_config()
-        notes_dir = pathlib.Path(config["docs_dir"]) / "notes"
 
         if options["command"] == "md":
-            update_markdown(notes_dir)
+            update_markdown(pathlib.Path(config["docs_dir"]))
             log.info("Markdown files updated")
         elif options["command"] == "db":
-            update_database(notes_dir)
+            update_database(pathlib.Path(config["docs_dir"]))
             log.info("Flashcards database updated")
 
 

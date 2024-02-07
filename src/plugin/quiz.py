@@ -25,7 +25,7 @@ class QuizPlugin(BasePlugin):
 
     def __init__(self) -> None:
         super().__init__()
-        self.quiz_uri = "notes/quiz.md"
+        self.quiz_uri = "quiz.md"
         self.md_file = None
         self.html_file = None
         self.flashcard_html_file = None
