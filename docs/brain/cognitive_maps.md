@@ -2,7 +2,7 @@
 
 ## World model
 
-**General knowledge $\times$ Specific knowledge $\Rightarrow$ [world model](../ai/world_model.md)**
+**General knowledge $\times$ Specific knowledge $\Rightarrow$ [world model](../artificial_intelligence/world_model.md)**
 
 ### Regularities
 Mammals organize knowledge by constructing models of the world: make us of **regularities** of the world to reduce memory and computational cost
