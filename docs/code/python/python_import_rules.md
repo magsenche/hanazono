@@ -119,5 +119,3 @@ from tini.model.encoder.vision import preprocessing
 
 y = preprocessing.mava(x) # apply mava preprocessing to some input x
 ```
-
-## Flashcards

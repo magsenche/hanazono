@@ -106,12 +106,11 @@ This can be explained because they have less inductive biases than CNN, so they 
 These models can also surpass CNN on high resolution  (cf paper on equivariance metric) do not struggle to model long range dependancies (all patches have a distance of one) in contrast to CNNs
 
 
-## Ressources
+## Resources
 
 - [Attention is all you need](https://arxiv.org/pdf/1706.03762.pdf)
 - [Pytorch tutorial](https://pytorch.org/tutorials/beginner/transformer_tutorial.html)
 
-## Flashcards
 ??? question "How does scaled-dot self-attention relates to a soft-dictionnary"
     - $Q$ Query: represent the word/token currently processed $Q_1=M_qV_1$
     - $K$ Key: represent all other words in the sequence used to compute attention weights $K_1=M_kV_1$

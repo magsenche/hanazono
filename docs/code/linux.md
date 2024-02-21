@@ -25,5 +25,3 @@ xdotool key ctrl+v
 xdotool key BackSpace
 xdotool key Up
 ```
-
-## Flashcards

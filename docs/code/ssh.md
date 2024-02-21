@@ -1,20 +1,14 @@
 # SSH
 
 ## Setup ssh
+
 1. generate ssh key pair on password
 ```bash title=""
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 ```
-
-2. copy the public key
-```bash title=""
-cat ~/.ssh/id_rsa.pub
-```
-
-3. add it
-      - to the service you want to connect to (ex github)
-      - to the host `ssh-copy-id -i ~/.ssh/id_rsa.pub gamnes@raspberrypi`
-      - by editing  `~/.ssh/authorized_keys`
+2. add it
+      - to the service you want to connect to (ex github) by copying it `cat ~/.ssh/id_rsa.pub`
+      - to the host `ssh-copy-id -i ~/.ssh/id_rsa.pub gamnes@raspberrypi` by editing  `~/.ssh/authorized_keys`
 
 ##  Vscode
 
@@ -26,5 +20,3 @@ cat ~/.ssh/id_rsa.pub
       HostName raspberrypi.local
       User pi
    ```
-
-## Flashcards

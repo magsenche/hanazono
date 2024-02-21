@@ -46,12 +46,11 @@ Dopamine interacts with the visual system. Physically focusing your visual atten
 ### Don’t Layer Too Many Sources of Dopamine
 When we layer too many sources of dopamine (e.g., preworkout energy drinks, plus music, plus friends/social connections, plus nootropics also known as “smart drugs,” etc.), it can increase dopamine and our energy and motivate us to work hard toward a goal. But stacking all these dopamine-triggering sources causes a crash afterward, ultimately undermining our longer-term motivation and continued drive. Instead, try to do some workouts without music or with just caffeine. Change it up.
 
-## Ressources
+## Resources
 ### Huberman labs
 - all comes from the [newsletter](https://www.hubermanlab.com/newsletter/tools-to-manage-dopamine-and-improve-motivation-and-drive)
 - podcast
 
-## Flashcards
 ??? question "What is dopamine's primary role in our emotions and perception?"
     Dopamine is linked to our sense of motivation, enhancing our focus and lowering our threshold for action. It is associated with wanting rather than having, shaping our perception of life and our feelings of capability.
 

@@ -24,5 +24,3 @@ Rendements faibles, imposition des bénéfices, les livrets bancaires sont utile
 
 ## PEL
 Le PEL n'est plus très intéressant son taux est inférieur au livret A. Ouvert avant 2018: soumis à CS si moins de 12 ans puis PFU après 12 ans. Ouvert après 2018: soumis à PFU.
-
-## Flashcards

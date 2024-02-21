@@ -52,6 +52,5 @@ Interlocuteur/orateur vs spectateur/auditeur suffisent pour définir les 4 dynam
 3. compétitive
 4. conflictuelle
 
-## Flashcards
 ??? question "What is the difference between convincing and manipulating in rhétoric?"
     Convincing involves using clear and respectful arguments that leave room for rejection, while manipulation aims to deceive and limit choices.

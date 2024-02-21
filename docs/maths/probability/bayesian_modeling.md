@@ -63,7 +63,6 @@ Only for continuous reports of a wolrd state. It's some measure of dispertion of
 ## References
 - [Bayesian Model for perception and action](https://www.cns.nyu.edu/malab/static/files/Bayesian_models_of_perception_and_action_v3.pdf)
 
-## Flashcards
 
 ??? question "List all steps of bayesian modeling"
     1. Generative Model

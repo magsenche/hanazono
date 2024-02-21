@@ -21,10 +21,10 @@ Other:
 ## Environment variables
 
 ```sh title=".env"
-PGDATABASE = "flashcard_db"
-PGHOST = "db"
-PGUSER =  "db_user"
-PGPASSWORD =  "db_pwd"
+PGDATABASE = "db"
+PGHOST = "host"
+PGUSER =  "user"
+PGPASSWORD =  "pwd"
 ```
 
 ## Docker image
@@ -51,5 +51,3 @@ The image will:
 - create a database and user when ran
 - expose 5432 port by default
 - create `/var/lib/postgresql/data` volume (so it's better to link it to existing one)
-
-## Flashcards

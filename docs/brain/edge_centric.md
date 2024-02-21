@@ -1,6 +1,6 @@
 # Edge centric view of the brain network
 
-## Ressources
+## Resources
 ### [Edges in brain networks: Contributions to models of structure and function](https://direct.mit.edu/netn/article/6/1/1/106931/Edges-in-brain-networks-Contributions-to-models-of)
 
 ![](fig/edge_centric_0.png)
@@ -11,7 +11,6 @@
 
 We may have a dual view of the brain with abstractly node/edges learning
 
-## Flashcards
 ??? question "How does the nature of the human brain differ from many other systems when considering the formation of connections in networks?"
     Unlike many systems where there's no inherent cost to forming a connection, the human brain, embedded in Euclidean space, requires material and energy for forming, maintaining, and signaling through axonal projections and white-matter tracts. These costs are significant at the level of edges in brain networks, where material and metabolic costs depend on geometric characteristics like the length and diameter of anatomical connections
 

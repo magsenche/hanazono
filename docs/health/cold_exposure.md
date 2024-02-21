@@ -54,11 +54,10 @@ The problem is that cold water immersion (but not cold showers) can limit some o
 ## Day or night?
 After cold exposure, your body heats up—yes, HEATS up. Body temperature increases tend to wake us up, whereas body temperature decreases tend to shift us toward sleepy states. Thus, I suggest using deliberate cold early in the day and not too close to bedtime. Sometimes it’s better to do it late than never, but not if it perturbs your sleep. If deliberate cold affects your sleep, try doing it earlier in the day, or not at all.
 
-## Ressources
+## Resources
 ### Huberman lab
 - all comes from the [newsletter](https://www.hubermanlab.com/newsletter/the-science-and-use-of-cold-exposure-for-health-and-performance)
 
-## Flashcards
 
 ??? question "How do you determine the right cold temperature for deliberate exposure?"
     The right temperature should evoke the thought, “This is really cold and I want to get out, BUT I can safely stay in.” This temperature varies for individuals; for some it might be 60°F, for others, 45°F.

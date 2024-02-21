@@ -20,5 +20,3 @@ class Person:
     age: int = 27
     job: str = "Engineer"
 ```
-
-## Flashcards

@@ -8,5 +8,3 @@ In mammals, navigation seems to rely on an **internal network keeping track of t
 - locomation
 - vestibular activation
 - optic flow
-
-## Flashcards

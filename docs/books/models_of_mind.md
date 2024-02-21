@@ -70,6 +70,5 @@ Chaos: when small perturbation are amplified. Outcomes look random but not at al
 Start with template maching
 Flaws of démon individually matching shapes. New solution is  pandemonium.
 
-## Flashcards
 ??? question "What is the concept behind extended cognition?"
     Extended cognition refers to the idea that certain cognitive processes occur outside of an organism's brain and rely on external tools or structures, such as language or mathematics. In this case, mathematics is considered an example of extended cognition because it relies on external symbols and rules to process information.

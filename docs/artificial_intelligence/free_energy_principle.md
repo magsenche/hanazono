@@ -65,7 +65,7 @@ This concept can be divided into:
 - Low road: A bottom-up approach that focuses on the brain's immediate actions.
 - High road: A top-down perspective emphasizing self-organization and non-equilibrium states.
 
-## Ressources
+## Resources
 
 [Vidéo interview Karl Friston](https://www.youtube.com/watch?v=KkR24ieh5Ow)
 
@@ -87,7 +87,6 @@ The inner screen model of consciousness applies the FEP directly to the study of
 
 A comprehensive article on Neurotech Berkeley delves into the intricacies of the Free Energy Principle, making it more accessible to a broader audience.
 
-## Flashcards
 ??? question "What is the Free Energy Principle (FEP)?"
     A theoretical framework suggesting every system minimizes its surprise or prediction error.
     It has implications for understanding cognition, behavior, and existence.

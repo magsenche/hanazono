@@ -39,11 +39,10 @@ The typical Western Diet (i.e., high fat, low fiber, higher in processed foods) 
 ## Don’t Over-Sanitize Your Environment
 Microbiota are present on any and all surfaces which have come into contact with the environment. Dr. Sonnenburg notes, “Exposure to microbes from the environment is likely an important part of educating our immune systems and keeping everything in the proper balance.” The gut microbiome is also populated from social interactions, including skin contact by shaking hands, hugging, kissing etc. and interactions with pets and dirt, and grass. Over-sanitization of our environments or excessive use of antibiotics can eliminate sources of good gut microbiota. While it is still important to eliminate the introduction of disease-causing pathogens and harmful environmental chemicals (e.g., pesticides), consider that many environmental microbes play an integral role in the establishment and maintenance of a healthy gut microbiome.
 
-## Ressources
+## Resources
 ### Huberman Lab
 - all is from the [newsletter](https://www.hubermanlab.com/newsletter/6-key-tools-to-improve-your-gut-microbiome-health)
 
-## Flashcards
 ??? question "What role do the microbiota in our gut play in our health?"
     Microbiota are essential for our immune, brain, and hormone health because they produce chemicals that impact our body's functions, including neurotransmitters like serotonin. They are crucial for both mental and physical health.
 

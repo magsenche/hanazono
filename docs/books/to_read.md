@@ -11,5 +11,3 @@
 - [ ] L’or noir 700 pages
 - [ ] Miracle dans les andes (crash équipe rugby)
 - [ ] 48 lois de pouvoir (raptor)
-
-## Flashcards

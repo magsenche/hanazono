@@ -248,7 +248,6 @@ False
 | $+      | Last matched string     | $+ represents the last matched string                                                    |
 | $&      | Entire matched string   | $& represents the entire matched string                                                  |
 
-## Flashcards
 
 ??? question "Regex: match an email adress"
     `^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$`

@@ -26,11 +26,10 @@ graph LR;
 - $Binomial(n=\lceil{b-a}\rceil,p=min(1,\lambda))$
 - $Poisson(\lambda=p\times n)$
 
-## Ressources
+## Resources
 
 - [CS 228 - Probabilistic Graphical Models](https://ermongroup.github.io/cs228-notes/)
 
-## Flashcards
 
 ??? question "What is a probabilistic graphical model?"
     A probabilistic graphical model is a statistical model that uses a graph to represent the conditional dependence structure between random variables. It is used to model systems where the variables are interdependent and the relationships between them are represented by edges in the graph.

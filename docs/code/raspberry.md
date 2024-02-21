@@ -29,6 +29,6 @@ network={
 }
 ```
 
-### Install necessary dependancies
+### Install python 3.11
 
-## Flashcards
+Follow this [answer](https://stackoverflow.com/a/76942080)

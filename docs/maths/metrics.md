@@ -48,7 +48,6 @@ En gros, ils projetent les features (high dim) dans une espace aléatoire de bas
 
 Un des problèmes de leur loss, c'est que avec leur metrique de transport optimal, ils perdent la structure (qui peut être très importante). Pour pallier ça, ils proposent de rajouter une feature qui encode cette structure (comme du positional encoding)
 
-## Flashcards
 
 ??? question "Interpretation of the KL div"
     - number of bits required for encoding samples of $P$ using a code optimized for $Q$ rather than one optimized for $P$

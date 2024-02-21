@@ -113,7 +113,7 @@ units with correlated responses to sine gratings images (Stage 2).
 
 Pretraining using sine grating images to pre-correlate nearby neurons (orientation,color,spatial frequency)
 
-## Ressources
+## Resources
 
 - [Modeling Category-Selective Cortical Regions with
 opographic Variational Autoencoders](https://arxiv.org/pdf/2110.13911.pdf)
@@ -123,7 +123,6 @@ selectivities in ventral temporal cortex](https://www.biorxiv.org/content/10.110
 role in categorization](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4143420/pdf/nihms612516.pdf)
 - [Spatial Embedding and Wiring Cost Constrain the Functional Layout of the Cortical Network of Rodents and Primates](https://journals.plos.org/plosbiology/article/file?id=10.1371/journal.pbio.1002512&type=printable)
 
-## Flashcards
 
 ??? question "What is a prominent feature of brain architecture seen in the VTC?"
     Superimposition of multiple functional maps and fine-scale clusters within the same cortical expanse.
@@ -135,6 +134,12 @@ role in categorization](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4143420/pdf
     - color
     - eccentricity bias
     - visual field maps
+    - specific domains
+    - expertise
+    - object categories
+    - concepts
+    - semantics
+    - real world object size
 
 ??? question "List all 3 levels of Marr's approach for understanding information processing systems"
     - computation

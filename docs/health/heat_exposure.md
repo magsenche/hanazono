@@ -38,11 +38,10 @@ In order to get maximum Growth Hormone release, use the sauna in a semi-fasted s
 
 To further increase metabolic gains, alternate periods of sauna with deliberate cold exposure during the rest periods. Read more about specific protocols for [cold exposure](cold_exposure.md).
 
-## Ressources
+## Resources
 ### Huberman lab
 - all comes from the [newsletter](https://www.hubermanlab.com/newsletter/deliberate-heat-exposure-protocols-for-health-and-performance)
 
-## Flashcards
 
 ??? question "How can regular sauna usage benefit cardiovascular health?"
     Regular sauna use can reduce risks of cardiovascular events and strokes. It triggers mechanisms similar to cardiovascular exercise, causing increased heart rate and blood flow. Blood vessels expand to regulate body temperature.

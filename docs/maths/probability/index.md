@@ -83,6 +83,10 @@
 
 ## Properties
 
+### Central Limit Theorem
+`Central Limit Theorem`
+: Under appropriate conditions, the distribution of a normalized version of the sample mean converges to a standard normal distribution.
+
 ### Chain rule
 $f_{X,Y}=f_{X|Y}f_{Y}$
 
@@ -149,7 +153,6 @@ $$f_{θ|Y}(θ|y)= \frac{f_{Θ}(θ)f_{Y|Θ}(y|θ)}{f_{Y}(y)} \rightarrow \frac{p(
 | the **probability of $θ$** changes based on the observed value of $d$ | the **distribution of $θ$** is shaped or characterized by the value of $d$ |
 | conditional probability where **$d$ is a random variable**            | $d$ is not a random variable but a **parameter or set of conditions**      |
 
-## Flashcards
 ??? question "What's the chain rule for conditonnal probabilities?"
     $f_{X,Y|Z}=f_{X|Y,Z}f_{Y|Z}$
 

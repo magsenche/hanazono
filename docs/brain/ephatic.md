@@ -4,7 +4,7 @@
 - "ephapse" derived from the greek "act of touch"
 - "synapse" derived from the greek "act of linking"
 
-## Ressources
+## Resources
 ### [A mathematical model of ephaptic interactions in neuronal fiber pathways](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7462434/pdf/netn-04-595.pdf)
 
 ### [Papier de patrick](https://www.researchgate.net/publication/359636101_Associative_Memory_Formation_and_Perception_A_Consideration_of_How_Ephaptic_Cortical_Field_Interference_Excites_Branched_Pyramidal_Neuron_Axons_to_Link_with_Synchronously_Activated_Primary_Cortical_Se)
@@ -26,7 +26,6 @@ Other models with different diameter for nerve fibers
 > Heterogeneity of the axonal diameters has a dispersive effect, and that a higher level of heterogeneity requires stronger ephaptic coupling to achieve full synchronisation between spikes
 
 
-## Flashcards
 ??? question "Ethymoligie of ephapse and synapse"
     - "ephapse" derived from the greek "act of touch"
     - "synapse" derived from the greek "act of linking"

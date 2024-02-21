@@ -27,6 +27,4 @@ Résultat:
 
 **2019** Sommet Russie Afrique a Sotchi. Armes vs voix à l’ONU ou contrats miniers. Permis d’exploitation en centre Afrique. Russie laisse l’Arménie dans la merde avec l’Azerbaïdjan, puis siffle la fin de la partie.
 
-## Ressources
-
-## Flashcards
+## Resources
