@@ -13,7 +13,6 @@ It also plays a crucial role in:
 - consciousness
 - emotional responses
 
-## Flashcards
 ??? question " What is the function of the thalamus?"
     The thalamus is the central hub for all senses and integrates many areas of the Central Nervous System.
 

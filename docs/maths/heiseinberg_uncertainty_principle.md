@@ -10,5 +10,3 @@ Trade-off:
 - only wide signals correlates with short range of frenquencies
 
 [The more general uncertainty principle, regarding Fourier transforms](https://www.youtube.com/watch?v%3DMBnnXbOM5S4)
-
-## Flashcards

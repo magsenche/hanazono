@@ -5,7 +5,7 @@
 
 Personal project based on neural cellular automata to generate and understand textures
 
-## Ressources
+## Resources
 ### Texture synthesis
 [Wood texture generation](http://www.cs.cornell.edu/projects/wood/simulating_the_structure_and_texture_of_solid_wood.pdf)
 
@@ -26,5 +26,3 @@ Texture Generation with Neural Cellular Automata:
 
 ## Datasets
 https://pytorch.org/vision/stable/generated/torchvision.datasets.DTD.html
-
-## Flashcards

@@ -45,12 +45,11 @@ Specific code
 - Boundary cells: code for boundaries
 - Head direction cells: direction the anoi!al is facing
 
-## Ressources
+## Resources
 ### [Spatial Computing enables flexible working memory](https://picower.mit.edu/news/spatial-computing-enables-flexible-working-memory)
 > Study shows that the brain creates distinct spaces in the cortex for each general rule and controls those patches with brain rhythms
 > Your brain can do this because it represents the rules and the contents at different physical scales
 
-## Flashcards
 ??? question "What is the primary way mammals organize knowledge?"
     By constructing models of the world that make use of the regularities of the world to reduce memory and computational cost
 

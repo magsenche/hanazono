@@ -22,8 +22,6 @@ class CustomServer(BasePlugin):
         return server
 ```
 
-## Ressources
+## Resources
 
 - official [dev guide](https://www.mkdocs.org/dev-guide/plugins/)
-
-## Flashcards

@@ -27,5 +27,3 @@ Uses Icosahedron as manifolds ![Icosahedron](fig/gauge_equivariance_icosahedron.
 The icosahedron is a regular solid with 20 faces, 30 edges, and 12 vertices  it has 60 rotational symmetries which is A5
 
 Whereas general manifolds, and even spheres, do not admit completely regular and symmetrical pixelations, we can define an almost perfectly regular grid of pixels on the icosahedron.
-
-## Flashcards

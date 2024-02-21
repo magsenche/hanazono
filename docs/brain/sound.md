@@ -39,7 +39,6 @@ Some problems:
  - Hallucinations auditives: [effet McGurk](https://fr.wikipedia.org/wiki/Effet_McGurk)
  - V1, A1, S1 anatomically interconnected
 
-## Flashcards
 
 ??? question "What are the roles of IHC and OHC in the auditory system?"
     IHC is responsible for 95% of projection and sensory transduction, while OHC accounts for 5% of projections and provides signal amplification.

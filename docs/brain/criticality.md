@@ -1,6 +1,6 @@
 # Criticality
 
-## Ressources
+## Resources
 ### [Theoretical foundations of studying criticality in the brain](https://direct.mit.edu/netn/article/6/4/1148/112392/Theoretical-foundations-of-studying-criticality-in)
 
 `Neurophysics`
@@ -20,7 +20,6 @@ Why is it evolutionnary advantaged? $\Rightarrow$ more sensitive to changes in i
 
 At critical point, information transmission is **optimal**
 
-## Flashcards
 
 ??? question "How does the darwinian perspective explain the brain's tendency towards criticality?"
     From a Darwinian perspective, the brain might feature criticality because the most informative parts of the external world primarily occur at a boundary between purely ordered and purely disordered states. In a purely ordered world, information would be trivial, while in a purely disordered world, it would be incomprehensible

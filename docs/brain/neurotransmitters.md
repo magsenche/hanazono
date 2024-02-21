@@ -6,19 +6,10 @@
 ## Dopamine
 [Dopamine note](../health/dopamine.md)
 
-## Adrenaline
-Also know as **epinephrine**.
-
-### Effects
-- fight-or-flight response
-- blood sugar levels
-- heart rate
-
 ## Noradrenaline
 Also known as **norepinephrine**
 
-### Effects
-It mobilizes body for action.
+It mobilizes body for action: **fight-or-flight** reponse. It is continuously released by the body, at low levels.
 
 In the brain:
 
@@ -34,9 +25,17 @@ In the rest of the body:
 - triggers the release of glucose from energy stores
 - increases blood flow to skeletal muscle
 - reduces blood flow to the gastrointestinal system
-- inhibits voiding of the bladder and gastrointestinal motility
+- inhibits voiding of the bladder and gastrointestinal mobility
 
-### Release
+## Adrenaline
+Also know as **epinephrine**
+
+Quite the same role as it's precurssor, the noradrenaline. However, it's released in large bursts in response to specific stimuli.
+
+- fight-or-flight response
+- blood sugar levels
+- heart rate
+
 Norepinephrine release is lowest during sleep, rises during wakefulness, and reaches much higher levels during situations of stress or danger, in the so-called fight-or-flight response
 
 ## Serotonin
@@ -56,7 +55,6 @@ In the rest of the body:
 - helps regulate sleep
 - can cause diarrhea or constipation when levels are too high
 
-### Release
 Serotonin release is highest during sleep, drops during wakefulness, and rises again during stressful situations.
 
 ## Acetylcholine
@@ -75,7 +73,6 @@ In the rest of the body:
 - stimulates digestion and appetite
 - controls heart rate and blood pressure
 
-### Release
 Acetylcholine release is highest during arousal and attention, and drops during sleep.
 
 ## Glutamate
@@ -94,7 +91,6 @@ In the rest of the body:
 - stimulates digestion and appetite
 - controls heart rate and blood pressure
 
-### Release
 Glutamate release is highest during arousal and attention, and drops during sleep.
 
 ## GABA
@@ -113,10 +109,8 @@ In the rest of the body:
 - stimulates digestion and appetite
 - controls heart rate and blood pressure
 
-### Release
 GABA release is highest during relaxation and sleep, and drops during arousal and attention.
 
-## Flashcards
 
 ??? question "Biosynthesis of adrenaline"
     L-phenylalanine $\rightarrow$ L-tyrosine $\rightarrow$ L-Dopa -> Dopamine $\rightarrow$ Noradrenaline $\rightarrow$ Adrenaline
@@ -133,7 +127,7 @@ GABA release is highest during relaxation and sleep, and drops during arousal an
     - triggers the release of glucose from energy stores
     - increases blood flow to skeletal muscle
     - reduces blood flow to the gastrointestinal system
-    - inhibits voiding of the bladder and gastrointestinal motility
+    - inhibits voiding of the bladder and gastrointestinal mobility
 
 ??? question "What is the main role of glutamate in the body?"
     - regulates muscle contraction
@@ -151,3 +145,7 @@ GABA release is highest during relaxation and sleep, and drops during arousal an
     - regulates muscle contraction
     - stimulates digestion and appetite
     - controls heart rate and blood pressure.
+
+??? question "What is the difference between noradrenaline and adrenaline?"
+    - Noradrenaline is released continuously by the nervous system at low levels
+    - Adrenaline is stored in adrenal glands and released in large bursts in response to specific stimuli

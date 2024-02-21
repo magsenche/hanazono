@@ -148,7 +148,6 @@ if __name__ == "__main__":
 start_response("200 OK", [("Access-Control-Allow-Origin", "*")])
 ```
 
-## Flashcards
 
 ??? question "Run a server to handle a post request sending a number"
     ```python title="server.py"
@@ -156,7 +155,7 @@ start_response("200 OK", [("Access-Control-Allow-Origin", "*")])
     app = flask.Flask(__name__)
     @app.route('/number', methods=['POST'])
     def number_route():
-        number flask.request.json.get("number")
+        number = flask.request.json.get("number")
         return f"Received {number}", 200
     if __name__ == "__main__":
         app.run()

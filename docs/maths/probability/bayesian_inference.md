@@ -128,13 +128,10 @@ Leads to posterior mean estimate
 ### Absolute error
 Leads to median estimate
 
-## Ressources
+## Resources
 - [Bayesian inference](https://vioshyvo.github.io/Bayesian_inference/index.html)
 - [Bayesian Model for perception and action](https://www.cns.nyu.edu/malab/static/files/Bayesian_models_of_perception_and_action_v3.pdf)
-- [Variational Inference](https://gregorygundersen.com/blog/2021/04/16/variational-inference/)
-- [Why Metropolis-Hastings works](https://gregorygundersen.com/blog/2019/11/02/metropolis-hastings/)
 
-## Flashcards
 ??? question "In which case is it impossible to differentiate two distributions using $\hat{\theta}_{MLE}$ or $\hat{\theta}_{MAP}$"
     Two distributions with the same mode/max cannot be differenciated by MLE or MAP
 

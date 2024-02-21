@@ -43,7 +43,7 @@ Cons:
 
 Scaling represents how many time a sample is presented to the map. It is a statistical representation of how many best matching nodes are in the map. It's as if the map covered the domain multiple times.
 
-## Ressources
+## Resources
 
 ### [Spontaneous emergence of topologically robust grid cell modules: A multiscale instability theory](https://www.biorxiv.org/content/10.1101/2021.10.28.466284v1.full.pdf)
 [thread twitter](https://twitter.com/FieteGroup/status/1455269014117105664?s=20&t=uIBKxkSFMzGfl8ou7CN-8A)
@@ -56,7 +56,6 @@ En accord avec les resultats experimentaux concernant les ratios d'echelle entre
 
 Utilisation de "Continuous Attractor Networks" pour la modélisation neuronale.
 
-## Flashcards
 ??? question "What are the main constraints from which self-organization emerges?"
     - energetic constraints (cost of connection induces stronger connectivity with neighbors)
     - topological constraints of inputs/outputs (spatially and semantically structured inputs/outputs)

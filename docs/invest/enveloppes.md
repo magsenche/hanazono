@@ -56,7 +56,7 @@ Le compte-titres ordinaire permet de loger les titres que vous possédez. Avec l
 
 En parallèle, vous devez détenir un compte espèces qui sera débité du montant de vos achats et des frais, et crédité du montant des ventes et des revenus de vos titres (dividendes, coupons, intérêts). Ce compte courant peut être spécialement ouvert pour assurer le fonctionnement du compte-titres, mais le compte bancaire que vous utilisez quotidiennement peut également faire l’affaire.
 
-[Ressources AMF](https://www.amf-france.org/fr/espace-epargnants/comprendre-les-produits-financiers/supports-dinvestissement/compte-titres)
+[Resources AMF](https://www.amf-france.org/fr/espace-epargnants/comprendre-les-produits-financiers/supports-dinvestissement/compte-titres)
 
 ### Fiscalité
 A la différence du PEA qui permet à son détenteur de profiter de certaines conditions fiscales avantageuses, lorsque les titres sont déposés sur un compte-titres ordinaire, on est nécessairement soumis à l'imposition des revenus de valeurs mobilières et des plus-values de cessions de titres. A cette imposition sur les revenus s'ajoutent les prélèvements sociaux.
@@ -84,7 +84,6 @@ Le PEE est doublement intéressant: les gains sont défiscalisés et l'employeur
 ### Blocage
 5 ans mais nombreuses possibilités de déblocage
 
-## Flashcards
 
 ??? question "Que privilégier entre le PEA et le CTO, et pourquoi?"
     PEA > CTO: à remplir avant d'ouvrir un compte titre (CTO)

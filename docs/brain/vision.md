@@ -2,7 +2,7 @@
 # Vision
 
 ## Foveal vision
-### Ressources
+### Resources
 #### [Biologically Inspired Deep Learning Model for Efficient Foveal-Peripheral Vision](https://www.frontiersin.org/articles/10.3389/fncom.2021.746204/full)
 It has been estimated that processing costs for the brain are reduced by a factor of 350 times less than a hypothetical full-resolution visual signal received at the human retina.
 
@@ -16,5 +16,3 @@ Log polar
 
 #### [ECG](https://ieeexplore.ieee.org/abstract/document/71367)
 Similar sampling method using concentric squares instead of circles
-
-## Flashcards

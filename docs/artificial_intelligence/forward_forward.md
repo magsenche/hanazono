@@ -18,5 +18,3 @@ Recurrent video processing
 ![](fig/forward_forward_1.jpeg)
 ![](fig/forward_forward_2.jpeg)
 ![](fig/forward_forward_3.jpeg)
-
-## Flashcards

@@ -12,7 +12,6 @@ We observe that in this first model of the hypercolumnar structure there are thr
 
 Perception is, at least implicitly, a probabilistic inference process, in which the organism attempts to infer the most probable state of the world, using sensory inputs and all relevant knowledge at its disposal
 
-## Flashcards
 ??? question "What is the hypercolumnar structure? How does it relate to simple cells in the motor cortex?"
     The hypercolumnar structure means that for every retinal position, there's a set of cells (hypercolumn) sensitive to all possible orientations.
 

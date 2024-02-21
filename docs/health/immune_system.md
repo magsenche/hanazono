@@ -53,22 +53,10 @@ This system consists of a series of proteins that:
 - **Hygiene**: Crucial for preventing exposure to many pathogens
 
 ### Vitamins & Minerals
-- **Vitamin D**:
-    - Enhances pathogen-fighting effects of monocytes and neutrophils
-    - Reduces inflammation
-    - Influences mood and hormone production
-- **Magnesium**:
-    - Supports normal immune function
-    - Involved in cell signaling
-    - Has anti-inflammatory properties
-- **Zinc**:
-    - Crucial for the development and function of immune cells
-    - Acts as an antioxidant
-    - Supports skin health
-- **Omega-3**:
-    - Reduces inflammation
-    - Modulates immune function
-    - Supports health of cell membranes
+- **[Vitamin D](./micronutrient.md#vitamin-d)**
+- **[Magnesium](./micronutrient.md#magnesium)**
+- **[Zinc](./micronutrient.md#zinc)**
+- **[Omega-3](./micronutrient.md#omega-3)**
 
 ### Seasonality
 Why do we tend to get sicker in winter?
@@ -133,14 +121,13 @@ Why do we tend to get sicker in winter?
 | Toxins                   | Harmful substances (typically small molecules or proteins) produced by living organisms, including some pathogens.                                                                                                                                                                                          |
 | Vaccine                  | A substance that triggers an immune response against a pathogen without causing an infection. If the immune system encounters the same type of pathogen later, it can destroy the pathogen more quickly and efficiently than if the individual had not had a vaccine.                                       |
 
-## Ressources
+## Resources
 
 - [Immune system anatomy](https://media.hhmi.org/biointeractive/click/immune-system/#/immune-system-anatomy/introduction)
 - [Exemple d’une réaction contre un microbe](https://www.ipubli.inserm.fr/bitstream/handle/10608/10043/SKS_2009_Auto-immunite_02ch.pdf?sequence=5&isAllowed=y)
 - [The innate and adaptive immune systems](https://www.ncbi.nlm.nih.gov/books/NBK279396/)
 - Raptor podcast
 
-## Flashcards
 
 ??? question "Describe the response and components of the innate immune system"
     The innate immune system's response is **local**, **immediate** and **non-specific**
@@ -178,19 +165,7 @@ Why do we tend to get sicker in winter?
     4. **Hygiene**: Crucial for preventing exposure to many pathogens
 
 ??? question "List all 4 minerals and vitamines essential the immune system"
-    - **Vitamin D**:
-        - Enhances pathogen-fighting effects of monocytes and neutrophils
-        - Reduces inflammation
-        - Influences mood and hormone production
-    - **Magnesium**:
-        - Supports normal immune function
-        - Involved in cell signaling
-        - Has anti-inflammatory properties
-    - **Zinc**:
-        - Crucial for the development and function of immune cells
-        - Acts as an antioxidant
-        - Supports skin health
-    - **Omega-3**:
-        - Reduces inflammation
-        - Modulates immune function
-        - Supports health of cell membranes
+    - **Vitamin D**
+    - **Magnesium**
+    - **Zinc**
+    - **Omega-3**

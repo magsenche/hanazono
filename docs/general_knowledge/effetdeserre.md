@@ -23,5 +23,5 @@ En fait, le rayonnement de la terre te de l'atmosphere (avec/sans effet de serre
 
 La difference entre avec/sans ES est la provenance du rayonnement (surface vs couches de l'atmosphere)
 
-## Ressources
+## Resources
 - [Science etonnante](https://www.youtube.com/watch?v=ewc8FBtEKPs)

@@ -74,12 +74,11 @@ CS: 17,2%
 
 check [/r/vosfinances](https://www.reddit.com/r/vosfinances/wiki/index/risques/)
 
-## Ressources
+## Resources
 - Martingale (podcast)
 - Reddit [vos finances](https://www.reddit.com/r/vosfinances/)
 - Site de l'[AMF](https://www.amf-france.org)
 
-## Flashcards
 ??? question "Quels sont les biais cognitifs liés à l'investissement?"
     1. **Biais de confirmation**: regarder nos actions qui montent, pas trop celles qui baissent
     2. **Biais de disposition/Aversion à la perte**: garder des actions perdantes, Vendre celles qui montent. Peu de risque au gain, bcp à la perte

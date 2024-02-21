@@ -119,5 +119,3 @@ Interdiction de faire des recherche sur internet (enabled, disabled: paramètre 
 
 ### Discussions
 - [Why does ChatGPT can't replace Google Search yet?](https://twitter.com/mmitchell_ai/status/1605013368560943105?s=20&t=tZXedkY_jjJNajlfGrnr5w)
-
-## Flashcards

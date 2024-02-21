@@ -260,9 +260,7 @@ class Command(BaseCommand):
 ### Database client
 Use the `dbshell` command to launch the database client
 
-## Ressources
+## Resources
 ### Django documentation
 - [Djangoproject](https://www.djangoproject.com/)
 - [Tutorials](https://docs.djangoproject.com/en/4.2/intro/) with 8 parts
-
-## Flashcards

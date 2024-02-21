@@ -50,7 +50,6 @@ $\frac{1}{2\pi}$ and $\frac{1}{N}$ to ensure $\hat{F}(F(f)) = f$, depending on t
 | Heaviside Step Function | $H(t)$                                | $-\frac{i}{\omega} + \pi\delta(\omega)$                                 |
 | Constant                | $A$                                   | $2\pi A\delta(\omega)$                                                  |
 
-## Flashcards
 
 ??? question "List 5 properties of fourier transform"
     | Property                  | Time Domain                                          | Frequency Domain                                      |

@@ -111,5 +111,3 @@ Produits spéculatifs non régulés, un petit investissement est possible dans u
 1. Statut social
 2. Spéculation
 3. Valeur d'usage (e.g. skin)
-
-## Flashcards

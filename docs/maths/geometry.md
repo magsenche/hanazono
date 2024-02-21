@@ -35,7 +35,6 @@ Examples with circle as a manifold, segment as the fiber:
 `Tangent space`
 : The tangent space defines a coordinate system locally on a manifold
 
-## Flashcards
 
 ??? question "List all properties of a group"
     - $+$ interne composistion

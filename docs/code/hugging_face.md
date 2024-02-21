@@ -192,9 +192,8 @@ trainer.train()
 
 
 
-## Ressources
+## Resources
 
-## Flashcards
 
 ??? question "What is the order of the language modeling pipeline?"
     The tokenizer handles text and returns IDs. The model handles these IDs and outputs a prediction. The tokenizer can then be used once again to convert these predictions back to some text

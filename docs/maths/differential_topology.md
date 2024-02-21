@@ -20,5 +20,3 @@ Soit $V$ une sous-variété d’une variété.
 Tout atlas lisse sur induit par restriction un atlas lisse sur $V$.
 
 Deux tels atlas sont équivalents et définissent donc une structure de variété.
-
-## Flashcards

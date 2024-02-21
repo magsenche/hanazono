@@ -1,3 +1,5 @@
+# Docker
+
 ## Definitions
 
 `Docker Image`
@@ -5,6 +7,92 @@
 
 `Docker Container`
 : A container is an isolated, lightweight runtime instance derived from an image. Essentially, when an image is executed, it becomes a container. Containers encapsulate the application along with its dependencies, offering a consistent and reproducible setting. This means applications can run reliably across various computing contexts, be it a developer's local machine or a production server.
+
+## Docker cli
+=== "Docker Hub"
+    ```bash title="Login into Docker"
+    docker login -u <username>
+    ```
+
+    ```bash title="Publish an image to Docker Hub"
+    docker push <username>/<image_name>
+    ```
+
+    ```bash title="Search Hub for an image"
+    docker search <image_name>
+    ```
+
+    ```bash title="Pull an image from a Docker Hub"
+    docker pull <image_name>
+    ```
+
+=== "Images"
+    ```bash title="Build an Image from a Dockerfile"
+    docker build -t <image_name> -f Dockerfile
+    ```
+
+    ```bash title="Build an Image from a Dockerfile without the cache"
+    docker build -t <image_name> . –no-cache -f Dockerfile
+    ```
+
+    ```bash title="List local images"
+    docker images
+    ```
+
+    ```bash title="Delete an Image"
+    docker rmi <image_name>
+    ```
+
+    ```bash title="Remove all unused images"
+    docker image prune
+    ```
+
+=== "Containers"
+    ```bash title="Create and run a container from an image, with a custom name"
+    docker run --name <container_name> <image_name>
+    ```
+
+    ```bash title="Run a container with and publish a container’s port(s) to the host"
+    docker run -p <host_port>:<container_port> <image_name>
+    ```
+
+    ```bash title="Run a container in the background"
+    docker run -d <image_name>
+    ```
+
+    ```bash title="Start or stop an existing container"
+    docker start|stop <container_name> (or <container-id>)
+    ```
+    ```bash title="Remove a stopped container"
+    docker rm <container_name>
+    ```
+
+    ```bash title="Open a shell inside a running container"
+    docker exec -it <container_name> sh
+    ```
+
+    ```bash title="Fetch and follow the logs of a container"
+    docker logs -f <container_name>
+    ```
+
+    ```bash title="To inspect a running container"
+    docker inspect <container_name> (or <container_id>)
+    ```
+
+    ```bash title="To list currently running containers"
+    docker ps
+    ```
+
+=== "Share images & container"
+    ```bash title="Share docker images"
+    docker save postgres > db.tar
+    docker load < postgres
+    ```
+
+    ```bash title="Share docker container"
+    docker export postgres > db.tar
+    docker import < postgres
+    ```
 
 ## Dockerfile
 ```docker title="Dockerfile"
@@ -101,7 +189,6 @@ volumes:
 Nginx is a versatile tool, commonly used as a web server, load balancer, or reverse proxy. In a Docker environment, Nginx can be containerized and configured to direct traffic to other containers, ensuring efficient communication and load distribution.
 
 ### Dockerizing Nginx
-
 ```dockerfile title="Dockerfile.nginx"
 # Use the official Nginx image as a base
 FROM nginx:latest
@@ -127,10 +214,9 @@ http {
 }
 ```
 
-In the configuration above, Nginx listens on port 80 and proxies incoming requests to a backend service. You'd replace your_backend_service_address:port with the address and port of your actual backend service, which could be another Docker container.
+In the configuration above, Nginx listens on port 80 and proxies incoming requests to a backend service. You'd replace `your_backend_service_address:port` with the address and port of your actual backend service, which could be another Docker container.
 
 ### How to integrate Nginx with another service
-
 ```yaml title="docker-compose.yml"
 version: '3.8'
 services:
@@ -149,8 +235,6 @@ services:
 In this setup, the Nginx container would proxy requests to the webapp container.
 
 Access the application through your browser or API client on port 80, and Nginx will handle the proxying to your web application.
-
-## Flashcards
 
 ??? question "Docker: What does the RUN instruction do in a Dockerfile"
     It executes commands during the image building phase
@@ -173,7 +257,7 @@ Access the application through your browser or API client on port 80, and Nginx 
 ??? question "Docker: how does ENV instruction benefit a Docker container?"
      It sets environment variables for processes inside the container
 
-??? question "Docker: difference between ENTRYPOINt and CMD"
+??? question "Docker: difference between ENTRYPOINT and CMD"
     ENTRYPOINT determines the default command when the container starts, while CMD specifies the default command for the container when it runs but can be overridden
 
 ??? question "Why use nginx in a containerzied environment?"

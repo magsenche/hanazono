@@ -44,7 +44,6 @@ The hippocampus is a structure located in the medial temporal lobe of the brain 
 - interacts with other areas of the brain, such as the amygdala, to regulate stress responses and learning.
 - interacts with other structures in the brain to maintain homeostasis and regulate cognitive functions.
 
-## Flashcards
 ??? question "What is the role of the hippocampus?"
     - plays an important role in memory formation and consolidation
     - regulats stress responses and learning

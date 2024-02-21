@@ -60,7 +60,6 @@ $\frac{\partial \bold{y}}{\partial \bold{x}}=(\frac{\partial y_j}{\partial x_i})
 - [https://sassafras13.github.io/ReparamTrick/](https://sassafras13.github.io/ReparamTrick/)
 - [https://gregorygundersen.com/blog/2018/04/29/reparameterization/](https://gregorygundersen.com/blog/2018/04/29/reparameterization/)
 
-## Flashcards
 
 ??? question "Properties of 4 deltas"
     | $\Delta$                        | $d$                                                       | $\partial$                                                                | $\delta$                                  |
