@@ -18,8 +18,7 @@ class ButtonPlugin(BasePlugin):
                 button_element = self._generate_button(btn_details)
                 section_class.insert_after(button_element)
 
-        souped_html = soup.prettify(soup.original_encoding)
-        return souped_html
+        return str(soup)
 
     def _generate_button(self, details):
         button = Tag(name="a", attrs={"class": "custombutton", "href": details["link"]})

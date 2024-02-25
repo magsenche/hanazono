@@ -56,7 +56,7 @@ class QuizPlugin(BasePlugin):
                 id_element = soup.find(string=lambda text: "id: " + fc.id in text)
                 if id_element:
                     fc_html = id_element.find_parents("details")[0]
-                    fc.html = fc_html.prettify(soup.original_encoding)
+                    fc.html = str(fc_html)
                     fc.save()
 
             # Prepare for the quiz template
@@ -66,7 +66,7 @@ class QuizPlugin(BasePlugin):
                     "{% block article_content %}Default content{% endblock %}"
                 )
                 article_tag.replace_with(new_content)
-            flashcard_html = soup.prettify(soup.original_encoding)
+            flashcard_html = str(soup)
             self.flashcard_html_file.write_text(flashcard_html)
 
         return output

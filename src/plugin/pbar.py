@@ -1,5 +1,5 @@
 import re
-
+import pathlib
 from bs4 import BeautifulSoup, Tag
 from mkdocs.plugins import BasePlugin
 
@@ -18,5 +18,4 @@ class ProgressBarPlugin(BasePlugin):
                 },
             )
             pbar.replace_with(new_pbar)
-        new_content = soup.prettify(soup.original_encoding)
-        return new_content
+        return str(soup)
