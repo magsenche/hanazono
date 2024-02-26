@@ -7,9 +7,6 @@ site_dir: src/site
 theme:
   logo: assets/logo.png
   favicon: assets/logo.png
-  font:
-    text: Quicksand
-    code: Fira Code
   name: material
   features:
     - content.code.annotate
@@ -81,7 +78,6 @@ extra_css:
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
   - stylesheet/extra.css
   - stylesheet/admonition.css
-  - stylesheet/progress.css
 plugins:
   - button:
       buttons:
