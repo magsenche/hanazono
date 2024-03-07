@@ -14,6 +14,11 @@
 - expected excess surprise from using $Q$ as a model when the actual distribution is $P$
 - relative entropy of $P$ w.r.t $Q$
 
+??? question "Interpretation of the KL div"
+    - number of bits required for encoding samples of $P$ using a code optimized for $Q$ rather than one optimized for $P$
+    - expected excess surprise from using $Q$ as a model when the actual distribution is $P$
+    - relative entropy of $P$ w.r.t $Q$
+
 ### Properties
 
 - divergence
@@ -38,6 +43,12 @@
 - minimum energy cost of moving a pile of dirt in the shape of one probability distribution to the shape of the other distribution
 - hard to compute
 
+??? question "List 3 properties of the wasserstein metric"
+    - also named Earth Mover’s distance
+    - linked to optimal transport
+    - minimum energy cost of moving a pile of dirt in the shape of one probability distribution to the shape of the other distribution
+    - hard to compute
+
 ### Sliced Wasserstein loss
 
 [A Sliced Wasserstein Loss for Neural Texture Synthesis](https://arxiv.org/pdf/2006.07229.pdf)
@@ -47,15 +58,3 @@ De manière général, pour faire du style transfer, on utilise les matrices de 
 En gros, ils projetent les features (high dim) dans une espace aléatoire de basse dimension, puis ils font une metrique de transport optimal dans cet espace.
 
 Un des problèmes de leur loss, c'est que avec leur metrique de transport optimal, ils perdent la structure (qui peut être très importante). Pour pallier ça, ils proposent de rajouter une feature qui encode cette structure (comme du positional encoding)
-
-
-??? question "Interpretation of the KL div"
-    - number of bits required for encoding samples of $P$ using a code optimized for $Q$ rather than one optimized for $P$
-    - expected excess surprise from using $Q$ as a model when the actual distribution is $P$
-    - relative entropy of $P$ w.r.t $Q$
-
-??? question "List 3 properties of the wasserstein metric"
-    - also named Earth Mover’s distance
-    - linked to optimal transport
-    - minimum energy cost of moving a pile of dirt in the shape of one probability distribution to the shape of the other distribution
-    - hard to compute

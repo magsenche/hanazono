@@ -4,6 +4,9 @@
 
 > A third feature of brain architecture that is manifested in the VTC is the **superimposition of multiple functional maps and fine-scale clusters within the same cortical expanse**. Superimposition of functional representations may be a necessary **consequence of projecting a high-dimensional representational space onto the two-dimensional cortical sheet**. The dimensionality of representations in the **VTC is estimated between 35 to 50 dimensions**.
 
+??? question "What is a prominent feature of brain architecture seen in the VTC?"
+    Superimposition of multiple functional maps and fine-scale clusters within the same cortical expanse.
+
 Visual categorization occuring in Ventral Temporal Cortex **VTC**. After V1-4 in the human visual stream.
 It contains information about:
 
@@ -17,13 +20,35 @@ It contains information about:
 - semantics
 - real world object size
 
+??? question "Where does visual categorization occur after V1-4 in the human visual stream?"
+    In the Ventral Temporal Cortex (VTC).
+
+??? question "Name three types of information contained in the VTC"
+    - color
+    - eccentricity bias
+    - visual field maps
+    - specific domains
+    - expertise
+    - object categories
+    - concepts
+    - semantics
+    - real world object size
+
 They propose that a nested sptial hierarchy enables efficient categorization. It enables flexible access to category information through multiple sclaes of abstraction.
+
+??? question "What is the role of the VTC in visual information processing?"
+    To disentangle tangled representations coming from V1 and allow flexible access to category information based on context or task
 
 Marr approach for understanding information processing systems involves 3 levels:
 
 1. **Computation**: what does the system do?
 2. **Representation**: how does it achieve its goal?
 3. **Neural implementation**: how is it implemented in the brain?
+
+??? question "List all 3 levels of Marr's approach for understanding information processing systems"
+    - computation
+    - representation
+    - neural implementation
 
 ### Computation
 
@@ -44,13 +69,15 @@ With separable representation its faster to categorize. Disantagle tangled repre
 VTC should allow flexible accesss to category information, depending on the context or the task
 
 ### Representation
-
 Evidences showing VTC representations are
 - primarily driven by shape and content
 - more tolrant to position, size and mirror rotation transformations
 - linearly separable in contrast with V1-hV4 representations
 
 VTC responses represent perceived similarity more than physical similarity
+
+??? question "How do VTC responses differ from V1-hV4 responses?"
+    VTC responses represent perceived similarity more than physical similarity and are primarily driven by shape and content
 
 ### Implementation
 
@@ -65,6 +92,9 @@ Multiple levels and scales of clustering:
 - maps
   - within a region (for example, a retinotopic map)
   - across regions (>10 mm; for example, an eccentricity band, which can span several visual areas)
+
+??? question "Describe the levels of clustering in VTC"
+    Columns (1 mm), patches (5 mm), regions (10 mm), and maps (within and across regions)
 
 > Consistent topology of functional representations relative to anatomical landmarks and to each other is meaningful: it reveals that particular axes of representational spaces are physically implemented as axes in anatomical space and, furthermore, that anatomical constraints might determine the topology of functional representations
 
@@ -83,7 +113,6 @@ Divergence vs convergence. They are both beneficial:
 
 
 ## Topographic Deep Artificial Neural Network
-
 [A Unifying Principle for the Functional Organization of Visual Cortex](https://www.biorxiv.org/content/10.1101/2023.05.18.541361v1.full.pdf) & [code](https://github.com/neuroailab/TDANN)
 
 `TDANN`
@@ -94,13 +123,19 @@ Divergence vs convergence. They are both beneficial:
 - support ecologically-relevant behaviors $\Rightarrow$ produce useful neural representations
 - biophysically efficient manner, using as few ressources as possible $\Rightarrow$ minimize of neuronal wiring length
 
+??? question "What is the primary objective of the TDANN model?"
+    To predict functional organization in cortical areas of the primate visual system in a biophysically efficient manner
+
 TDANN reproduces the functional organization of the ventral stream:
 
 - smooth orientation, maps with pinwheels in an earlier model layer
 - category-selective patches in a later layer that match the number, size, and relative geometry of patches in human VTC.
 
-#### Overview of Training
+??? question "Name the two main constraints of TDANN"
+    - support ecologically-relevant behaviors
+    - minimize neuronal wiring length
 
+#### Overview of Training
 In summary, models are trained in 6 steps:
 
 1. ResNet-18 is trained on the task loss only.
@@ -122,42 +157,3 @@ selectivities in ventral temporal cortex](https://www.biorxiv.org/content/10.110
 - [The functional architecture of the ventral temporal cortex and its
 role in categorization](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4143420/pdf/nihms612516.pdf)
 - [Spatial Embedding and Wiring Cost Constrain the Functional Layout of the Cortical Network of Rodents and Primates](https://journals.plos.org/plosbiology/article/file?id=10.1371/journal.pbio.1002512&type=printable)
-
-
-??? question "What is a prominent feature of brain architecture seen in the VTC?"
-    Superimposition of multiple functional maps and fine-scale clusters within the same cortical expanse.
-
-??? question "Where does visual categorization occur after V1-4 in the human visual stream?"
-    In the Ventral Temporal Cortex (VTC).
-
-??? question "Name three types of information contained in the VTC"
-    - color
-    - eccentricity bias
-    - visual field maps
-    - specific domains
-    - expertise
-    - object categories
-    - concepts
-    - semantics
-    - real world object size
-
-??? question "List all 3 levels of Marr's approach for understanding information processing systems"
-    - computation
-    - representation
-    - neural implementation
-
-??? question "What is the role of the VTC in visual information processing?"
-    To disentangle tangled representations coming from V1 and allow flexible access to category information based on context or task
-
-??? question "How do VTC responses differ from V1-hV4 responses?"
-    VTC responses represent perceived similarity more than physical similarity and are primarily driven by shape and content
-
-??? question "Describe the levels of clustering in VTC"
-    Columns (1 mm), patches (5 mm), regions (10 mm), and maps (within and across regions)
-
-??? question "What is the primary objective of the TDANN model?"
-    To predict functional organization in cortical areas of the primate visual system in a biophysically efficient manner
-
-??? question "Name the two main constraints of TDANN"
-    - support ecologically-relevant behaviors
-    - minimize neuronal wiring length

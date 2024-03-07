@@ -2,6 +2,9 @@
 
 ## [Geometric Deep Learning: Grids, Groups, Graphs, Geodesics, and Gauges](https://arxiv.org/pdf/2104.13478.pdf)
 
+??? question "What the basic idea of geometric deep learning"
+    Applying deep learning to surfaces or manifolds while respecting and preserving their underlying geometry
+
 ## Problem-Dependent Structure
 
 The choice of the appropriate level of structure depends on the problem.
@@ -23,11 +26,12 @@ Understand the geometry of the input domain. Utilize:
 - coarsening operators.
 
 ## Shifts and Convolutions
-
 Convolutions are linear shift-equivariant operations, and any shift-equivariant linear operator is a convolution.
 
-## Invariances in Manifolds
+??? question "Relation between convolution and shift-invariant linear operator"
+    Convolutions are linear shift-equivariant operations, and any shift-equivariant linear operator is a convolution.
 
+## Invariances in Manifolds
 Manifolds exhibit invariance in transformations that preserve metric structure and local reference frame changes.
 
 ## Advantages of Manifold Models
@@ -36,15 +40,7 @@ Manifolds exhibit invariance in transformations that preserve metric structure a
 - enable ignoring the internal structure of objects and are suitable for modeling non-rigid deformations, such as those found in the human body
 
 ## Geodesics
-
 Among all the curves connecting points $u$ and $v$ on a manifold, we seek $\gamma$ that minimizes the length functional.
 
 `Geodesic`
 :  It is a generalization of the notion of a "straight line". Curve representing in some sense the shortest path (arc) between two points in a surface, or more generally in a Riemannian manifold.
-
-
-??? question "What the basic idea of geometric deep learning"
-    Applying deep learning to surfaces or manifolds while respecting and preserving their underlying geometry
-
-??? question "Relation between convolution and shift-invariant linear operator"
-    Convolutions are linear shift-equivariant operations, and any shift-equivariant linear operator is a convolution.

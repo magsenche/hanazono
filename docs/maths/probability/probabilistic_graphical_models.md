@@ -6,6 +6,9 @@ Class of statistical models that represent the relationships between variables i
 
 Used to model systems in which the variables are interdependent, and the relationships between the variables are represented by edges in the graph.
 
+??? question "What is a probabilistic graphical model?"
+    A probabilistic graphical model is a statistical model that uses a graph to represent the conditional dependence structure between random variables. It is used to model systems where the variables are interdependent and the relationships between them are represented by edges in the graph.
+
 ## Example
 
 ``` mermaid
@@ -26,14 +29,6 @@ graph LR;
 - $Binomial(n=\lceil{b-a}\rceil,p=min(1,\lambda))$
 - $Poisson(\lambda=p\times n)$
 
-## Resources
-
-- [CS 228 - Probabilistic Graphical Models](https://ermongroup.github.io/cs228-notes/)
-
-
-??? question "What is a probabilistic graphical model?"
-    A probabilistic graphical model is a statistical model that uses a graph to represent the conditional dependence structure between random variables. It is used to model systems where the variables are interdependent and the relationships between them are represented by edges in the graph.
-
 ??? question "Identify the following graphical model"
     === "Question"
         - $Uniform(a,b)$
@@ -53,3 +48,7 @@ graph LR;
             R --> S;
             S --> T[Poisson];
         ```
+
+## Resources
+
+- [CS 228 - Probabilistic Graphical Models](https://ermongroup.github.io/cs228-notes/)

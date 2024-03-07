@@ -13,6 +13,15 @@ The innate immune system's response is **local**, **immediate** and **non-specif
 - **Natural Killer Cells**: A type of cytotoxic cell that targets virus-infected cells and tumors
 - **Dendritic Cells**: Capture pathogens and present their antigens to cells of the adaptive immune system
 
+??? question "Describe the response and components of the innate immune system"
+    The innate immune system's response is **local**, **immediate** and **non-specific**
+
+    - **Skin**: Acts as a natural barrier against pathogens
+    - **Mucous Membranes**: Protective linings in the nasal, oral, intestinal, and urogenital tracts
+    - **Macrophages**: Cells that engulf and digest pathogens
+    - **Natural Killer Cells**: A type of cytotoxic cell that targets virus-infected cells and tumors
+    - **Dendritic Cells**: Capture pathogens and present their antigens to cells of the adaptive immune system
+
 ### Adaptive Immune System
 Specific response tailored to the pathogen and has memory of past infections
 
@@ -24,6 +33,18 @@ Specific response tailored to the pathogen and has memory of past infections
     - Cytotoxic T cells directly attack and kill infected cells
     - Regulatory T cells suppress the immune system, preventing over-activity
 - **Antibodies**: Proteins that bind specifically to pathogens or their products
+
+??? question "Describe the adaptive immune system"
+    Specific response tailored to the pathogen and has memory of past infections
+
+    - **B Lymphocytes (B cells)**:
+        - Produce antibodies that neutralize pathogens
+        - Create immunological memory
+    - **T Lymphocytes (T cells)**:
+        - Helper T cells stimulate B cells and other T cells
+        - Cytotoxic T cells directly attack and kill infected cells
+        - Regulatory T cells suppress the immune system, preventing over-activity
+    - **Antibodies**: Proteins that bind specifically to pathogens or their products
 
 ### Complement System
 This system consists of a series of proteins that:
@@ -45,6 +66,14 @@ This system consists of a series of proteins that:
 5. Dendritic cells present pathogen antigens to T cells, activating the adaptive immune system
 6. T cells coordinate the immune response, with helper T cells stimulating B cells to produce antibodies
 
+??? question "What are the 6 steps of the immune response sequence?"
+    1. Pathogen breaches barrier $\rightarrow$ Activation of macrophages
+    2. Macrophages engulf the pathogen $\rightarrow$ Digestion through enzymes
+    3. Release of cytokines to alert the body of an infection $\rightarrow$ Inflammation $\rightarrow$ Increase in phagocytes, cytokines, and vasodilation
+    4. Cytokines differentiate into interleukins
+    5. Dendritic cells present pathogen antigens to T cells, activating the adaptive immune system
+    6. T cells coordinate the immune response, with helper T cells stimulating B cells to produce antibodies
+
 ## Immunity
 ### Pillars of the Immune System
 - **Sleep**: Essential for immune function and cytokine production
@@ -52,11 +81,23 @@ This system consists of a series of proteins that:
 - **Sun Exposure**: Primary source of Vitamin D, which supports immune function
 - **Hygiene**: Crucial for preventing exposure to many pathogens
 
+??? question "List all 4 pillars of healthy immune system"
+    1. **Sleep**: Essential for immune function and cytokine production
+    2. **Physical Activity**: Enhances lymph circulation, facilitating immune cell movement
+    3. **Sun Exposure**: Primary source of Vitamin D, which supports immune function
+    4. **Hygiene**: Crucial for preventing exposure to many pathogens
+
 ### Vitamins & Minerals
 - **[Vitamin D](./micronutrient.md#vitamin-d)**
 - **[Magnesium](./micronutrient.md#magnesium)**
 - **[Zinc](./micronutrient.md#zinc)**
 - **[Omega-3](./micronutrient.md#omega-3)**
+
+??? question "List all 4 minerals and vitamines essential the immune system"
+    - **Vitamin D**
+    - **Magnesium**
+    - **Zinc**
+    - **Omega-3**
 
 ### Seasonality
 Why do we tend to get sicker in winter?
@@ -127,45 +168,3 @@ Why do we tend to get sicker in winter?
 - [Exemple d’une réaction contre un microbe](https://www.ipubli.inserm.fr/bitstream/handle/10608/10043/SKS_2009_Auto-immunite_02ch.pdf?sequence=5&isAllowed=y)
 - [The innate and adaptive immune systems](https://www.ncbi.nlm.nih.gov/books/NBK279396/)
 - Raptor podcast
-
-
-??? question "Describe the response and components of the innate immune system"
-    The innate immune system's response is **local**, **immediate** and **non-specific**
-
-    - **Skin**: Acts as a natural barrier against pathogens
-    - **Mucous Membranes**: Protective linings in the nasal, oral, intestinal, and urogenital tracts
-    - **Macrophages**: Cells that engulf and digest pathogens
-    - **Natural Killer Cells**: A type of cytotoxic cell that targets virus-infected cells and tumors
-    - **Dendritic Cells**: Capture pathogens and present their antigens to cells of the adaptive immune system
-
-??? question "Describe the adaptive immune system"
-    Specific response tailored to the pathogen and has memory of past infections
-
-    - **B Lymphocytes (B cells)**:
-        - Produce antibodies that neutralize pathogens
-        - Create immunological memory
-    - **T Lymphocytes (T cells)**:
-        - Helper T cells stimulate B cells and other T cells
-        - Cytotoxic T cells directly attack and kill infected cells
-        - Regulatory T cells suppress the immune system, preventing over-activity
-    - **Antibodies**: Proteins that bind specifically to pathogens or their products
-
-??? question "What are the 6 steps of the immune response sequence?"
-    1. Pathogen breaches barrier $\rightarrow$ Activation of macrophages
-    2. Macrophages engulf the pathogen $\rightarrow$ Digestion through enzymes
-    3. Release of cytokines to alert the body of an infection $\rightarrow$ Inflammation $\rightarrow$ Increase in phagocytes, cytokines, and vasodilation
-    4. Cytokines differentiate into interleukins
-    5. Dendritic cells present pathogen antigens to T cells, activating the adaptive immune system
-    6. T cells coordinate the immune response, with helper T cells stimulating B cells to produce antibodies
-
-??? question "List all 4 pillars of healthy immune system"
-    1. **Sleep**: Essential for immune function and cytokine production
-    2. **Physical Activity**: Enhances lymph circulation, facilitating immune cell movement
-    3. **Sun Exposure**: Primary source of Vitamin D, which supports immune function
-    4. **Hygiene**: Crucial for preventing exposure to many pathogens
-
-??? question "List all 4 minerals and vitamines essential the immune system"
-    - **Vitamin D**
-    - **Magnesium**
-    - **Zinc**
-    - **Omega-3**

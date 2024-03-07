@@ -5,6 +5,11 @@
 arp -a
 ```
 
+??? question "Get ip of all device connected to local network"
+    ```bash title=""
+    arp -a
+    ```
+
 ## HTTP Request methods
 
 ### GET
@@ -59,6 +64,12 @@ Host: example.com
 curl -X DELETE "http://example.com/delete-data?id=123"
 ```
 
+??? question "List all 4 http request methods along with their usage"
+    - `GET` : request data from server
+    - `POST`: send data to server
+    - `PUT`: update data to server
+    - `DELETE`: delete data from server
+
 
 ## Server
 
@@ -93,6 +104,24 @@ if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8080)  # Replace with your desired host and port
 
 ```
+
+??? question "Run a server to handle a post request sending a number"
+    ```python title="server.py"
+    import flask
+    app = flask.Flask(__name__)
+    @app.route('/number', methods=['POST'])
+    def number_route():
+        number = flask.request.json.get("number")
+        return f"Received {number}", 200
+    if __name__ == "__main__":
+        app.run()
+    ```
+
+??? question "Write a POST request sending a number to localhost on a server running on port 5000"
+    ```bash title=""
+    curl -X POST -H "Content-Type: application/json" -d '{"number": 42}' http://localhost:5000/number
+    ```
+
 
 ### [http.server](https://docs.python.org/3/library/http.server.html)
 
@@ -147,32 +176,3 @@ if __name__ == "__main__":
 ```python
 start_response("200 OK", [("Access-Control-Allow-Origin", "*")])
 ```
-
-
-??? question "Run a server to handle a post request sending a number"
-    ```python title="server.py"
-    import flask
-    app = flask.Flask(__name__)
-    @app.route('/number', methods=['POST'])
-    def number_route():
-        number = flask.request.json.get("number")
-        return f"Received {number}", 200
-    if __name__ == "__main__":
-        app.run()
-    ```
-
-??? question "Write a POST request sending a number to localhost on a server running on port 5000"
-    ```bash title=""
-    curl -X POST -H "Content-Type: application/json" -d '{"number": 42}' http://localhost:5000/number
-    ```
-
-??? question "List all 4 http request methods along with their usage"
-    - `GET` : request data from server
-    - `POST`: send data to server
-    - `PUT`: update data to server
-    - `DELETE`: delete data from server
-
-??? question "Get ip of all device connected to local network"
-    ```bash title=""
-    arp -a
-    ```

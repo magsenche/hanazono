@@ -6,6 +6,9 @@ This comprehensive guide dives into the key components of a well-designed sleep 
 ### Greet the Day with Light
 Embrace the natural light spectrum by **stepping outside within the first hour of waking**. This helps regulate your circadian rhythm, promoting daytime alertness and smoother transitions into sleep at night. Aim for 10 minutes on bright days, 20 minutes on cloudy days, and 30-60 minutes in overcast conditions. If sunlight is scarce, consider an artificial light therapy device.
 
+??? question "How can sunlight exposure improve sleep?"
+    Morning & afternoon sun exposure regulates your circadian rhythm, promoting daytime alertness and smoother sleep transitions. Aim for 10-60 minutes depending on cloud cover.
+
 ### Evening Wind-Down
 Mimic the natural sunset by dimming bright lights and avoiding blue-emitting screens in the hours leading up to bedtime. This promotes the production of melatonin, a sleep hormone that signals your body that it is time to get ready for sleep.
 
@@ -36,16 +39,12 @@ Minimize noise distractions by using earplugs, a white noise machine, or soundpr
 ### Mind the Caffeine Cut-off
 While caffeine can provide that afternoon pick-me-up, its stimulating effects can linger for hours. **Avoid caffeine consumption within 8-10 hours of bedtime** (ideally 12-14 hours) to prevent sleep disturbances.
 
+??? question "What's the best caffeine cut-off time for better sleep?"
+    Avoid caffeine 8-10 hours, ideally 12-14 hours before bedtime to prevent sleep disruption.
+
 ### Supplementing for Success
 Consider incorporating [magnesium](./micronutrient.md#magnesium), apigenin, theanine, glycine, or GABA into your bedtime routine. However, it's crucial to start with one supplement at a time and monitor its effects. Remember, individual needs vary, and some people may experience side effects.
 
 ## Resources
 
 - [hubermanlab toolkit for sleep](https://www.hubermanlab.com/newsletter/toolkit-for-sleep)
-
-
-??? question "What's the best caffeine cut-off time for better sleep?"
-    Avoid caffeine 8-10 hours, ideally 12-14 hours before bedtime to prevent sleep disruption.
-
-??? question "How can sunlight exposure improve sleep?"
-    Morning & afternoon sun exposure regulates your circadian rhythm, promoting daytime alertness and smoother sleep transitions. Aim for 10-60 minutes depending on cloud cover.

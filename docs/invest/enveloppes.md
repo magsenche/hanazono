@@ -43,6 +43,10 @@ Composé de deux parties:
 [reddit PEA](https://www.reddit.com/r/vosfinances/wiki/index/pea/)
 [fiche PEA](https://www.amf-france.org/sites/institutionnel/files/2019-12/fiche_inc_2019_pea2.pdf)
 
+??? question "Que privilégier entre le PEA et le CTO, et pourquoi?"
+    PEA > CTO: à remplir avant d'ouvrir un compte titre (CTO)
+    La fiscalité est plus interessante CS à 17,2% vs PFU à 30%
+
 ### Blocage
 Non bloqué mais le retrait avant 5 ans entraîne PFU sur les gains et la clôture du compte (réouvrable instantanément cela dit)
 
@@ -83,8 +87,3 @@ Le PEE est doublement intéressant: les gains sont défiscalisés et l'employeur
 
 ### Blocage
 5 ans mais nombreuses possibilités de déblocage
-
-
-??? question "Que privilégier entre le PEA et le CTO, et pourquoi?"
-    PEA > CTO: à remplir avant d'ouvrir un compte titre (CTO)
-    La fiscalité est plus interessante CS à 17,2% vs PFU à 30%

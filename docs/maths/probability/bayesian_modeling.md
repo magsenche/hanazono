@@ -38,6 +38,22 @@ The response distribution $p(\hat{s}|s)$ is the distribution of the stimulus est
     5. **Model comparison** using summary statistics
     6. **Evaluate absolute goodness of fit**
 
+??? question "List all steps of bayesian modeling"
+    1. Generative Model
+        - Graph
+        - Equations
+    2. Bayesian inference (decision rule)
+        - Comptute the posterior
+        - Specify the read-out of the posterior
+    3. Response probabilities
+    4. Model fitting and model comparison
+        - Compute the parameter log likelihood
+        - Maximize the parameter log likelihood
+        - Obtain fits to summary statistics
+        - Formulate alternative models
+        - Model comparison
+        - Evaluate absolute goodness of fit
+
 ## Noise, Uncertainty, Variability
 - **Noise** to the process by which the observations are generated, it's **trial-to-trial variability**.
 - **Uncertainty** reflects the **observer's knowledge** about variables in the world. It's subjective and noise can be a source of uncertainty.
@@ -62,23 +78,6 @@ Only for continuous reports of a wolrd state. It's some measure of dispertion of
 
 ## References
 - [Bayesian Model for perception and action](https://www.cns.nyu.edu/malab/static/files/Bayesian_models_of_perception_and_action_v3.pdf)
-
-
-??? question "List all steps of bayesian modeling"
-    1. Generative Model
-        - Graph
-        - Equations
-    2. Bayesian inference (decision rule)
-        - Comptute the posterior
-        - Specify the read-out of the posterior
-    3. Response probabilities
-    4. Model fitting and model comparison
-        - Compute the parameter log likelihood
-        - Maximize the parameter log likelihood
-        - Obtain fits to summary statistics
-        - Formulate alternative models
-        - Model comparison
-        - Evaluate absolute goodness of fit
 
 ??? question "Posterior mean estimate exercice"
     === "Question"

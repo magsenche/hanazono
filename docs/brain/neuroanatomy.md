@@ -12,6 +12,10 @@ The amygdala is a small almond-shaped structure located in the temporal lobe of 
 
 - interacts with other areas of the brain, such as the hippocampus, to regulate stress responses and learning
 
+??? question "What is the main role of the amygdala?"
+    - plays an important role in the processing of emotions and memories, particularly those related to fear and anxiety
+    - regulates stress responses and learning
+
 ## Cerebellum
 The cerebellum is a structure located at the back of the brain that is responsible for coordinating muscle movements and maintaining balance.
 
@@ -48,7 +52,3 @@ The hippocampus is a structure located in the medial temporal lobe of the brain 
     - plays an important role in memory formation and consolidation
     - regulats stress responses and learning
     - maintains homeostasis and regulate cognitive functions
-
-??? question "What is the main role of the amygdala?"
-    - plays an important role in the processing of emotions and memories, particularly those related to fear and anxiety
-    - regulates stress responses and learning

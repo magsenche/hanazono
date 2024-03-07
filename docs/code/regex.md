@@ -72,6 +72,9 @@ False
     - expects the `@` symbol, followed by the domain name, which can have alphanumeric characters and hyphens
     - looks for a period and a domain suffix (like `com` or `net`)
 
+??? question "Regex: match an email adress"
+    `^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$`
+
 !!! example "url `https?://[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(/[\w&%?#-]+)*`"
     - starts with the `http` or `https` protocol, followed by `://`
     - matches the domain name and optional path components, which can contain alphanumeric characters, underscores, percents, question marks, hashes, and hyphens
@@ -85,6 +88,9 @@ False
 
     - the `(?!...)` part is a negative lookahead that ensures the filename doesn't start with `backup_`
     - the `(?:...)` part is a non-capturing group for the file extensions
+
+??? question "Regex: match filenames that are not prefixed with `backup_` and ends with the extensions `.jpg`, `.jpeg`, or `.png`"
+    `(?i)^(?!backup_).*\.(?:jpg|jpeg|png)$`
 
 !!! example "number not preceded by `$` or `£` `(?<![£$])\b\d+\b`"
     This pattern matches numbers that are not immediately preceded by either a `$` or a `£` symbol
@@ -247,10 +253,3 @@ False
 | $'      | After matched string    | $' represents the portion of the string after the matched string                         |
 | $+      | Last matched string     | $+ represents the last matched string                                                    |
 | $&      | Entire matched string   | $& represents the entire matched string                                                  |
-
-
-??? question "Regex: match an email adress"
-    `^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$`
-
-??? question "Regex: match filenames that are not prefixed with `backup_` and ends with the extensions `.jpg`, `.jpeg`, or `.png`"
-    `(?i)^(?!backup_).*\.(?:jpg|jpeg|png)$`
