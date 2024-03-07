@@ -3,8 +3,6 @@
 ## Asitop
 NVTOP like for M1 Mac
 
-TODO: install
-
 ## isort
 use isort to sort python imports
 - install `pipx install isort`
@@ -36,6 +34,23 @@ store all packages after an `npm install`
 - install via `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
 - TODO: custom aliases
 
+### dotfiles
+[What should/shouldn't go in .zshenv, .zshrc, .zlogin, .zprofile, .zlogout?](https://unix.stackexchange.com/a/71258)
+
+#### `.zshenv`
+You can put environment variable in `.zshenv`
+
+```sh title=".zshenv"
+export MY_KEY="<key>"
+OTHER_KEY="<other_key>"
+```
+
+???+ tip
+    When `export` is used, it makes the variable available to subprocessed as well
+
+???+ warning
+    It will most of the time **override** environment variables in `.env` file
+
 ## Pdm
 Use [pdm](https://pdm.fming.dev/2.9/) as python package and dependency manager
 
@@ -46,6 +61,7 @@ Use [pdm](https://pdm.fming.dev/2.9/) as python package and dependency manager
     - `pdm info`, `pdm config`
 - do not fill name, version etc in the `pyproject.toml` to avoid editable package issues
 - store environment variable in `.env`; only works if run command with `pdm run mycmd`
+- using the src layout, just make a `pdm add .` to editably install the project
 
 ```python title="pyproject.toml"
 [tool.pdm]
@@ -92,6 +108,7 @@ Use [pipx](https://pypa.github.io/pipx/) for python tools used on several projec
 ## VsCode
 - [download](https://code.visualstudio.com/download)
 - install using mac software manager
+- can also be installed using `brew install code`
 
 Extensions:
 

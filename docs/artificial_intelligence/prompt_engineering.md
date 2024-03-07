@@ -3,7 +3,7 @@
 
 - **start simple** and add elements and context as you aim for better results: it's an iterative process
 - **use commands** to instruct the model what you want to do, e.g. "write", "translate", "summarize"
-- **separate instructions from context** by using some clear separators such as "### Instruction ###"
+- **separate instructions from context** by using some clear separators such as ‘### Instruction ###‘
 - **say what to do, not what not to do**
 - **be very specific** as the more descriptive the prompt is, the better the results
 
@@ -27,6 +27,10 @@ Decides how deterministic the model is.
 - High `top_p` $\rightarrow$ **diverse**
 
 `top_p` decides how many possible words to consider. It will only consider words that together add up to `top_p` of the total proability. Also called nucleus sampling. Generally we tweak either `temperature` or `top_p` but not both.
+
+??? question "What are the `temperature` and `top_p` parameters for? "
+    - `temperature` controls the creativity of the model by changing how often the model outputs a less likely token
+    - `top_p` controls how deterministic a model is by deciding how many words to consider
 
 ### Max length
 Limits the number of token the model generates.
@@ -109,6 +113,14 @@ Samples questions with diversity and generates reasoning chains to construct the
 #### Self-consistency
 Samples a diverse set of reasoning paths instead of only taking the greedy one, and then selects the most consistent answer by marginalizing out the sampled reasoning paths. Idea from [Self-Consistency Improves Chain of Thought Reasoning in Language Models](https://arxiv.org/pdf/2203.11171.pdf).
 
+??? question "What is COT (Chain-Of-Thought)? Name few example of other techniques related to it"
+    **COT** enables complex reasoning capabilities through intermediate reasoning steps provided as context.
+    Some methods improve the original techniques:
+
+    - Zero-shot COT
+    - Auto-COT
+    - Self-consistency
+
 ### Prompt chaining
 Splits the task into subtasks with the idea to create a chain of prompt operations.
 
@@ -188,6 +200,9 @@ Combines an information retrieval componenent with a text generator model. It al
 2. concatenates as context with the original input prompt
 3. feeds it to the text generator to produce the final output
 
+??? question "What is RAG?"
+    **Retrieval Augmented Generation** combines an information retrieval componenent with a text generator model. It allows LLMs to bypass retraining as the internal knowledge can be modified in an efficient manner
+
 ### Prompt function
 Encapsulates prompts into functions to create a workflow.
 
@@ -231,6 +246,10 @@ Encapsulates prompts into functions to create a workflow.
     fix_english(expand_word(trans_word('婆罗摩火山处于享有“千岛之国”美称的印度尼西亚. 多岛之国印尼有4500座之多的火山, 世界著名的十大活火山有三座在这里.')))
     ```
 
+??? question "What's the principle behind prompt-chaining and prompt function techniques"
+    - **prompt-chaining** is spliting the task into subtasks with the idea to create a chain of prompt operations
+    - **prompt function** consists of encapsulating prompts into functions to create a workflow
+
 ### Others
 Check the prompt engineering [guide](https://www.promptingguide.ai/techniques) for more techniques
 
@@ -239,22 +258,3 @@ Check the prompt engineering [guide](https://www.promptingguide.ai/techniques) f
 - [Prompt Engineering Guide](https://www.promptingguide.ai/)
 - [OpenAI Prompt Engineering guide](https://platform.openai.com/docs/guides/prompt-engineering)
 - [Anthropic AI prompt design guide](https://docs.anthropic.com/claude/docs/introduction-to-prompt-design)
-
-??? question "What are the `temperature` and `top_p` parameters for? "
-    - `temperature` controls the creativity of the model by changing how often the model outputs a less likely token
-    - `top_p` controls how deterministic a model is by deciding how many words to consider
-
-??? question "What is COT (Chain-Of-Thought)? Name few example of other techniques related to it"
-    **COT** enables complex reasoning capabilities through intermediate reasoning steps provided as context.
-    Some methods improve the original techniques:
-
-    - Zero-shot COT
-    - Auto-COT
-    - Self-consistency
-
-??? question "What is RAG?"
-    **Retrieval Augmented Generation** combines an information retrieval componenent with a text generator model. It allows LLMs to bypass retraining as the internal knowledge can be modified in an efficient manner
-
-??? question "What's the principle behind prompt-chaining and prompt function techniques"
-    - **prompt-chaining** is spliting the task into subtasks with the idea to create a chain of prompt operations
-    - **promt function** consists of encapsulating prompts into functions to create a workflow

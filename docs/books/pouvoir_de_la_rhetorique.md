@@ -14,6 +14,9 @@ La rhétorique est:
 | clair                                     | vise à égarer            |
 | laisse possibilité de rejet des arguments | duper facultés critiques |
 
+??? question "What is the difference between convincing and manipulating in rhétoric?"
+    Convincing involves using clear and respectful arguments that leave room for rejection, while manipulation aims to deceive and limit choices.
+
 Éthique de moyen vs de fin vs individualiste $\rightarrow$ Dilemme, pas de solution.
 
 ## Comprendre la rhétorique
@@ -51,6 +54,3 @@ Interlocuteur/orateur vs spectateur/auditeur suffisent pour définir les 4 dynam
 2. délibérative
 3. compétitive
 4. conflictuelle
-
-??? question "What is the difference between convincing and manipulating in rhétoric?"
-    Convincing involves using clear and respectful arguments that leave room for rejection, while manipulation aims to deceive and limit choices.

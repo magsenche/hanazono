@@ -10,6 +10,12 @@ A mathematical group is a collection of things (like the set of integers), and a
 
 [Check appendix A](https://arxiv.org/pdf/2209.15563.pdf)
 
+??? question "List all properties of a group"
+    - $+$ interne composistion
+    - $0$ identity element
+    - associativity
+    - $-a$ inverse
+
 `Orbit`
 : $O_x =  \{gx | x \in X, g \in G \}$
 : $x \sim_g y \Leftrightarrow y \in O_x$
@@ -32,15 +38,8 @@ Examples with circle as a manifold, segment as the fiber:
 - Basic cartesian product $\rightarrow$ Ring
 - "Twisted" product $\rightarrow$ Moebius ruban
 
-`Tangent space`
-: The tangent space defines a coordinate system locally on a manifold
-
-
-??? question "List all properties of a group"
-    - $+$ interne composistion
-    - $0$ identity element
-    - associativity
-    - $-a$ inverse
-
 ??? question "List 2 possible structures constructed from the circle and the segment"
     Basic cartesian product $\rightarrow$ Ring and "Twisted" product $\rightarrow$ Moebius ruban
+
+`Tangent space`
+: The tangent space defines a coordinate system locally on a manifold

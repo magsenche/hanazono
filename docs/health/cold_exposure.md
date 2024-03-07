@@ -9,13 +9,22 @@ The key is to aim for a temperature that evokes the thought, “This is really c
 
 And the colder the stimulus (water immersion, shower, etc.), the shorter amount of time you need to expose yourself to the cold. .
 
+??? question "How do you determine the right cold temperature for deliberate exposure?"
+    The right temperature should evoke the thought, “This is really cold and I want to get out, BUT I can safely stay in.” This temperature varies for individuals; for some it might be 60°F, for others, 45°F.
+
 ## Increase Energy and Focus
 Deliberate cold exposure causes a significant release of epinephrine (aka [adrenaline](../brain/neurotransmitters.md#adrenaline)) and norepinephrine (aka [noradrenaline](../brain/neurotransmitters.md#noradrenaline)) in the brain and body. These neurochemicals make us feel alert and can make us feel agitated and as if we need to move or vocalize during the cold exposure. Cold causes their levels to stay elevated for some time and their ongoing effect after the exposure is to increase your level of energy and focus, which can be applied to other mental and/or physical activities.
+
+??? question "How does deliberate cold exposure impact energy and focus?"
+    Cold exposure triggers a significant release of epinephrine and norepinephrine in the brain and body. These neurochemicals increase alertness and energy, enhancing focus post-exposure.
 
 ## Building Resilience & Grit
 By forcing yourself to embrace the stress of cold exposure as a meaningful self-directed challenge (i.e., stressor), you exert what is called ‘top-down control’ over deeper brain centers that regulate reflexive states. This top-down control process involves your prefrontal cortex – an area of your brain involved in planning and suppressing impulsivity. That ‘top-down’ control is the basis of what people refer to when they talk about “resilience and grit.” Importantly, it is a skill that carries over to situations outside of the deliberate cold environment, allowing you to cope better and maintain a calm, clear mind when confronted with real-world stressors.
 
 In other words, **deliberate cold exposure is great training for the mind**
+
+??? question "What are the mental benefits of deliberate cold exposure?"
+    Deliberate cold exposure builds resilience and grit by allowing individuals to exert 'top-down control' over reflexive brain centers, aiding in coping with real-world stressors. It also enhances mood through the release of dopamine.
 
 ## Enhancing Your Mood
 While not true of every stress, cold exposure causes the prolonged release of dopamine. Dopamine is a powerful molecule capable of elevating mood, enhancing focus, attention, goal-directed behavior, etc. Even short bouts of cold exposure can cause a lasting increase in dopamine and sustained elevation of mood, energy, and focus.
@@ -27,6 +36,9 @@ In the short-term, cold exposure increases metabolism as the body has to burn ca
 - Triggering further and more sustained increases in metabolism
 
 Of course, calories in (consumed) versus calories out (metabolized) or “CICO” governs whether you gain, lose, or maintain weight. There is no escaping the laws of thermodynamics.
+
+??? question "How does cold exposure influence metabolism?"
+    In the short term, metabolism increases as the body burns calories to raise its core temperature. Cold exposure can also convert white fat to metabolically active beige or brown fat, benefiting cold adaptation and metabolism boost.
 
 ## A Solid Basic, Science-Supported Protocol
 - Consider doing deliberate cold exposure for 11 minutes per week TOTAL. NOT per session, but rather, 2-4 sessions lasting 1-5 mins each distributed across the week.
@@ -57,16 +69,3 @@ After cold exposure, your body heats up—yes, HEATS up. Body temperature increa
 ## Resources
 ### Huberman lab
 - all comes from the [newsletter](https://www.hubermanlab.com/newsletter/the-science-and-use-of-cold-exposure-for-health-and-performance)
-
-
-??? question "How do you determine the right cold temperature for deliberate exposure?"
-    The right temperature should evoke the thought, “This is really cold and I want to get out, BUT I can safely stay in.” This temperature varies for individuals; for some it might be 60°F, for others, 45°F.
-
-??? question "How does deliberate cold exposure impact energy and focus?"
-    Cold exposure triggers a significant release of epinephrine and norepinephrine in the brain and body. These neurochemicals increase alertness and energy, enhancing focus post-exposure.
-
-??? question "What are the mental benefits of deliberate cold exposure?"
-    Deliberate cold exposure builds resilience and grit by allowing individuals to exert 'top-down control' over reflexive brain centers, aiding in coping with real-world stressors. It also enhances mood through the release of dopamine.
-
-??? question "How does cold exposure influence metabolism?"
-    In the short term, metabolism increases as the body burns calories to raise its core temperature. Cold exposure can also convert white fat to metabolically active beige or brown fat, benefiting cold adaptation and metabolism boost.

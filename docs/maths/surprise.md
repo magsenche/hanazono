@@ -9,6 +9,12 @@ Tries to give a unifying definition of surprise. 4 main categories:
 3. change-point detection surprise
 4. confidence-correction surprise
 
+??? question "What are the 4 different types of surprise?"
+    1. information gain suprise
+    2. prediction surprise
+    3. change-point detection surprise
+    4. confidence-correction surprise
+
 They think that multiple neural mechanisms exist to detect and signal different aspects of surprise.
 
 >Surprise change how we predict and perceive the future, how we remember our past.
@@ -26,10 +32,3 @@ Different types of surprise measure:
 In non volatile environments: $\Theta_i = \Theta$, pas de changement dans la parametrisation de la distribution
 
 Signature of shannon surprise $S_{Sh1}$ found in various EEG and FMRi experiments.
-
-
-??? question "What are the 4 different types of surprise?"
-    1. information gain suprise
-    2. prediction surprise
-    3. change-point detection surprise
-    4. confidence-correction surprise

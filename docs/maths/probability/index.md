@@ -92,6 +92,8 @@ $f_{X,Y}=f_{X|Y}f_{Y}$
 
 $f_{X,Y|Z}=f_{X|Y,Z}f_{Y|Z}$
 
+??? question "What's the chain rule for conditonnal probabilities?"
+    $f_{X,Y|Z}=f_{X|Y,Z}f_{Y|Z}$
 
 ### Marginalization
 
@@ -120,6 +122,21 @@ if $Y=f(X)$, then $p_{Y}(y)=p_{X}(f^{-1}(y))|\frac{df^{-1}}{dy}|$
 | Dirichlet (α₁, ..., αₖ) | Multinomial (n, p₁, ..., pₖ) | Dirichlet (α₁ + x₁, ..., αₖ + xₖ) |
 | Inverse-Gamma (α, β)    | Gamma (k, θ)                 | Inverse-Gamma (α + n, β + Σxᵢ)    |
 
+??? question "List 3 example of conjugate distributions "
+    | Prior                   | Likelihood                   | Posterior                         |
+    | ----------------------- | ---------------------------- | --------------------------------- |
+    | Normal (μ₀, σ₀²)        | Normal (x̄, σ²/n)             | Normal (μₙ, σₙ²)                  |
+    | Beta (α, β)             | Binomial (n, p)              | Beta (α + x, β + n - x)           |
+    | Gamma (α, β)            | Poisson (λ)                  | Gamma (α + x, β + 1/n)            |
+    | Gamma (α, β)            | Exponential (λ)              | Gamma (α + n, β + Σxᵢ)            |
+    | Dirichlet (α₁, ..., αₖ) | Multinomial (n, p₁, ..., pₖ) | Dirichlet (α₁ + x₁, ..., αₖ + xₖ) |
+    | Inverse-Gamma (α, β)    | Gamma (k, θ)                 | Inverse-Gamma (α + n, β + Σxᵢ)    |
+
+??? question "How do you find which conjugate distribution to use?"
+    - Compute the likelihood from the data
+    - Identify its distribution
+    - Use the table to choose a conjugate distribution
+
 ## Markov Chain
 `Markov Chain`
 : $P(X_T = x_T | X_{T-1}, ..., X_{0} = x_{T-1}, ..., x_{0})=P(X_T = x_T | X_{T-1} = x_{T-1})$. Memory-less stochastic process. The knowledge of the previous state is all that is necessary to determine the current state
@@ -142,6 +159,9 @@ These methods can deal with arbitrary probability distributions. They are partic
 
 In cognitive science, it has been proposed that human decision-makers behave like Markov Chains with a limited number of iterations.
 
+??? question "What's the principle behind MCMC sampling"
+    It's based on iteratively sampling from a Markov chain whose stationary distribution is the target distribution, which in the case of Bayesian computation is most often the posterior distribution $p(θ|y)$
+
 ## Notations
 Often times, all the density and probability mass functions are denoted with the same letter (usually p) without any subscripts:
 
@@ -153,9 +173,6 @@ $$f_{θ|Y}(θ|y)= \frac{f_{Θ}(θ)f_{Y|Θ}(y|θ)}{f_{Y}(y)} \rightarrow \frac{p(
 | the **probability of $θ$** changes based on the observed value of $d$ | the **distribution of $θ$** is shaped or characterized by the value of $d$ |
 | conditional probability where **$d$ is a random variable**            | $d$ is not a random variable but a **parameter or set of conditions**      |
 
-??? question "What's the chain rule for conditonnal probabilities?"
-    $f_{X,Y|Z}=f_{X|Y,Z}f_{Y|Z}$
-
 ??? question "$Y=f(X)$, what is  $p_{Y}$ as a function of $p_{X}$?"
     $p_{Y}(y)=p_{X}(f^{-1}(y))|\frac{df^{-1}}{dy}|$
 
@@ -164,21 +181,3 @@ $$f_{θ|Y}(θ|y)= \frac{f_{Θ}(θ)f_{Y|Θ}(y|θ)}{f_{Y}(y)} \rightarrow \frac{p(
         Find $p_Z$ with $X,Y \sim \mathcal{U}(0,1)$ and $Z=XY$
     === "Answer"
         $p_Z = -log(z)$
-
-??? question "What's the principle behind MCMC sampling"
-    It's based on iteratively sampling from a Markov chain whose stationary distribution is the target distribution, which in the case of Bayesian computation is most often the posterior distribution $p(θ|y)$
-
-??? question "List 3 example of conjugate distributions "
-    | Prior                   | Likelihood                   | Posterior                         |
-    | ----------------------- | ---------------------------- | --------------------------------- |
-    | Normal (μ₀, σ₀²)        | Normal (x̄, σ²/n)             | Normal (μₙ, σₙ²)                  |
-    | Beta (α, β)             | Binomial (n, p)              | Beta (α + x, β + n - x)           |
-    | Gamma (α, β)            | Poisson (λ)                  | Gamma (α + x, β + 1/n)            |
-    | Gamma (α, β)            | Exponential (λ)              | Gamma (α + n, β + Σxᵢ)            |
-    | Dirichlet (α₁, ..., αₖ) | Multinomial (n, p₁, ..., pₖ) | Dirichlet (α₁ + x₁, ..., αₖ + xₖ) |
-    | Inverse-Gamma (α, β)    | Gamma (k, θ)                 | Inverse-Gamma (α + n, β + Σxᵢ)    |
-
-??? question "How do you find which conjugate distribution to use?"
-    - Compute the likelihood from the data
-    - Identify its distribution
-    - Use the table to choose a conjugate distribution

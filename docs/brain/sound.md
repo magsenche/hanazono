@@ -12,34 +12,6 @@
 - A1 tuned by frequency levels and localisation
 - A1 receptive fields shaped by experience (?)
 
-## Vowel perception
-
-[Beyond Formants: Vowel Perception at High Fundamental Frequencies](https://www.zora.uzh.ch/id/eprint/147197/8/20173177.pdf)
-
-![](fig/sound_source_filter.png)
-
-- **S(f)** Vocal folds
-- **T(f)** Vocal tract (shape and position of larynx, tongue, ...)
-- **R(f)** Mouse radiation
-
-## Formants
-
-**Formants**: distinctive patterns of spectral maxima.
-**Formant frequency**: maxima of a formant
-
-Distribution of first 3 formants used as cues for vowel perception
-Some problems:
-
-- F1-F2 combinations ambiguities for $\ne$ vowels across talkers
-- $\ne$ vowel categories with $\sim$ formant frequencies
-- Formant frequencies not flat
-
-## Multimodality
-
- - Hallucinations auditives: [effet McGurk](https://fr.wikipedia.org/wiki/Effet_McGurk)
- - V1, A1, S1 anatomically interconnected
-
-
 ??? question "What are the roles of IHC and OHC in the auditory system?"
     IHC is responsible for 95% of projection and sensory transduction, while OHC accounts for 5% of projections and provides signal amplification.
 
@@ -51,14 +23,42 @@ Some problems:
 ??? question "How is A1 tuned and what affects its receptive fields?"
     A1 is tuned by frequency levels and localisation, and its receptive fields can be shaped by experience.
 
+## Vowel perception
+
+[Beyond Formants: Vowel Perception at High Fundamental Frequencies](https://www.zora.uzh.ch/id/eprint/147197/8/20173177.pdf)
+
+![](fig/sound_source_filter.png)
+
+- **S(f)** Vocal folds
+- **T(f)** Vocal tract (shape and position of larynx, tongue, ...)
+- **R(f)** Mouse radiation
+
 ??? question "Identify the 3 main components involved in vowel perception and their roles"
     - S(f) - Vocal folds
     - T(f) - Vocal tract (influenced by the shape and position of the larynx, tongue, etc.)
     - R(f) - Mouth radiation
 
+## Formants
+
+**Formants**: distinctive patterns of spectral maxima.
+**Formant frequency**: maxima of a formant
+
+Distribution of first 3 formants used as cues for vowel perception
+
 ??? question "What are formants, formant frequencies? Why are they importent in vowel perception?"
     Formants are distinctive patterns of spectral maxima, with formant frequencies being the maxima of a formant.
     The distribution of the first three formants is used as cues for vowel perception
+
+Some problems:
+
+- F1-F2 combinations ambiguities for $\ne$ vowels across talkers
+- $\ne$ vowel categories with $\sim$ formant frequencies
+- Formant frequencies not flat
+
+## Multimodality
+
+ - Hallucinations auditives: [effet McGurk](https://fr.wikipedia.org/wiki/Effet_McGurk)
+ - V1, A1, S1 anatomically interconnected
 
 ??? question "What is the McGurk effect in the context of auditory hallucinations?"
     The McGurk effect demonstrates how visual and auditory modalities can interact to produce a perceived sound different from the auditory stimulus
