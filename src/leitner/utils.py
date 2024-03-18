@@ -7,7 +7,7 @@ flashcard_str = """??? question "{question}"
 
 quiz_flashcard_str = """??? question "{question} {buttons}"
 {answer}
-    ##### id: {id}, box: {box}, score: {score}, next: {next_review}, last: {last_review}
+    ##### [note]({file_path}), id: {id}, box: {box}, score: {score}, next: {next_review}, last: {last_review}
 """
 
 buttons = "[](){.fbutton .ok}[](){.fbutton .nok}"
@@ -29,7 +29,7 @@ def import_flashcards(markdown_text):
     return flashcards, parts
 
 
-def import_definitions(markdown_text, file_stem):
+def import_definitions(markdown_text):
     definitions = []
     for m in re.finditer(definition_regex, markdown_text):
         q, d = m.groups()
@@ -52,6 +52,7 @@ def export_markdown(flashcard, for_quiz=False):
             score=flashcard.score(),
             next_review=flashcard.next_review.strftime("%d/%m/%Y"),
             last_review=flashcard.last_review.strftime("%d/%m/%Y"),
+            file_path=flashcard.file_path,
         )
     else:
         return flashcard_str.format(

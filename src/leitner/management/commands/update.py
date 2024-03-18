@@ -8,6 +8,7 @@ from leitner.utils import export_markdown, import_definitions, import_flashcards
 from utils import logger
 
 log = logger.custom(__name__)
+config = mkdocs.config.load_config()
 
 
 class Command(BaseCommand):
@@ -17,8 +18,6 @@ class Command(BaseCommand):
         parser.add_argument("command", choices=["md", "db"])
 
     def handle(self, *args, **options):
-        config = mkdocs.config.load_config()
-
         if options["command"] == "md":
             update_markdown(pathlib.Path(config["docs_dir"]))
             log.info("Markdown files updated")
@@ -49,26 +48,29 @@ def update_markdown(docs_dir):
 def update_database(docs_dir):
     flashcards_in_md = set()
     for mdfile in docs_dir.rglob("*.md"):
-        txt = mdfile.read_text()
-        flashcards = import_flashcards(txt)[0]
-        flashcards += import_definitions(txt, mdfile.stem)
+        flashcards, _ = import_flashcards(mdfile.read_text())
+        flashcards += import_definitions(mdfile.read_text())
         for fc in flashcards:
             flashcards_in_md.add(fc.question)
             try:
                 flashcard = Flashcard.objects.get(question=fc.question)
             except Flashcard.DoesNotExist:
                 flashcard = Flashcard.objects.create(
-                    question=fc.question, answer=fc.answer
+                    question=fc.question,
+                    answer=fc.answer,
+                    file_path=mdfile.relative_to(config["docs_dir"]),
                 )
                 log.info(f"Created {flashcard}")
             else:
-                if (flashcard.question != fc.question) | (
-                    flashcard.answer != fc.answer
-                ):
-                    log.info(f"Updated {flashcard}")
-                    flashcard.question = fc.question
+                if flashcard.answer != fc.answer:
                     flashcard.answer = fc.answer
                     flashcard.save()
+                    log.info(f"Updated answer: {flashcard}")
+                if flashcard.file_path == "":
+                    flashcard.file_path = mdfile.relative_to(config["docs_dir"])
+                    flashcard.save()
+                    log.info(f"Updated file path: {flashcard}")
+
     for db_flashcard in Flashcard.objects.all():
         if db_flashcard.question not in flashcards_in_md:
             log.info(f"Removed {db_flashcard}")
