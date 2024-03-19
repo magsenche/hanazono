@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
             });
 
             const idElement = details.querySelector('h5');
-            const id = idElement ? idElement.id.split('-')[1] : null;
+            const id = idElement ? idElement.id.split('-')[2] : null;
 
             if (id !== null) {
                 if (fbutton.classList.contains('ok')) {
