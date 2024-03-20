@@ -2,7 +2,7 @@ import re
 
 from leitner.models import Flashcard
 
-flashcard_str = """??? question "{question}"
+flashcard_str = """???{plus} question "{question}"
 {answer}"""
 
 quiz_flashcard_str = """??? question "{question} {buttons}"
@@ -11,7 +11,7 @@ quiz_flashcard_str = """??? question "{question} {buttons}"
 """
 
 buttons = "[](){.fbutton .ok}[](){.fbutton .nok}"
-flashcard_regex = r"""\?\?\? question "(.*?)".*?\n((?: {4}.*|\n)*?)(?=\n[^\s]|$)"""
+flashcard_regex = r"""\?\?\?(\+?) question "(.*?)".*?\n((?: {4}.*|\n)*?)(?=\n[^\s]|$)"""
 definition_regex = r"(`.+`)\n:\s(.+?)(?=\n|$)"
 
 
@@ -22,7 +22,9 @@ def import_flashcards(markdown_text):
     for m in re.finditer(flashcard_regex, markdown_text):
         parts.append(markdown_text[ms : m.start()])
         ms = m.end()
-        flashcard = Flashcard(*m.groups())
+        plus, question, answer = m.groups()
+        hidden = not plus == "+"
+        flashcard = Flashcard(question=question, answer=answer, hidden=hidden)
         flashcards.append(flashcard)
 
     parts.append(markdown_text[ms:])
@@ -35,7 +37,7 @@ def import_definitions(markdown_text):
         q, d = m.groups()
         question = f"{q}"
         answer = f"    {d}"
-        flashcard = Flashcard(question=question, answer=answer)
+        flashcard = Flashcard(question=question, answer=answer, hidden=False)
         definitions.append(flashcard)
 
     return definitions
@@ -55,6 +57,7 @@ def export_markdown(flashcard, for_quiz=False):
             file_path=flashcard.file_path,
         )
     else:
+        plus = "" if flashcard.hidden else "+"
         return flashcard_str.format(
-            question=flashcard.question, answer=flashcard.answer
+            plus=plus, question=flashcard.question, answer=flashcard.answer
         )

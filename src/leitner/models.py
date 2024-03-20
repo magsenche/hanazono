@@ -12,6 +12,7 @@ class Flashcard(models.Model):
     intervals = [0, 1, 6, 14, 30, 66, 150, 360]
     question = models.TextField()
     answer = models.TextField()
+    hidden = models.BooleanField(default=True)
     file_path = models.TextField(default="")
     id = models.CharField(max_length=6, primary_key=True, default="000000")
     box = models.IntegerField(default=1)
