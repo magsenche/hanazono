@@ -45,6 +45,9 @@ While caffeine can provide that afternoon pick-me-up, its stimulating effects ca
 ### Supplementing for Success
 Consider incorporating [magnesium](./micronutrient.md#magnesium), apigenin, theanine, glycine, or GABA into your bedtime routine. However, it's crucial to start with one supplement at a time and monitor its effects. Remember, individual needs vary, and some people may experience side effects.
 
+??? question "What supplement to take to improve sleep quality ?"
+    Take [zinc](./micronutrient.md#zinc) with [magnesium](./micronutrient.md#magnesium) before sleeping
+
 ## Resources
 
 - [hubermanlab toolkit for sleep](https://www.hubermanlab.com/newsletter/toolkit-for-sleep)

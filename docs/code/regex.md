@@ -92,12 +92,6 @@ False
 ??? question "Regex: match filenames that are not prefixed with `backup_` and ends with the extensions `.jpg`, `.jpeg`, or `.png`"
     `(?i)^(?!backup_).*\.(?:jpg|jpeg|png)$`
 
-!!! example "number not preceded by `$` or `£` `(?<![£$])\b\d+\b`"
-    This pattern matches numbers that are not immediately preceded by either a `$` or a `£` symbol
-
-    - `(?<!...)` part is a negative lookbehind. It ensures that the matched number does not have the specified prefix
-    - `\b` parts are word boundaries, ensuring that we match whole numbers
-
 !!! example "match HTML tags but not self-closing ones `<(?!\w+/>)[a-zA-Z]*>(?!<).*?</\w+>`"
     This pattern matches HTML opening and closing tags and their content, but skips self-closing tags like <img/>
 

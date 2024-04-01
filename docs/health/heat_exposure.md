@@ -32,7 +32,7 @@ Saunas have traditional roots in Scandinavian cultures. For centuries, many who 
 Hormesis is mild, tolerable stress that stimulates the body and helps it to positively adapt. Hormesis can take many forms, and heat is one such form. Studies have found that the regular use of sauna can decrease cortisol levels; enhance the activation of DNA repair/longevity pathways; and increase the activation of unique heat-dependent molecular mechanisms, termed Heat Shock Proteins, which help monitor and possibly repair protein structure within our cells. The integrity of protein structures is vital to our health and wellbeing.
 
 ??? question "How does heat exposure influence mood and stress response?"
-    Heat exposure leads to a release of dynorphins (cause initial discomfort) followed by endorphins, leading to post-sauna euphoria. Hormesis, a mild stress from heat, has been linked to decreased cortisol levels, activation of DNA repair pathways, and Heat Shock Proteins for cellular protein structure integrity.
+    Heat exposure leads to a release of dynorphins (cause initial discomfort) followed by endorphins, leading to post-sauna euphoria. Hormesis, a mild stress from heat, has been linked to decreased cortisol levels, activation of DNA repair pathways, and increase in unique Heat Shock Proteins mechanism that help monitor and repaire protein structures.
 
 ### Protocol #2
 In order to gain the benefits of deliberate heat exposure for general health, including improved mood, stress management, and the enhancement of the body’s hormetic (mild stress) response pathways, use sauna for a total of 1 hour per week, but not all at once. Rather, split that into 2 to 3 sessions. (The sauna temperature should be between 80-100 ℃; 176-212 ℉).
