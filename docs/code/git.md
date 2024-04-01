@@ -19,6 +19,15 @@
 - add a global gitignore `git config --global core.excludesfile ~/.gitignore_global`
 - use vscode as default git editor (linux only?) `git config --global core.editor code -w`
 
+## Remote
+
+- add a remote using `git remote add <remote_name>`
+- see remotes with `git remote -v`
+- see current upstream branch with `git branch -vv`
+
+just do `git push -u <remote_name> <src>:<dst>`  the first time to setup the upstream branch for the current branch
+
+
 ## Resources
 
 - [Conventional Commits 1.0.0](https://www.conventionalcommits.org/)
