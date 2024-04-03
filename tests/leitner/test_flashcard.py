@@ -12,11 +12,14 @@ last_review = datetime.strptime("10/12/2015", "%d/%m/%Y")
 correct, incorrect = 2, 2
 score = {"correct": correct, "incorrect": incorrect}
 
-flashcard_md = leitner.utils.flashcard_str.format(question=question, answer=answer)
+flashcard_md = leitner.utils.flashcard_str.format(
+    question=question, answer=answer, plus=""
+)
 quiz_flashcard_md = leitner.utils.quiz_flashcard_str.format(
     question=question,
     buttons=leitner.utils.buttons,
     answer=answer,
+    file_path="/path/to/flashcard",
     id=id,
     box=box,
     score=f"""{score["correct"]}/{score["correct"]+score["incorrect"]}""",
