@@ -4,7 +4,7 @@ import mkdocs.config
 from django.conf import settings
 from django.core.management import call_command
 from django.core.serializers import deserialize, serialize
-from django.http import FileResponse, HttpResponse, JsonResponse
+from django.http import FileResponse, Http404, HttpResponse, JsonResponse
 from django.shortcuts import redirect, render
 from django.utils import timezone
 
@@ -18,7 +18,7 @@ log = logger.custom(__name__)
 
 def home(request):
     if request.method == "GET":
-        return FileResponse((settings.STATIC_ROOT / "index.html").open("rb"))
+        return render(request, "index.html")
 
 
 def update_flashcard(request, id, is_ok):
@@ -72,7 +72,7 @@ def serve(request, path):
         if full_path.exists():
             return FileResponse(full_path.open("rb"))
         else:
-            return FileResponse((settings.STATIC_ROOT / "404.html").open("rb"))
+            raise Http404(f"path not found: {path} ")
 
 
 def update_site(request):
