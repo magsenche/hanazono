@@ -50,7 +50,7 @@ Follow the same steps as above but without using PDM commands (refer to `pyproje
 - [ ] put notes in the database
 
 ### Test
-- [ ] re-write tests
+- [x] re-write tests
 
 ### Documentation
 - [ ] install without PDM

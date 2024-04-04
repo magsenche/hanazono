@@ -8,12 +8,10 @@ dependencies = [
     "mkdocs-material>=9.3.1",
     "pymdown-extensions>=10.3",
     "black>=23.9.1",
-    "pytest>=7.4.2",
     "mkdocs-open-in-new-tab>=1.0.2",
     "django>=4.2.6",
     "colorlog>=6.7.0",
     "bs4>=0.0.1",
-    "pytest-django>=4.5.2",
     "psycopg>=3.1.17",
 ]
 requires-python = ">=3.11"
@@ -29,6 +27,7 @@ init = { composite = [
     "manage update db",
     "manage build",
 ] }
+test = "python src/manage.py test leitner"
 
 [tool.pdm.scripts._]
 env_file = ".env"
@@ -38,9 +37,6 @@ line-length = 88
 
 [tool.isort]
 profile = "black"
-
-[tool.pytest.ini_options]
-DJANGO_SETTINGS_MODULE = "djangoproject.settings"
 
 [project.entry-points."mkdocs.plugins"]
 button = "plugin.button:ButtonPlugin"
