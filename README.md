@@ -21,11 +21,15 @@ It leverages [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) for
    ```
 
 ## Launch your Hanazono
+### Environment variable
+
+ - database creation: `POSTGRES_DB`,`POSTGRES_USER`,`POSTGRES_PASSWORD` (see [postgress](https://hub.docker.com/_/postgres))
+ - database-server connection: `POSTGRES_HOST`(should be set to `db` when using docker),`POSTGRES_PORT`.
+ - django admin: `DJANGO_SUPERUSER_USERNAME`,`DJANGO_SUPERUSER_PASSWORD`,`DJANGO_SUPERUSER_EMAIL`
+ - server: `SERVER_PORT`
+
 ### Docker
 1. setup your environment variables (automatic if you use pdm)
-    - database: `PGDATABASE`,`PGDATABASE`,`PGUSER`,`PGPASSWORD`
-    - django admin: `DJANGO_SUPERUSER_USERNAME`,`DJANGO_SUPERUSER_PASSWORD`,`DJANGO_SUPERUSER_EMAIL`
-    - server: `SERVER_PORT`
 2. write and put your notes as markdown files in a `docs` folder
 3. start django server and postgres database services `docker-compose up`:
    - creates a postgres database
@@ -37,7 +41,7 @@ As `docs` folder is mounted in the server container: updates are directly availa
 
 ### PDM
 1. install dependencies `pdm install`
-2. put environment variables in `.env` file
+2. put environment variables in an `.env` file
 3. start the postgres database (TODO)
 4. initialize the server `pdm run init` (extracts flashcards and build the sites)
 5. run the django server `pdm run manage runserver`
