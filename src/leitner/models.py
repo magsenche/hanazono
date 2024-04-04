@@ -43,14 +43,14 @@ class Flashcard(models.Model):
     def do_quiz(self):
         return self.next_review.date() <= timezone.now().date()
 
-    def update_box(self, succes):
-        if succes:
-            self.succes()
+    def update_box(self, success):
+        if success:
+            self.success()
         else:
             self.fail()
         self.update_review()
 
-    def succes(self):
+    def success(self):
         self.box += 1
         self.update_score()
 
