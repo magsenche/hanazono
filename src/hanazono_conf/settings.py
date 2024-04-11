@@ -14,7 +14,7 @@ import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve().parent.parent.parent
 STATIC_ROOT = BASE_DIR / "site"
 
 
@@ -33,7 +33,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    "leitner",
+    "hanazono.flashcards",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -52,12 +52,12 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-ROOT_URLCONF = "djangoproject.urls"
+ROOT_URLCONF = "hanazono_conf.urls"
 
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [STATIC_ROOT],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -67,11 +67,10 @@ TEMPLATES = [
                 "django.contrib.messages.context_processors.messages",
             ],
         },
-        "DIRS": [STATIC_ROOT],
     },
 ]
 
-WSGI_APPLICATION = "djangoproject.wsgi.application"
+WSGI_APPLICATION = "hanazono_conf.wsgi.application"
 
 
 # Database

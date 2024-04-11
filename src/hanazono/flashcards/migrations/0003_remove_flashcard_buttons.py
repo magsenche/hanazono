@@ -5,7 +5,7 @@ from django.db import migrations
 
 class Migration(migrations.Migration):
     dependencies = [
-        ("leitner", "0002_flashcard_html"),
+        ("flashcards", "0002_flashcard_html"),
     ]
 
     operations = [

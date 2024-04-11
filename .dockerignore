@@ -39,4 +39,4 @@ venv.bak/
 .DS_Store
 
 # mkdocs documentation
-/src/site/
+site/

@@ -1,6 +1,6 @@
 import re
 
-from leitner.models import Flashcard
+from hanazono.flashcards.models import Flashcard
 
 flashcard_str = """???{plus} question "{question}"
 {answer}"""

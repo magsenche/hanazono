@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from leitner import views
+from hanazono.flashcards import views
 
 urlpatterns = [
     path("", views.home, name="home"),

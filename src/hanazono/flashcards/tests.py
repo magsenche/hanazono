@@ -3,8 +3,12 @@ from django.test import TestCase
 from django.urls import reverse
 from django.utils import timezone
 
-from leitner.models import Flashcard
-from leitner.utils import export_markdown, flashcard_str, import_flashcards
+from hanazono.flashcards.models import Flashcard
+from hanazono.flashcards.serializers import (
+    export_markdown,
+    flashcard_str,
+    import_flashcards,
+)
 
 
 class FlashcardTestCase(TestCase):
@@ -87,7 +91,7 @@ class TestViews(TestCase):
         self.assertEqual(response["content-type"], "application/json")
 
     def test_import_data(self):
-        file_content = b'[{ "model": "leitner.flashcard", "pk": 1, "fields": { "question": "Test Question", "answer": "Test Answer" } }]'
+        file_content = b'[{ "model": "flashcards.flashcard", "pk": 1, "fields": { "question": "Test Question", "answer": "Test Answer" } }]'
         uploaded_file = SimpleUploadedFile("test_file.json", file_content)
         initial_count = Flashcard.objects.count()
         response = self.client.post(reverse("import_data"), {"file": uploaded_file})

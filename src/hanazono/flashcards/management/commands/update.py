@@ -3,9 +3,9 @@ import pathlib
 import mkdocs.config
 from django.core.management.base import BaseCommand
 
-from leitner.models import Flashcard
-from leitner.utils import import_definitions, import_flashcards
-from utils import logger
+from hanazono.flashcards.models import Flashcard
+from hanazono.flashcards.serializers import import_definitions, import_flashcards
+from hanazono.utils import logger
 
 log = logger.custom(__name__)
 config = mkdocs.config.load_config()

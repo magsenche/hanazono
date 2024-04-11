@@ -2,7 +2,7 @@ import os
 
 import django
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "djangoproject.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "hanazono_conf.settings")
 django.setup()
 import pathlib
 
@@ -13,9 +13,9 @@ from mkdocs.plugins import BasePlugin
 from mkdocs.structure.files import File, Files
 from mkdocs.structure.pages import Page
 
-from leitner.models import Flashcard
-from leitner.utils import export_markdown
-from utils import logger
+from hanazono.flashcards.models import Flashcard
+from hanazono.flashcards.serializers import export_markdown
+from hanazono.utils import logger
 
 log = logger.custom(__name__)
 

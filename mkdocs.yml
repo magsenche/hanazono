@@ -3,7 +3,7 @@ site_description: My personal digital garden
 site_author: Magsen
 repo_url: https://github.com/magsenche/hanazono
 repo_name: magsenche/hanazono
-site_dir: src/site
+site_dir: site
 theme:
   logo: assets/logo.png
   favicon: assets/logo.png

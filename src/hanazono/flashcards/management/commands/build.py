@@ -2,7 +2,7 @@ import mkdocs.config
 from django.core.management.base import BaseCommand
 from mkdocs.commands import build
 
-from utils import logger
+from hanazono.utils import logger
 
 log = logger.custom(__name__)
 

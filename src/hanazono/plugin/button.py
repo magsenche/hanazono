@@ -2,7 +2,7 @@ from bs4 import BeautifulSoup, Tag
 from mkdocs.config import config_options
 from mkdocs.plugins import BasePlugin
 
-from utils import logger
+from hanazono.utils import logger
 
 log = logger.custom(__name__)
 

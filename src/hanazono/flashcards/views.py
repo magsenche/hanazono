@@ -8,9 +8,9 @@ from django.http import FileResponse, Http404, HttpResponse, JsonResponse
 from django.shortcuts import redirect, render
 from django.utils import timezone
 
-from leitner.forms import FileUploadForm
-from leitner.models import Flashcard
-from utils import logger
+from hanazono.flashcards.forms import FileUploadForm
+from hanazono.flashcards.models import Flashcard
+from hanazono.utils import logger
 
 config = mkdocs.config.load_config()
 log = logger.custom(__name__)

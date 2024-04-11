@@ -3,7 +3,7 @@ import pathlib
 from django.contrib import admin
 from django.core.management import call_command
 
-from leitner.models import Flashcard
+from hanazono.flashcards.models import Flashcard
 
 
 class FlashcardAdmin(admin.ModelAdmin):
@@ -15,7 +15,7 @@ class FlashcardAdmin(admin.ModelAdmin):
         selected_pks = ",".join(str(obj.pk) for obj in queryset)
         call_command(
             "dumpdata",
-            f"leitner.flashcard",
+            f"flashcards.flashcard",
             output=output_file,
             pks=selected_pks,
         )

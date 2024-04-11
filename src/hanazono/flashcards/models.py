@@ -3,7 +3,7 @@ import hashlib
 from django.db import models
 from django.utils import timezone
 
-from utils import logger
+from hanazono.utils import logger
 
 log = logger.custom(__name__)
 

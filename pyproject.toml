@@ -27,7 +27,7 @@ init = { composite = [
     "manage update db",
     "manage build",
 ] }
-test = "python src/manage.py test leitner"
+test = "python src/manage.py test hanazono.flashcards"
 
 [tool.pdm.scripts._]
 env_file = ".env"
@@ -39,6 +39,6 @@ line-length = 88
 profile = "black"
 
 [project.entry-points."mkdocs.plugins"]
-button = "plugin.button:ButtonPlugin"
-quiz = "plugin.quiz:QuizPlugin"
-pbar = "plugin.pbar:ProgressBarPlugin"
+button = "hanazono.plugin.button:ButtonPlugin"
+quiz = "hanazono.plugin.quiz:QuizPlugin"
+pbar = "hanazono.plugin.pbar:ProgressBarPlugin"
