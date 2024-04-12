@@ -23,14 +23,29 @@ It leverages [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) for
 ## Launch your Hanazono
 ### Environment variable
 
- - database creation: `POSTGRES_DB`,`POSTGRES_USER`,`POSTGRES_PASSWORD` (see [postgress](https://hub.docker.com/_/postgres))
- - database-server connection: `POSTGRES_HOST`(should be set to `db` when using docker),`POSTGRES_PORT`.
- - django admin: `DJANGO_SUPERUSER_USERNAME`,`DJANGO_SUPERUSER_PASSWORD`,`DJANGO_SUPERUSER_EMAIL`
- - server: `SERVER_PORT`
+```ini
+POSTGRES_DB = "postgres"
+POSTGRES_USER =  "user"
+POSTGRES_PASSWORD =  "pwd"
+
+DJANGO_SUPERUSER_USERNAME=${POSTGRES_USER}
+DJANGO_SUPERUSER_PASSWORD=${POSTGRES_PASSWORD}
+DJANGO_SUPERUSER_EMAIL=""
+
+POSTGRES_HOST="db"
+POSTGRES_PORT=5432
+SERVER_PORT=8001
+```
+
+- database creation: `POSTGRES_DB`,`POSTGRES_USER`,`POSTGRES_PASSWORD` (see [postgress](https://hub.docker.com/_/postgres))
+- database-server connection: `POSTGRES_HOST`(should be set to `db` when using docker),`POSTGRES_PORT`.
+- django admin: `DJANGO_SUPERUSER_USERNAME`,`DJANGO_SUPERUSER_PASSWORD`,`DJANGO_SUPERUSER_EMAIL`
+- server: `SERVER_PORT`
+
 
 ### Docker
 1. setup your environment variables (automatic if you use pdm)
-2. write and put your notes as markdown files in a `docs` folder
+2. write and put your notes as markdown files in the `docs` folder
 3. start django server and postgres database services `docker-compose up`:
    - creates a postgres database
    - extracts flashcards from your notes
@@ -42,16 +57,18 @@ As `docs` folder is mounted in the server container: updates are directly availa
 ### PDM
 1. install dependencies `pdm install`
 2. put environment variables in an `.env` file
-3. start the postgres database (TODO)
-4. initialize the server `pdm run init` (extracts flashcards and build the sites)
+3. start the postgres database
+4. initialize the server `pdm run init` (extracts flashcards and build the static files in `site/`)
 5. run the django server `pdm run manage runserver`
 
-### Without PDM (TODO)
-Follow the same steps as above but without using PDM commands (refer to `pyproject.toml`).
+### Without PDM
+Follow the same steps as above but without using PDM commands (refer to `pyproject.toml`). Make sure to editably install the project.
+
 
 ## TODO
 ### Features
-- [ ] put notes in the database
+- [ ] make a Notes django model
+- [ ] provide tools to analyze flashcards/notes
 
 ### Test
 - [x] re-write tests
@@ -59,3 +76,7 @@ Follow the same steps as above but without using PDM commands (refer to `pyproje
 ### Documentation
 - [ ] install without PDM
 - [ ] start PostgreSQL database instructions
+
+### Distribution & Deployment
+- [ ] use a production server
+- [x] correctly package the project
