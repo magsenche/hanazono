@@ -32,6 +32,8 @@ DJANGO_SUPERUSER_USERNAME=${POSTGRES_USER}
 DJANGO_SUPERUSER_PASSWORD=${POSTGRES_PASSWORD}
 DJANGO_SUPERUSER_EMAIL=""
 
+DJANGO_SETTINGS_MODULE="hanazono_conf.settings"
+
 POSTGRES_HOST="db"
 POSTGRES_PORT=5432
 SERVER_PORT=8001
@@ -40,6 +42,7 @@ SERVER_PORT=8001
 - database creation: `POSTGRES_DB`,`POSTGRES_USER`,`POSTGRES_PASSWORD` (see [postgress](https://hub.docker.com/_/postgres))
 - database-server connection: `POSTGRES_HOST`(should be set to `db` when using docker),`POSTGRES_PORT`.
 - django admin: `DJANGO_SUPERUSER_USERNAME`,`DJANGO_SUPERUSER_PASSWORD`,`DJANGO_SUPERUSER_EMAIL`
+- django settings: `DJANGO_SETTINGS_MODULE`
 - server: `SERVER_PORT`
 
 

@@ -1,8 +1,5 @@
-import os
-
 import django
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "hanazono_conf.settings")
 django.setup()
 import pathlib
 
