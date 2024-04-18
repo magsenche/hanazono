@@ -71,7 +71,8 @@ Follow the same steps as above but without using PDM commands (refer to `pyproje
 ## TODO
 ### Features
 - [ ] make a Notes django model
-- [ ] provide tools to analyze flashcards/notes
+- [x] provide tools to analyze flashcards/notes
+- [ ] use ai assistant from the website directly
 
 ### Test
 - [x] re-write tests
@@ -79,7 +80,10 @@ Follow the same steps as above but without using PDM commands (refer to `pyproje
 ### Documentation
 - [ ] install without PDM
 - [ ] start PostgreSQL database instructions
+- [ ] add typing everywhere
+- [ ] add docstring (may not be necessary if typing & good naming)
 
 ### Distribution & Deployment
 - [ ] use a production server
 - [x] correctly package the project
+- [ ] use a multi-stage build to install `aiasan` and only copy necessary files to lighten the image

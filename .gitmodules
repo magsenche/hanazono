@@ -1,0 +1,3 @@
+[submodule "src/aiasan"]
+	path = src/aiasan
+	url = https://github.com/magsenche/aiasan.git

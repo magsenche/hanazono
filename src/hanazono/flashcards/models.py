@@ -1,11 +1,32 @@
 import hashlib
 
 from django.db import models
+from django.db.models import Avg, Count
 from django.utils import timezone
 
 from hanazono.utils import logger
 
 log = logger.custom(__name__)
+
+
+class FlashcardManager(models.Manager):
+
+    def extract(self, file_path: str) -> list[dict]:
+        """extract flashcards (question/answer pairs) from a given markdown file"""
+        flashcards = []
+        for fc in self.filter(file_path=file_path):
+            flashcards.append(fc.to_dict())
+        return flashcards
+
+    def by_box(self) -> list[dict]:
+        """Sort flashcards by box number"""
+        return list(self.values("box").annotate(count=Count("id")))
+
+    def file_stats(self) -> list[dict]:
+        """Analyzes your flashcards and provides insightful statistics for each file, including the total number of flashcards and the average box they belong to."""
+        return list(
+            self.values("file_path").annotate(count=Count("id"), average_box=Avg("box"))
+        )
 
 
 class Flashcard(models.Model):
@@ -21,9 +42,13 @@ class Flashcard(models.Model):
     score_correct = models.IntegerField(default=0)
     score_incorrect = models.IntegerField(default=0)
     html = models.TextField(default="")
+    objects = FlashcardManager()
 
     def __str__(self) -> str:
         return f"Flashcard {self.id}: {self.question}"
+
+    def to_dict(self) -> dict:
+        return dict(question=self.question, answer=self.answer)
 
     def save(self, *args, **kwargs):
         if not self.id or self.id == "000000":

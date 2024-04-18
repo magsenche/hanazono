@@ -5,6 +5,8 @@ WORKDIR /app
 RUN pip install --no-cache-dir pdm
 
 COPY pyproject.toml ./
+
+COPY src/aiasan ./src/aiasan
 RUN mkdir -p src/hanazono
 
 RUN pdm install

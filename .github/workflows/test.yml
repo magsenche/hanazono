@@ -32,6 +32,10 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+
+      - name: Init Submodules
+        run: git submodule update --init --recursive
+
       - name: Setup PDM
         uses: pdm-project/setup-pdm@v4
 
