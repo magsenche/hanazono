@@ -1,6 +1,6 @@
 [project]
 name = "Hanazono"
-version = "0.0.0"
+dynamic = ["version"]
 description = "Personal digital garden"
 authors = [{ name = "Magsen Chebini", email = "magsen.che@gmail.com" }]
 dependencies = [
@@ -18,6 +18,9 @@ dependencies = [
 requires-python = "==3.12.*"
 readme = "README.md"
 license = { text = "MIT" }
+
+[tool.setuptools.dynamic]
+version = { attr = "src.hanazono.__version__" }
 
 [tool.pdm.scripts]
 manage = "python src/manage.py"

@@ -7,7 +7,7 @@ RUN pip install --no-cache-dir pdm
 COPY pyproject.toml ./
 
 COPY src/aiasan ./src/aiasan
-RUN mkdir -p src/hanazono
+COPY src/hanazono/__init__.py ./src/hanazono/__init__.py
 
 RUN pdm install
 ENV PATH="/app/.venv/bin:$PATH"
