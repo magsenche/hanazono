@@ -70,7 +70,7 @@ Follow the same steps as above but without using PDM commands (refer to `pyproje
 
 ## TODO
 ### Features
-- [ ] make a Notes django model
+- [x] make a Notes django model
 - [x] provide tools to analyze flashcards/notes
 - [ ] use ai assistant from the website directly
 

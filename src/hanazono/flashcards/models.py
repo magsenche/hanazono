@@ -1,4 +1,5 @@
 import hashlib
+import pathlib
 
 from django.db import models
 from django.db.models import Avg, Count
@@ -7,6 +8,19 @@ from django.utils import timezone
 from hanazono.utils import logger
 
 log = logger.custom(__name__)
+
+
+class Note(models.Model):
+    filepath = models.TextField(default="")
+    content = models.TextField(null=True)
+
+    def __str__(self) -> str:
+        return f"{self.filepath}"
+
+    def save(self, *args, **kwargs):
+        if not self.content:
+            self.content = pathlib.Path(self.filepath).read_text()
+        super().save(*args, **kwargs)
 
 
 class FlashcardManager(models.Manager):
@@ -34,7 +48,9 @@ class Flashcard(models.Model):
     question = models.TextField()
     answer = models.TextField()
     hidden = models.BooleanField(default=True)
-    file_path = models.TextField(default="")
+    note = models.ForeignKey(
+        Note, related_name="flashcards", null=True, on_delete=models.CASCADE
+    )
     id = models.CharField(max_length=6, primary_key=True, default="000000")
     box = models.IntegerField(default=1)
     next_review = models.DateTimeField(null=True)

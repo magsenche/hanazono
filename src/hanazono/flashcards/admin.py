@@ -3,7 +3,7 @@ import pathlib
 from django.contrib import admin
 from django.core.management import call_command
 
-from hanazono.flashcards.models import Flashcard
+from hanazono.flashcards.models import Flashcard, Note
 
 
 class FlashcardAdmin(admin.ModelAdmin):
@@ -26,3 +26,4 @@ class FlashcardAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Flashcard, FlashcardAdmin)
+admin.site.register(Note)

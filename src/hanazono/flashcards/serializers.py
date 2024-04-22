@@ -54,7 +54,7 @@ def export_markdown(flashcard, for_quiz=False):
             score=flashcard.score(),
             next_review=flashcard.next_review.strftime("%d/%m/%Y"),
             last_review=flashcard.last_review.strftime("%d/%m/%Y"),
-            file_path=flashcard.file_path,
+            file_path=flashcard.note.filepath,
         )
     else:
         plus = "" if flashcard.hidden else "+"
