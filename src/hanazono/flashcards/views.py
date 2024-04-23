@@ -1,3 +1,4 @@
+import itertools
 import pathlib
 
 import mkdocs.config
@@ -9,7 +10,7 @@ from django.shortcuts import redirect, render
 from django.utils import timezone
 
 from hanazono.flashcards.forms import FileUploadForm
-from hanazono.flashcards.models import Flashcard
+from hanazono.flashcards.models import Flashcard, Note
 from hanazono.utils import logger
 
 config = mkdocs.config.load_config()
@@ -93,8 +94,11 @@ def update_site(request):
 def export_data(request):
     if request.method == "GET":
         try:
-            data = serialize("json", Flashcard.objects.all())
-            filename = f"flashcards_{timezone.now().strftime('%d%m%y')}.json"
+            data = serialize(
+                "json",
+                list(itertools.chain(Note.objects.all(), Flashcard.objects.all())),
+            )
+            filename = f"hanazono_db_{timezone.now().strftime('%y%m%d')}.json"
             log.info(f"Data exported successfully")
             return HttpResponse(
                 data,
@@ -112,10 +116,10 @@ def import_data(request):
         if form.is_valid():
             file_obj = form.cleaned_data["file"]
             try:
-                flashcards = list(deserialize("json", file_obj))
-                for fc in flashcards:
-                    fc.object.save()
-                    log.info(f"Imported {fc.object}")
+                data = list(deserialize("json", file_obj))
+                for d in data:
+                    d.object.save()
+                    log.info(f"Imported {d.object}")
                 return redirect(f"/admin/update_site/")
             except Exception as e:
                 log.error(f"Can't load data from {file_obj.name}: {str(e)}")
@@ -124,6 +128,7 @@ def import_data(request):
 
 def reset_data(request):
     if request.method == "GET":
-        Flashcard.objects.all().delete()
+        Note.objects.all().delete()
+        Flashcard.objects.all().delete()  # overkill
         log.info("Database reseted")
         return redirect(f"/admin")
