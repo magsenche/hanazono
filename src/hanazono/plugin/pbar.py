@@ -1,11 +1,15 @@
 import re
-import pathlib
+
 from bs4 import BeautifulSoup, Tag
+from mkdocs.config.defaults import MkDocsConfig
 from mkdocs.plugins import BasePlugin
+from mkdocs.structure.pages import Page
 
 
 class ProgressBarPlugin(BasePlugin):
-    def on_post_page(self, output_content, page, config):
+    def on_post_page(
+        self, output_content: str, page: Page, config: MkDocsConfig
+    ) -> str:
         soup = BeautifulSoup(output_content, "html.parser")
         pbars = soup.find_all("a", {"class": "pbar"})
         for pbar in pbars:

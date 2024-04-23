@@ -80,8 +80,8 @@ Follow the same steps as above but without using PDM commands (refer to `pyproje
 ### Documentation
 - [ ] install without PDM
 - [ ] start PostgreSQL database instructions
-- [ ] add typing everywhere
-- [ ] add docstring (may not be necessary if typing & good naming)
+- [x] add typing everywhere
+- [ ] ~~add docstring (may not be necessary if typing & good naming)~~
 
 ### Distribution & Deployment
 - [ ] use a production server

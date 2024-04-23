@@ -5,7 +5,7 @@ import mkdocs.config
 from django.conf import settings
 from django.core.management import call_command
 from django.core.serializers import deserialize, serialize
-from django.http import FileResponse, Http404, HttpResponse, JsonResponse
+from django.http import FileResponse, Http404, HttpRequest, HttpResponse, JsonResponse
 from django.shortcuts import redirect, render
 from django.utils import timezone
 
@@ -17,12 +17,12 @@ config = mkdocs.config.load_config()
 log = logger.custom(__name__)
 
 
-def home(request):
+def home(request: HttpRequest) -> HttpResponse:
     if request.method == "GET":
         return render(request, "index.html")
 
 
-def update_flashcard(request, id, is_ok):
+def update_flashcard(request: HttpRequest, id: str, is_ok: str) -> JsonResponse:
     if request.method == "GET":
         is_ok = is_ok.lower() == "true"
         try:
@@ -43,7 +43,7 @@ def update_flashcard(request, id, is_ok):
             )
 
 
-def daily_quiz(request):
+def daily_quiz(request: HttpRequest) -> HttpResponse:
     if request.method == "GET":
         flashcards = Flashcard.objects.all().order_by("?")
         fc_htmls = [fc.html for fc in flashcards if fc.do_quiz()]
@@ -54,7 +54,7 @@ def daily_quiz(request):
         return redirect(f"/quiz/")
 
 
-def serve_config(request):
+def serve_config(request: HttpRequest) -> HttpResponse:
     if request.method == "GET":
         content = f"""
             var HTTP_HOST = "{request.get_host()}";
@@ -65,7 +65,7 @@ def serve_config(request):
         )
 
 
-def serve(request, path):
+def serve(request: HttpRequest, path: pathlib.Path) -> FileResponse | Http404:
     if request.method == "GET":
         full_path = settings.STATIC_ROOT / path
         if full_path.is_dir():
@@ -76,7 +76,7 @@ def serve(request, path):
             raise Http404(f"path not found: {path} ")
 
 
-def update_site(request):
+def update_site(request: HttpRequest):
     if request.method == "GET":
         try:
             call_command("makemigrations")
@@ -91,7 +91,7 @@ def update_site(request):
             return redirect(f"/admin")
 
 
-def export_data(request):
+def export_data(request: HttpRequest) -> HttpResponse:
     if request.method == "GET":
         try:
             data = serialize(
@@ -110,7 +110,7 @@ def export_data(request):
             return redirect(f"/admin")
 
 
-def import_data(request):
+def import_data(request: HttpRequest) -> HttpResponse:
     if request.method == "POST":
         form = FileUploadForm(request.POST, request.FILES)
         if form.is_valid():
@@ -126,7 +126,7 @@ def import_data(request):
                 return redirect(f"/admin")
 
 
-def reset_data(request):
+def reset_data(request: HttpRequest) -> HttpResponse:
     if request.method == "GET":
         Note.objects.all().delete()
         Flashcard.objects.all().delete()  # overkill

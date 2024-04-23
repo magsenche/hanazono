@@ -75,16 +75,16 @@ class Flashcard(models.Model):
             self.last_review = timezone.now()
         super().save(*args, **kwargs)
 
-    def generate_flashcard_id(self):
+    def generate_flashcard_id(self) -> str:
         hash_object = hashlib.md5()
         content = self.question + self.answer
         hash_object.update(content.encode("utf-8"))
         return hash_object.hexdigest()[:6]
 
-    def do_quiz(self):
+    def do_quiz(self) -> bool:
         return self.next_review.date() <= timezone.now().date()
 
-    def update_box(self, success):
+    def update_box(self, success: bool):
         if success:
             self.success()
         else:
@@ -99,7 +99,7 @@ class Flashcard(models.Model):
         self.box = 1
         self.update_score(False)
 
-    def update_score(self, correct=True):
+    def update_score(self, correct: bool = True):
         if correct:
             self.score_correct += 1
         else:
@@ -116,5 +116,5 @@ class Flashcard(models.Model):
             days=days_until_next_review
         )
 
-    def score(self):
+    def score(self) -> str:
         return f"{self.score_correct}/{self.score_correct+self.score_incorrect}"

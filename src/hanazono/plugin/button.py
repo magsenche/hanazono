@@ -1,6 +1,8 @@
 from bs4 import BeautifulSoup, Tag
 from mkdocs.config import config_options
+from mkdocs.config.defaults import MkDocsConfig
 from mkdocs.plugins import BasePlugin
+from mkdocs.structure.pages import Page
 
 from hanazono.utils import logger
 
@@ -10,7 +12,9 @@ log = logger.custom(__name__)
 class ButtonPlugin(BasePlugin):
     config_scheme = (("buttons", config_options.Type(list, default=[])),)
 
-    def on_post_page(self, output_content, page, config):
+    def on_post_page(
+        self, output_content: str, page: Page, config: MkDocsConfig
+    ) -> str:
         soup = BeautifulSoup(output_content, "html.parser")
         for btn_details in self.config["buttons"]:
             section_class = soup.find("div", {"class": btn_details["class"]})
@@ -20,7 +24,7 @@ class ButtonPlugin(BasePlugin):
 
         return str(soup)
 
-    def _generate_button(self, details):
+    def _generate_button(self, details: dict) -> Tag:
         button = Tag(name="a", attrs={"class": "custombutton", "href": details["link"]})
         if "text" in details:
             button.append(details["text"])

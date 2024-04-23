@@ -15,7 +15,7 @@ flashcard_regex = r"""\?\?\?(\+?) question "(.*?)".*?\n((?: {4}.*|\n)*?)(?=\n[^\
 definition_regex = r"(`.+`)\n:\s(.+?)(?=\n|$)"
 
 
-def import_flashcards(markdown_text):
+def import_flashcards(markdown_text: str) -> tuple[list[Flashcard], list[str]]:
     flashcards = []
     parts = []
     ms = 0
@@ -31,7 +31,7 @@ def import_flashcards(markdown_text):
     return flashcards, parts
 
 
-def import_definitions(markdown_text):
+def import_definitions(markdown_text: str) -> list[Flashcard]:
     definitions = []
     for m in re.finditer(definition_regex, markdown_text):
         q, d = m.groups()
@@ -43,7 +43,7 @@ def import_definitions(markdown_text):
     return definitions
 
 
-def export_markdown(flashcard, for_quiz=False):
+def export_markdown(flashcard: list[Flashcard], for_quiz: bool = False) -> str:
     if for_quiz:
         return quiz_flashcard_str.format(
             question=flashcard.question,

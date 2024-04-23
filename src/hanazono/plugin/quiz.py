@@ -20,7 +20,7 @@ log = logger.custom(__name__)
 class QuizPlugin(BasePlugin):
     config_scheme = (("buttons", config_options.Type(list, default=[])),)
 
-    def __init__(self) -> None:
+    def __init__(self):
         super().__init__()
         self.quiz_uri = "quiz.md"
         self.md_file = None
@@ -68,6 +68,6 @@ class QuizPlugin(BasePlugin):
 
         return output
 
-    def on_post_build(self, *, config: MkDocsConfig) -> None:
+    def on_post_build(self, *, config: MkDocsConfig):
         self.md_file.unlink()
         self.html_file.unlink()
