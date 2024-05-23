@@ -14,8 +14,10 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+
+from django.conf import settings
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, re_path
 
 from hanazono.flashcards import views
 
@@ -33,5 +35,10 @@ urlpatterns = [
         name="update_flashcard",
     ),
     path("server_config.js", views.serve_config, name="serve_config"),
-    path("<path:path>", views.serve, name="custom_serve"),
+    re_path(r"^(?P<path>.*)$", views.serve_mkdocs, name="serve_mkdocs"),
 ]
+
+if not settings.DEBUG:
+    urlpatterns.insert(
+        -2, re_path(r"^static/(?P<path>.*)$", views.serve_static, name="serve_static")
+    )

@@ -32,18 +32,23 @@ DJANGO_SUPERUSER_USERNAME=${POSTGRES_USER}
 DJANGO_SUPERUSER_PASSWORD=${POSTGRES_PASSWORD}
 DJANGO_SUPERUSER_EMAIL=""
 
-DJANGO_SETTINGS_MODULE="hanazono_conf.settings"
+DJANGO_SETTINGS_MODULE="hanazono_conf.production"
 
 POSTGRES_HOST="db"
 POSTGRES_PORT=5432
 SERVER_PORT=8001
+
+REDIS_PORT = 6379
+SECRET_KEY = "y0urv3rys3cr3tk3y"
+IP_ADDRESS = "192.168.1.13"
 ```
 
 - database creation: `POSTGRES_DB`,`POSTGRES_USER`,`POSTGRES_PASSWORD` (see [postgress](https://hub.docker.com/_/postgres))
 - database-server connection: `POSTGRES_HOST`(should be set to `db` when using docker),`POSTGRES_PORT`.
 - django admin: `DJANGO_SUPERUSER_USERNAME`,`DJANGO_SUPERUSER_PASSWORD`,`DJANGO_SUPERUSER_EMAIL`
-- django settings: `DJANGO_SETTINGS_MODULE`
+- django settings: `DJANGO_SETTINGS_MODULE`, `SECRET_KEY`,`IP_ADDRESS`
 - server: `SERVER_PORT`
+- redis: `REDIS_PORT`
 
 
 ### Docker
@@ -84,6 +89,6 @@ Follow the same steps as above but without using PDM commands (refer to `pyproje
 - [ ] ~~add docstring (may not be necessary if typing & good naming)~~
 
 ### Distribution & Deployment
-- [ ] use a production server
+- [x] use a production server
 - [x] correctly package the project
 - [ ] use a multi-stage build to install `aiasan` and only copy necessary files to lighten the image

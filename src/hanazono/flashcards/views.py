@@ -49,7 +49,7 @@ def daily_quiz(request: HttpRequest) -> HttpResponse:
         fc_htmls = [fc.html for fc in flashcards if fc.do_quiz()]
         quiz_html = "\n".join(fc_htmls)
         res = render(request, "quiz.html", {"quiz_html": quiz_html})
-        quiz_file = settings.STATIC_ROOT / f"quiz/index.html"
+        quiz_file = settings.SITE_ROOT / f"quiz/index.html"
         quiz_file.write_text(str(res.content, "utf-8"))
         return redirect(f"/quiz/")
 
@@ -65,15 +65,24 @@ def serve_config(request: HttpRequest) -> HttpResponse:
         )
 
 
-def serve(request: HttpRequest, path: pathlib.Path) -> FileResponse | Http404:
+def serve_mkdocs(request: HttpRequest, path: str) -> FileResponse | Http404:
     if request.method == "GET":
-        full_path = settings.STATIC_ROOT / path
+        full_path = settings.SITE_ROOT / path
         if full_path.is_dir():
             full_path = full_path / "index.html"
         if full_path.exists():
             return FileResponse(full_path.open("rb"))
         else:
-            raise Http404(f"path not found: {path} ")
+            raise Http404(f"path not found: {path}")
+
+
+def serve_static(request: HttpRequest, path: str) -> FileResponse | Http404:
+    if request.method == "GET":
+        full_path = settings.STATIC_ROOT / path
+        if full_path.exists():
+            return FileResponse(full_path.open("rb"))
+        else:
+            raise Http404(f"path not found: {path}")
 
 
 def update_site(request: HttpRequest):

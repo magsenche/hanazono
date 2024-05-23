@@ -13,7 +13,10 @@ dependencies = [
     "colorlog>=6.7.0",
     "bs4>=0.0.1",
     "psycopg>=3.1.17",
-    "aiasan @ file:///${PROJECT_ROOT}/src/aiasan",
+    "django-redis>=5.4.0",
+    "gunicorn>=22.0.0",
+    "whitenoise>=6.6.0",
+    "psycopg2-binary>=2.9.9",
 ]
 requires-python = "==3.12.*"
 readme = "README.md"
@@ -30,6 +33,7 @@ init = { composite = [
     "manage createuser --no-input",
     "manage update db",
     "manage build",
+    "manage collectstatic --no-input",
 ] }
 test = "python src/manage.py test hanazono.flashcards"
 

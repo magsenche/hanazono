@@ -15,8 +15,12 @@ from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
-STATIC_ROOT = BASE_DIR / "site"
 
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/4.2/howto/static-files/
+STATIC_URL = "static/"
+SITE_ROOT = BASE_DIR / "site"  # MkDocs generated files (with mkdocs.build)
+STATIC_ROOT = BASE_DIR / "static"  # Django generated files (collecstatic)
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
@@ -57,7 +61,7 @@ ROOT_URLCONF = "hanazono_conf.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [STATIC_ROOT],
+        "DIRS": [SITE_ROOT, STATIC_ROOT],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -79,11 +83,11 @@ WSGI_APPLICATION = "hanazono_conf.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": os.environ["POSTGRES_DB"],
-        "USER": os.environ["POSTGRES_USER"],
-        "PASSWORD": os.environ["POSTGRES_PASSWORD"],
-        "HOST": os.environ["POSTGRES_HOST"],
-        "PORT": os.environ["POSTGRES_PORT"],
+        "NAME": os.environ.get("POSTGRES_DB"),
+        "USER": os.environ.get("POSTGRES_USER"),
+        "PASSWORD": os.environ.get("POSTGRES_PASSWORD"),
+        "HOST": os.environ.get("POSTGRES_HOST"),
+        "PORT": os.environ.get("POSTGRES_PORT"),
     }
 }
 
@@ -116,12 +120,6 @@ TIME_ZONE = "CET"
 USE_I18N = True
 
 USE_TZ = False
-
-
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/4.2/howto/static-files/
-
-STATIC_URL = "static/"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
