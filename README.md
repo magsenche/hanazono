@@ -40,13 +40,13 @@ SERVER_PORT=8001
 
 REDIS_PORT = 6379
 SECRET_KEY = "y0urv3rys3cr3tk3y"
-IP_ADDRESS = "192.168.1.13"
+ALLOWED_HOSTS = "localhost"
 ```
 
 - database creation: `POSTGRES_DB`,`POSTGRES_USER`,`POSTGRES_PASSWORD` (see [postgress](https://hub.docker.com/_/postgres))
 - database-server connection: `POSTGRES_HOST`(should be set to `db` when using docker),`POSTGRES_PORT`.
 - django admin: `DJANGO_SUPERUSER_USERNAME`,`DJANGO_SUPERUSER_PASSWORD`,`DJANGO_SUPERUSER_EMAIL`
-- django settings: `DJANGO_SETTINGS_MODULE`, `SECRET_KEY`,`IP_ADDRESS`
+- django settings: `DJANGO_SETTINGS_MODULE`, `SECRET_KEY`,`ALLOWED_HOSTS`
 - server: `SERVER_PORT`
 - redis: `REDIS_PORT`
 
