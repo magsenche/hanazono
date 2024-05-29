@@ -34,7 +34,6 @@ urlpatterns = [
         views.update_flashcard,
         name="update_flashcard",
     ),
-    path("server_config.js", views.serve_config, name="serve_config"),
     re_path(r"^(?P<path>.*)$", views.serve_mkdocs, name="serve_mkdocs"),
 ]
 

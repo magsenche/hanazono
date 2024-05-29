@@ -72,11 +72,6 @@ class TestViews(TestCase):
         response = self.client.get(reverse("daily_quiz"))
         self.assertEqual(response.status_code, 302)
 
-    def test_serve_config(self):
-        response = self.client.get(reverse("serve_config"))
-        self.assertEqual(response.status_code, 200)
-        self.assertEqual(response["content-type"], "application/javascript")
-
     def test_serve_nonexistent_file(self):
         response = self.client.get("nonexistent_file.html")
         self.assertEqual(response.status_code, 404)

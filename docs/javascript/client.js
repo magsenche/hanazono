@@ -1,9 +1,8 @@
-if (typeof HTTP_HOST === 'undefined') {
-    console.error("HTTP_HOST is not defined. Ensure server_config.js is loaded before this script.");
-}
 document.addEventListener('DOMContentLoaded', function () {
+    const protocol = window.location.protocol;
+    const host = window.location.host;
     function updateMarkdownContent(id, isOk) {
-        fetch('http://' + HTTP_HOST + '/update_flashcard/' + id + '/' + isOk, {
+        fetch(`${protocol}//${host}/update_flashcard/${id}/${isOk}`, {
             method: 'GET',
         })
             .then(response => response.json())

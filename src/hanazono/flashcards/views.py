@@ -54,17 +54,6 @@ def daily_quiz(request: HttpRequest) -> HttpResponse:
         return redirect(f"/quiz/")
 
 
-def serve_config(request: HttpRequest) -> HttpResponse:
-    if request.method == "GET":
-        content = f"""
-            var HTTP_HOST = "{request.get_host()}";
-        """
-        return HttpResponse(
-            content,
-            content_type="application/javascript",
-        )
-
-
 def serve_mkdocs(request: HttpRequest, path: str) -> FileResponse | Http404:
     if request.method == "GET":
         full_path = settings.SITE_ROOT / path
