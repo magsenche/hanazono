@@ -3,6 +3,7 @@ import pathlib
 
 import mkdocs.config
 from django.conf import settings
+from django.contrib.auth.decorators import login_required
 from django.core.management import call_command
 from django.core.serializers import deserialize, serialize
 from django.http import FileResponse, Http404, HttpRequest, HttpResponse, JsonResponse
@@ -43,6 +44,7 @@ def update_flashcard(request: HttpRequest, id: str, is_ok: str) -> JsonResponse:
             )
 
 
+@login_required
 def daily_quiz(request: HttpRequest) -> HttpResponse:
     if request.method == "GET":
         flashcards = Flashcard.objects.all().order_by("?")
