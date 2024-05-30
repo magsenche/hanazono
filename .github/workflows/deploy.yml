@@ -1,0 +1,32 @@
+name: Build & Deploy on Render
+
+on:
+  push:
+    branches: [ "notes" ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    environment: prod
+    steps:
+    - uses: actions/checkout@v4
+    - name: Login to Docker Hub
+      uses: docker/login-action@v3
+      with:
+        username: ${{ secrets.DOCKERHUB_USERNAME }}
+        password: ${{ secrets.DOCKERHUB_PWD }}
+    - name: Build and push Docker images
+      uses: docker/build-push-action@v5.3.0
+      with:
+        context: .
+        file: render.Dockerfile
+        push: true
+        tags: |
+          gamnes/hanazono-render-server:${{ github.run_number }}
+          gamnes/hanazono-render-server:latest
+  render-deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment: prod
+    steps:
+      - name: Deploy to render
+        run: curl ${{ secrets.DEPLOY_HOOK }}
