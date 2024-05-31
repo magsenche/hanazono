@@ -19,3 +19,10 @@ CACHES = {
         "LOCATION": f"redis://{os.environ.get("REDIS_HOST")}:{os.environ.get("REDIS_PORT")}",
     }
 }
+if os.environ.get("RENDER",False):
+    DATABASES = {
+        "default": {
+            "ENGINE": "django.db.backends.sqlite3",
+            "NAME": "sqlitedb",
+        }
+    }
