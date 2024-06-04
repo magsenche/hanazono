@@ -9,7 +9,7 @@ COPY pyproject.toml ./
 COPY src/aiasan ./src/aiasan
 COPY src/hanazono/__init__.py ./src/hanazono/__init__.py
 
-RUN pdm install
+RUN pdm install --without aiassistant
 ENV PATH="/app/.venv/bin:$PATH"
 
 EXPOSE 8000

@@ -40,7 +40,7 @@ jobs:
         uses: pdm-project/setup-pdm@v4
 
       - name: Install dependencies
-        run: pdm install
+        run: pdm install --without aiassistant
 
       - name: Run init
         env:
