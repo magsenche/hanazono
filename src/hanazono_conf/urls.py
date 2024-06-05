@@ -17,6 +17,7 @@ Including another URLconf
 
 from django.conf import settings
 from django.contrib import admin
+from django.contrib.auth.decorators import login_required
 from django.urls import path, re_path
 
 from hanazono.flashcards import views
@@ -28,7 +29,7 @@ urlpatterns = [
     path("admin/import_data/", views.import_data, name="import_data"),
     path("admin/reset_data/", views.reset_data, name="reset_data"),
     path("admin", admin.site.urls),
-    path("daily_quiz", views.daily_quiz, name="daily_quiz"),
+    path("quiz/", login_required(views.quiz), name="quiz"),
     path(
         "update_flashcard/<str:id>/<str:is_ok>",
         views.update_flashcard,

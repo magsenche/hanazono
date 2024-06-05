@@ -1,3 +1,4 @@
+from django.contrib.auth.models import User
 from django.core.files.uploadedfile import SimpleUploadedFile
 from django.test import TestCase
 from django.urls import reverse
@@ -55,6 +56,8 @@ class FlashcardTestCase(TestCase):
 class TestViews(TestCase):
     def setUp(self):
         self.flashcard = Flashcard.objects.create(question="What is 2+2?", answer="4")
+        self.user = User.objects.create_user(username="testuser", password="password")
+        self.client.login(username="testuser", password="password")
 
     def test_home(self):
         response = self.client.get(reverse("home"))
@@ -68,8 +71,13 @@ class TestViews(TestCase):
         self.assertEqual(response.json()["success"], True)
         self.assertEqual(response.json()["box"], 2)
 
-    def test_daily_quiz(self):
-        response = self.client.get(reverse("daily_quiz"))
+    def test_daily_quiz_authenticated(self):
+        response = self.client.get(reverse("quiz"))
+        self.assertEqual(response.status_code, 200)
+
+    def test_daily_quiz_unauthenticated(self):
+        self.client.logout()
+        response = self.client.get(reverse("quiz"))
         self.assertEqual(response.status_code, 302)
 
     def test_serve_nonexistent_file(self):

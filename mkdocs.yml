@@ -84,9 +84,6 @@ plugins:
         - link: /admin
           text: Admin
           class: md-header__source
-        - link: /daily_quiz
-          text: Daily quiz
-          class: md-header__title
   - quiz
   - pbar
   - search
