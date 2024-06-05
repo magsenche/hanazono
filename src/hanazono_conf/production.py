@@ -19,7 +19,14 @@ CACHES = {
         "LOCATION": f"redis://{os.environ.get("REDIS_HOST")}:{os.environ.get("REDIS_PORT")}",
     }
 }
-if os.environ.get("RENDER",False):
+
+# Database
+is_standalone = (
+    os.environ.get("RENDER") is not None  # Render
+    or os.environ.get("WEBSITE_INSTANCE_ID") is not None  # Azure
+    or str(os.environ.get("STANDALONE", False)).lower() != "false"  # Set manually
+)
+if is_standalone:
     DATABASES = {
         "default": {
             "ENGINE": "django.db.backends.sqlite3",

@@ -1,4 +1,4 @@
-name: Build & Deploy on Render
+name: build & deploy on hosts
 
 on:
   push:
@@ -22,15 +22,22 @@ jobs:
       uses: docker/build-push-action@v5.3.0
       with:
         context: .
-        file: render.Dockerfile
+        file: Dockerfile.standalone
         push: true
         tags: |
-          gamnes/hanazono-render-server:${{ github.run_number }}
-          gamnes/hanazono-render-server:latest
+          gamnes/hanazono-server:${{ github.run_number }}
+          gamnes/hanazono-server:latest
   render-deploy:
     needs: build
     runs-on: ubuntu-latest
     environment: prod
     steps:
       - name: Deploy to render
-        run: curl ${{ secrets.DEPLOY_HOOK }}
+        run: curl ${{ secrets.RENDER_DEPLOY_HOOK }}
+  azure-deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment: prod
+    steps:
+      - name: Deploy to azure
+        run: curl ${{ secrets.AZURE_DEPLOY_HOOK }}

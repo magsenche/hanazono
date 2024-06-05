@@ -8,6 +8,8 @@ Hanazono is a versatile tool designed to help you build a website for your perso
 
 It leverages [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) for writing notes, making it easy to create and manage your content.
 
+You can check my hanazono [azure](https://hanazono.azurewebsites.net/) or [render](https://hanazono.onrender.com) (may be slow due to free hosting). Log in is required to have access to the Daily Quiz.
+
 1. write your notes as markdown `.md` file
 2. define flashcards as a [question admonition](https://squidfunk.github.io/mkdocs-material/reference/admonitions/?h=admon#+type:question)
    ```
@@ -43,8 +45,7 @@ DJANGO_SUPERUSER_EMAIL="user@mail.com"
 DJANGO_SETTINGS_MODULE="hanazono_conf.production"
 SECRET_KEY = "y0urv3rys3cr3tk3y"
 ALLOWED_HOSTS = "localhost"
-
-
+STANDALONE = false
 
 # Redis connection
 REDIS_PORT = 6379
@@ -68,15 +69,15 @@ This is the easiest and most recommended approach if you're comfortable with Doc
 
 As `docs` folder is mounted in the server container: updates are directly available from the site. You just need to click on "Update site" from the admin panel.
 
-#### Server only (for Free Hosting)
-Useful if you can't use docker-compose for instance free host provider such as [render](https://render.com/).
+#### Standalone (for Free Hosting)
+Useful if you can't use docker-compose for instance free host provider such as [render](https://render.com/) or azure.
 
 Here, Hanazono operates within a single container and uses a local SQLite3 database instead of an external one.
 
 1. make sur to set:
    - `DJANGO_SETTINGS_MODULE="hanazono_conf.production"`
-   - `RENDER=true` to use a sqlite3 database
-2. use `render.Dockerfile` to build the image `docker build -f render.Dockerfile -t hanazono-server:latest .`
+   - `STANDALONE=true` to use a sqlite3 database
+2. use `Dockerfile.standalone` to build the image `docker build -f Dockerfile.standalone -t hanazono-server:latest .`
 3. push your image and upload it on your host
 4. run the server `docker run --env-file .env -p 8000:8000 hanazono-server:latest`
 
@@ -109,6 +110,7 @@ To use the ai assistant package to help you generate notes or flashcards, change
 - [ ] start PostgreSQL database instructions
 - [x] add typing everywhere
 - [ ] ~~add docstring (may not be necessary if typing & good naming)~~
+- [ ] add showcase video
 
 ### Distribution & Deployment
 - [x] use a production server
@@ -116,3 +118,4 @@ To use the ai assistant package to help you generate notes or flashcards, change
 - [ ] use a multi-stage build to install `aiasan` and only copy necessary files to lighten the image
 - [x] deploy without docker-compose
 - [x] optional dependencies for ai assistant
+- [ ] export & import database automatically on new deployement
