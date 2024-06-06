@@ -110,6 +110,12 @@ def import_data(request: HttpRequest) -> HttpResponse:
         if form.is_valid():
             file_obj = form.cleaned_data["file"]
             try:
+                # Reset data
+                Note.objects.all().delete()
+                Flashcard.objects.all().delete()
+                log.info("Database reseted")
+
+                # Import data
                 data = list(deserialize("json", file_obj))
                 for d in data:
                     d.object.save()

@@ -27,17 +27,21 @@ jobs:
         tags: |
           gamnes/hanazono-server:${{ github.run_number }}
           gamnes/hanazono-server:latest
-  render-deploy:
+
+  render:
     needs: build
-    runs-on: ubuntu-latest
-    environment: prod
-    steps:
-      - name: Deploy to render
-        run: curl ${{ secrets.RENDER_DEPLOY_HOOK }}
-  azure-deploy:
+    uses: ./.github/workflows/deploy_template.yml
+    with:
+      host: https://hanazono.onrender.com
+      environment: prod
+    secrets:
+      deploy_hook: ${{ secrets.RENDER_DEPLOY_HOOK }}
+
+  azure:
     needs: build
-    runs-on: ubuntu-latest
-    environment: prod
-    steps:
-      - name: Deploy to azure
-        run: curl ${{ secrets.AZURE_DEPLOY_HOOK }}
+    uses: ./.github/workflows/deploy_template.yml
+    with:
+      host: https://hanazono.azurewebsites.net
+      environment: prod
+    secrets:
+      deploy_hook: ${{ secrets.RENDER_DEPLOY_HOOK }}

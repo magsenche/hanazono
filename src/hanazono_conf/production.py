@@ -9,7 +9,7 @@ CSRF_TRUSTED_ORIGINS = ["https://" + host for host in ALLOWED_HOSTS]
 DEBUG = False
 
 # WhiteNoise configuration
-MIDDLEWARE.insert(1, "whitenoise.middleware.WhiteNoiseMiddleware")
+MIDDLEWARE.insert(2, "whitenoise.middleware.WhiteNoiseMiddleware")
 STATICFILES_STORAGE = "whitenoise.storage.CompressedStaticFilesStorage"
 
 # Redis Cache

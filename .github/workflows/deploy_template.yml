@@ -1,0 +1,44 @@
+name: deploy
+
+on:
+  workflow_call:
+    inputs:
+      host:
+        required: true
+        type: string
+      environment:
+        required: true
+        type: string
+    secrets:
+      deploy_hook:
+        required: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: ${{ inputs.environment }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
+      - name: Check if host is up
+        id: check_host
+        run: |
+          if [ "$(curl -o /dev/null -w '%{http_code}' -s ${{ inputs.host }}/healthz)" -eq 200 ]; then
+            echo "::set-output name=host_status::up"
+          else
+            echo "::set-output name=host_status::down"
+          fi
+      - name: Install db.py script requirements
+        if: steps.check_host.outputs.host_status == 'up'
+        run: pip install requests bs4
+      - name: Export database
+        if: steps.check_host.outputs.host_status == 'up'
+        run: python3 db.py export -f db.json -H ${{ inputs.host }}
+      - name: Deploy
+        run: curl ${{ secrets.deploy_hook }}
+      - name: Import database
+        if: steps.check_host.outputs.host_status == 'up'
+        run: python3 db.py import -f db.json -H ${{ inputs.host }}

@@ -96,12 +96,11 @@ class TestViews(TestCase):
     def test_import_data(self):
         file_content = b'[{ "model": "flashcards.flashcard", "pk": 1, "fields": { "question": "Test Question", "answer": "Test Answer" } }]'
         uploaded_file = SimpleUploadedFile("test_file.json", file_content)
-        initial_count = Flashcard.objects.count()
         response = self.client.post(reverse("import_data"), {"file": uploaded_file})
         self.assertEqual(response.status_code, 302)
 
         after_import_count = Flashcard.objects.count()
-        self.assertEqual(after_import_count, initial_count + 1)
+        self.assertEqual(after_import_count, 1)
 
         imported_flashcard = Flashcard.objects.get(question="Test Question")
         self.assertEqual(imported_flashcard.answer, "Test Answer")
@@ -109,12 +108,11 @@ class TestViews(TestCase):
     def test_import_invalid_data(self):
         file_content = b"Invalid content"
         uploaded_file = SimpleUploadedFile("invalid_file.json", file_content)
-        initial_count = Flashcard.objects.count()
         response = self.client.post(reverse("import_data"), {"file": uploaded_file})
         self.assertEqual(response.status_code, 302)
 
         after_import_count = Flashcard.objects.count()
-        self.assertEqual(after_import_count, initial_count)
+        self.assertEqual(after_import_count, 0)
 
     def test_reset_data(self):
         Flashcard.objects.create(question="Q1", answer="A1")

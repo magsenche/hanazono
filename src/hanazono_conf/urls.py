@@ -24,15 +24,15 @@ from hanazono.flashcards import views
 
 urlpatterns = [
     path("", views.home, name="home"),
-    path("admin/update_site/", views.update_site, name="update_site"),
-    path("admin/export_data/", views.export_data, name="export_data"),
-    path("admin/import_data/", views.import_data, name="import_data"),
-    path("admin/reset_data/", views.reset_data, name="reset_data"),
+    path("admin/update_site/", login_required(views.update_site), name="update_site"),
+    path("admin/export_data/", login_required(views.export_data), name="export_data"),
+    path("admin/import_data/", login_required(views.import_data), name="import_data"),
+    path("admin/reset_data/", login_required(views.reset_data), name="reset_data"),
     path("admin", admin.site.urls),
     path("quiz/", login_required(views.quiz), name="quiz"),
     path(
         "update_flashcard/<str:id>/<str:is_ok>",
-        views.update_flashcard,
+        login_required(views.update_flashcard),
         name="update_flashcard",
     ),
     re_path(r"^(?P<path>.*)$", views.serve_mkdocs, name="serve_mkdocs"),
