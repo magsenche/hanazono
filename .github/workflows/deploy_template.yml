@@ -27,9 +27,9 @@ jobs:
         id: check_host
         run: |
           if [ "$(curl -o /dev/null -w '%{http_code}' -s ${{ inputs.host }}/healthz)" -eq 200 ]; then
-            echo "::set-output name=host_status::up"
+            echo "host_status=up" >> $GITHUB_OUTPUT
           else
-            echo "::set-output name=host_status::down"
+            echo "host_status=down" >> $GITHUB_OUTPUT
           fi
       - name: Install db.py script requirements
         if: steps.check_host.outputs.host_status == 'up'
