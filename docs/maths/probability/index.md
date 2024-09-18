@@ -81,6 +81,38 @@
 
     Useful for modeling the joint distribution of a set of continuous random variables that are linearly correlated. It's a generalization of the normal distribution to higher dimensions and is widely used in multivariate analysis, pattern recognition, and machine learning.
 
+## Characteristic Functions
+
+`Characteristic Function`
+: $\phi_X(t) = E[e^{itX}] = \int_{-\infty}^{\infty} e^{itx} f_X(x) dx$ where $f_X(x)$ is the probability density function of X.
+
+Properties:
+
+1. $|\phi_X(t)| \leq 1$ for all t
+2. $\phi_X(0) = 1$
+3. $\phi_X(-t) = \overline{\phi_X(t)}$, where $\overline{z}$ denotes the complex conjugate of z
+
+Characteristic functions are useful for:
+
+- Determining the distribution of sums of independent random variables
+- Proving limit theorems
+- Calculating moments of a distribution
+
+## Moment Generating Functions
+
+The moment generating function (MGF) of a random variable X is defined as:
+
+$M_X(t) = E[e^{tX}] = \int_{-\infty}^{\infty} e^{tx} f_X(x) dx$
+
+Properties:
+1. $M_X(0) = 1$
+2. $M_X^{(n)}(0) = E[X^n]$, where $M_X^{(n)}$ is the nth derivative of $M_X$
+
+MGFs are useful for:
+- Calculating moments of a distribution
+- Determining the distribution of sums of independent random variables
+- Proving the Central Limit Theorem
+
 ## Properties
 
 ### Central Limit Theorem

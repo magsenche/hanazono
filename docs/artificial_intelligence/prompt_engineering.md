@@ -3,7 +3,7 @@
 
 - **start simple** and add elements and context as you aim for better results: it's an iterative process
 - **use commands** to instruct the model what you want to do, e.g. "write", "translate", "summarize"
-- **separate instructions from context** by using some clear separators such as ‘### Instruction ###‘
+- **separate instructions from context** by using some clear separators such as '### Instruction ###'
 - **say what to do, not what not to do**
 - **be very specific** as the more descriptive the prompt is, the better the results
 
@@ -193,16 +193,6 @@ Splits the task into subtasks with the idea to create a chain of prompt operatio
 
 More on [Anthropic AI guide](https://docs.anthropic.com/claude/docs/prompt-chaining)
 
-### Retrieval Augmented Generation
-Combines an information retrieval componenent with a text generator model. It allows LLMs to bypass retraining as the internal knowledge can be modified in an efficient manner. Idea by [Meta AI](https://ai.meta.com/blog/retrieval-augmented-generation-streamlining-the-creation-of-intelligent-natural-language-processing-models/).
-
-1. takes an input and retrieves a set of relevant documents given a source
-2. concatenates as context with the original input prompt
-3. feeds it to the text generator to produce the final output
-
-??? question "What is RAG?"
-    **Retrieval Augmented Generation** combines an information retrieval componenent with a text generator model. It allows LLMs to bypass retraining as the internal knowledge can be modified in an efficient manner
-
 ### Prompt function
 Encapsulates prompts into functions to create a workflow.
 
@@ -241,9 +231,9 @@ Encapsulates prompts into functions to create a workflow.
     ```
 === "Task prompt"
     ```title=""
-    trans_word('婆罗摩火山处于享有“千岛之国”美称的印度尼西亚. 多岛之国印尼有4500座之多的火山, 世界著名的十大活火山有三座在这里.')
+    trans_word('婆罗摩火山处于享有"千岛之国"美称的印度尼西亚. 多岛之国印尼有4500座之多的火山, 世界著名的十大活火山有三座在这里.')
     fix_english('Finally, you can run the function independently or chain them together.')
-    fix_english(expand_word(trans_word('婆罗摩火山处于享有“千岛之国”美称的印度尼西亚. 多岛之国印尼有4500座之多的火山, 世界著名的十大活火山有三座在这里.')))
+    fix_english(expand_word(trans_word('婆罗摩火山处于享有"千岛之国"美称的印度尼西亚. 多岛之国印尼有4500座之多的火山, 世界著名的十大活火山有三座在这里.')))
     ```
 
 ??? question "What's the principle behind prompt-chaining and prompt function techniques"

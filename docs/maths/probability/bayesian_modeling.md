@@ -59,6 +59,55 @@ The response distribution $p(\hat{s}|s)$ is the distribution of the stimulus est
 - **Uncertainty** reflects the **observer's knowledge** about variables in the world. It's subjective and noise can be a source of uncertainty.
 - **Variability** encompasses **anything that varies from trial to trial**. Noise is a form of variablity, uncertainty is not.
 
+## Bayesian Model Selection
+Bayesian model selection is a method for choosing between different models based on their posterior probabilities. It naturally incorporates Occam's razor, favoring simpler models unless more complex models are substantially better at explaining the data.
+
+### Bayes Factor
+???+ question "What is the Bayes factor and how is it interpreted in Bayesian model selection?"
+    The Bayes factor is the ratio of the marginal likelihoods of two models:
+
+    $B_{12} = \frac{p(D|M_1)}{p(D|M_2)}$
+
+    where $p(D|M_i)$ is the marginal likelihood of model $M_i$.
+
+    Interpretation:
+
+    - $B_{12} > 1$: Data supports $M_1$ over $M_2$
+    - $B_{12} < 1$: Data supports $M_2$ over $M_1$
+
+### Bayesian Information Criterion (BIC)
+The BIC is an approximation to the log of the Bayes factor:
+
+$BIC = -2 \ln(\hat{L}) + k \ln(n)$
+
+where $\hat{L}$ is the maximum likelihood, $k$ is the number of parameters, and $n$ is the number of data points.
+
+Lower BIC values indicate better models.
+
+## Hierarchical Bayesian Models
+Hierarchical Bayesian models involve multiple levels of parameters, allowing for more complex and realistic modeling of data.
+
+???+ question "Structure of a Hierarchical Bayesian Model"
+    1. Data level: $p(y|\theta)$
+    2. Parameter level: $p(\theta|\phi)$
+    3. Hyperparameter level: $p(\phi)$
+
+    The joint posterior is given by:
+
+    $p(\theta, \phi|y) \propto p(y|\theta) p(\theta|\phi) p(\phi)$
+
+Advantages:
+
+1. Can model complex dependencies in data
+2. Allows for partial pooling of information across groups
+3. Naturally handles uncertainty at multiple levels
+
+Challenges:
+
+1. Can be computationally intensive
+2. Requires careful specification of priors
+3. Interpretation can be more complex than simpler models
+
 ## Bayesian Confidence
 
 ### Estimate-based Bayesian confidence

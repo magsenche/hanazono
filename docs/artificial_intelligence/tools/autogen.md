@@ -2,6 +2,13 @@
 
 AutoGen provides a ** multi-agent conversation framework as a high-level abstraction**. It is an **open-source** library for enabling next-generation Large Language Model (LLM) applications with multi-agent collaborations, teachability, and personalization. It allows users to build LLM workflows, where **multiple agents can converse with each other to solve tasks**.
 
+## Installation
+
+To install AutoGen, use the following command:
+```bash
+pip install autogen
+```
+
 ## Agents
 
 ![](../fig/autogen-class.png)

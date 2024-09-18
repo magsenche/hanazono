@@ -43,3 +43,11 @@ Examples with circle as a manifold, segment as the fiber:
 
 `Tangent space`
 : The tangent space defines a coordinate system locally on a manifold
+
+### Dihedral group
+
+The Dihedral group $D_{2n}$ is the group of symmetry of a regular $n$-polygon of order in $2n$.
+
+It's made of $2$ possible refelctions of $n$ rotations.
+
+![](fig/d16.png)
